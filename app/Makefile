@@ -1,0 +1,16 @@
+# More information: https://wiki.ubuntu.com/Touch/Testing
+#
+# Notes for autopilot tests:
+# -----------------------------------------------------------
+# In order to run autopilot tests:
+# sudo apt-add-repository ppa:autopilot/ppa
+# sudo apt-get update
+# sudo apt-get install python-autopilot autopilot-qt
+#############################################################
+
+all:
+
+check:
+
+run:
+	/usr/bin/qmlscene -I ../backend/modules $@ Logviewer.qml

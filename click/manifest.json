@@ -1,0 +1,15 @@
+{
+    "description": "Logviewer app for Ubuntu touch",
+    "framework": "ubuntu-sdk-13.10",
+    "hooks": {
+        "logviewer": {
+            "apparmor": "logviewer.json",
+            "desktop": "logviewer.desktop"
+        }
+    },
+    "maintainer": "victor palau <vtuson@gmail.com>",
+    "name": "com.ubuntu.developer.vtuson.logviewer",
+    "title": "logviewer",
+    "version": "0.1",
+    "architecture": "armhf" 
+}

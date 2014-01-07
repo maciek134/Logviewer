@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Logviewer
+Comment=Logviewer for ubuntu touch
+Exec=/usr/bin/qmlscene -I plugin $@ logviewer.qml
+Icon=qmlscene
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
