@@ -15,8 +15,8 @@ Page {
     property alias fontsize: logText.font.pointSize
     property int maxTitle:14
     property int iconSize:units.gu(4)
-
-    title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length-1) :
+    property bool logDie: false
+    title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length) :
                                      logname
     visible: false
 
@@ -24,6 +24,9 @@ Page {
         id: mLogViewer
         onLogTextChanged: {
             if(autoscroll) flickArea.contentY= logText.height-logPage.height
+        }
+        onLogStopped: {
+            if(logDie) logPage.destroy()
         }
     }
     ListModel {  id:logsList  }
@@ -34,9 +37,10 @@ Page {
                 text: "Back"
                 onTriggered: {
                     toolbar.pageStack.pop()
-                    logPage.destroy()
+                    logDie=true
+                    mLogViewer.stopLog()
                 }
-                iconSource:Qt.resolvedUrl("back")
+                iconSource:Qt.resolvedUrl("image://theme/back")
             }
         }
         ToolbarButton {

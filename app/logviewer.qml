@@ -52,11 +52,11 @@ MainView {
 
             Component.onCompleted:loadStandardSettings()
 
-                function loadStandardSettings(){
-                    msettings.bufferSize= preferences.buffer
-                    msettings.directory=preferences.dir
-                    msettings.filter=preferences.filter
-                }
+            function loadStandardSettings(){
+                msettings.bufferSize= preferences.buffer
+                msettings.directory=preferences.dir
+                msettings.filter=preferences.filter
+            }
         }
         Page {
             id:page0
@@ -69,6 +69,14 @@ MainView {
                         text: i18n.tr("Settings")
                         onTriggered: pStack.push(msettings)
                         iconSource: Qt.resolvedUrl("image://theme/properties")
+                    }
+                }
+
+                ToolbarButton {
+                    action: Action {
+                        text: "Reload"
+                        onTriggered:logs.loadLogs()
+                        iconSource:Qt.resolvedUrl("image://theme/reload")
                     }
                 }
             }
@@ -103,28 +111,22 @@ MainView {
                         anchors.fill: parent
                         onClicked:{
 
-                            //if the page has already being created load it again
-                            if (pageDelegate === undefined) {
-                                console.log("creating page")
+                            console.log("creating page")
 
-                                //remove the file extension if any
-                                var lastpos = iLogPath.lastIndexOf(".")
-                                if (lastpos ===-1) lastpos=iLogPath.length
+                            //remove the file extension if any
+                            var lastpos = iLogPath.lastIndexOf(".")
+                            if (lastpos ===-1) lastpos=iLogPath.length
 
-                                //remove path
-                                var startpos = iLogPath.lastIndexOf("/")
+                            //remove path
+                            var startpos = iLogPath.lastIndexOf("/")
 
-                                //iname is now the title page
-                                var iname= iLogPath.slice(startpos+1,lastpos)
-                                console.log("in page creation, title is " +iname + "file is " +iLogPath)
-                                //create page
-                                pageDelegate=createLog(iLogPath,iname,preferences.buffer)
+                            //iname is now the title page
+                            var iname= iLogPath.slice(startpos+1,lastpos)
+                            console.log("in page creation, title is " +iname + "file is " +iLogPath)
+                            //create page
+                            pageDelegate=createLog(iLogPath,iname,preferences.buffer)
 
 
-                            } else {
-                                pStack.push(pageDelegate)
-                                pageDelegate.buffer=preferences.buffer
-                            }
                             pageDelegate.fontsize=msettings.fontSize
 
                         }

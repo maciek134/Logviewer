@@ -34,15 +34,20 @@ void LogReaderService::readLog() {
             qDebug()<< "opening file failed" << mFilePath;
             return;
         }
+        qint64 pos =inputFile->size() - mbuffer;
         qDebug() << "filed opened succesfully " << mFilePath;
         mlog = new QTextStream(inputFile);
+        if (pos > 0) {
+            bool isSeek = mlog->seek(pos);
+            qDebug() << "seek of file was " << isSeek;
+        }
     }
-    while (mRead || !mDie)
+    while (mRead && !mDie)
     {
         if (!mlog->atEnd()) {
             mline = mlog->readLine();
             m_logText.append(mline + "\n");
-            qDebug() << "Line is " << mline ;
+            //qDebug() << "Line is " << mline ;
             if (m_logText.length() > mbuffer) {
                 m_logText = m_logText.right(mbuffer);
             }
@@ -53,19 +58,19 @@ void LogReaderService::readLog() {
             nanosleep(&ts, NULL);
         }
     }
-    if (mDie){
+
+    qDebug() << "leaving read log";
+    if (!mDie)Q_EMIT logReadingDone();
+}
+
+LogReaderService::~LogReaderService(){
+    if (inputFile !=NULL){
+        mDie=true;
         qDebug() << "closing file and destroy service";
         inputFile->close();
         delete(inputFile);
         delete(mlog);
-        return;
     }
-    qDebug() << "leaving read log";
-    Q_EMIT logReadingDone();
-}
-
-LogReaderService::~LogReaderService(){
-    mDie=true;
 }
 
 void LogReaderService::readLogFiles() {

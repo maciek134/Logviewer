@@ -15,8 +15,8 @@ Page {
     property alias fontsize: logText.font.pointSize
     property int maxTitle:14
     property int iconSize:units.gu(4)
-
-    title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length-1) :
+    property bool logDie: false
+    title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length) :
                                      logname
     visible: false
 
@@ -25,11 +25,27 @@ Page {
         onLogTextChanged: {
             if(autoscroll) flickArea.contentY= logText.height-logPage.height
         }
+        onLogStopped: {
+            if(logDie) logPage.destroy()
+        }
     }
     ListModel {  id:logsList  }
     tools: ToolbarItems {
+        id:toolbar
+        back: ToolbarButton {
+            action: Action {
+                text: "Back"
+                onTriggered: {
+                    toolbar.pageStack.pop()
+                    logDie=true
+                    mLogViewer.stopLog()
+                }
+                iconSource:Qt.resolvedUrl("image://theme/back")
+            }
+        }
         ToolbarButton {
             action: Action {
+                id:pauseaction
                 text: readingLog? i18n.tr("Pause") : i18n.tr("Start")
                 onTriggered: {
                     if (readingLog){
@@ -38,10 +54,12 @@ Page {
                         mLogViewer.openLog()
                     }
                     readingLog = !readingLog
+                    console.log("Action is " + pauseaction.text)
                 }
                 iconSource: readingLog?Qt.resolvedUrl("image://theme/media-playback-pause"):
                                         Qt.resolvedUrl("image://theme/media-playback-start")
             }
+
         }
         ToolbarButton {
             action: Action {
@@ -61,7 +79,7 @@ Page {
                     doselection =!doselection
                 }
                 iconSource: doselection?Qt.resolvedUrl("image://theme/browser-tabs"):
-                                        Qt.resolvedUrl("image://theme/edit")
+                                         Qt.resolvedUrl("image://theme/edit")
             }
         }
     }
