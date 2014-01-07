@@ -2,7 +2,7 @@
 Name=Logviewer
 Comment=Logviewer for ubuntu touch
 Exec=/usr/bin/qmlscene -I plugin $@ logviewer.qml
-Icon=qmlscene
+Icon=icon.png
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
