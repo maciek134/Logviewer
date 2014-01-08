@@ -10,6 +10,6 @@
     "maintainer": "victor palau <vtuson@gmail.com>",
     "name": "com.ubuntu.developer.vtuson.logviewer",
     "title": "logviewer",
-    "version": "0.1",
+    "version": "0.2",
     "architecture": "armhf" 
 }

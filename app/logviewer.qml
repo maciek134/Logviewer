@@ -28,7 +28,7 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(75)
-    property var preferences: {"dir":"/home/phablet/.cache/upstart/", "filter":"*.logs", "buffer":8000}
+    property var preferences: {"dir":"/home/phablet/.cache/upstart/", "filter":"*.log", "buffer":8000}
 
 
     PageStack {
@@ -44,6 +44,7 @@ MainView {
                 preferences.buffer=msettings.bufferSize
                 preferences.dir=msettings.directory
                 logs.logDir=msettings.directory
+                logs.logFilter=msettings.filter
                 preferences.filter=msettings.filter
                 pStack.pop()
                 logs.loadLogs()
@@ -125,9 +126,8 @@ MainView {
                             console.log("in page creation, title is " +iname + "file is " +iLogPath)
                             //create page
                             pageDelegate=createLog(iLogPath,iname,preferences.buffer)
-
-
                             pageDelegate.fontsize=msettings.fontSize
+                            pageDelegate.filter=preferences.filter
 
                         }
                     }
@@ -146,6 +146,7 @@ MainView {
             LogViewer {
                 id:logs
                 logDir: preferences.dir
+                logFilter:preferences.filter
 
                 onLogListChanged: {
                     //this signal indicates that the directory files where loaded

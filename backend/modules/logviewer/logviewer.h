@@ -16,7 +16,7 @@ class LogViewer : public QObject
     Q_PROPERTY( QString filePath READ filePath WRITE setfilePath NOTIFY filePathChanged )
     Q_PROPERTY( QString logDir READ logDir WRITE setlogDir NOTIFY logDirChanged )
     Q_PROPERTY( QString logText READ logText NOTIFY logTextChanged )
-    Q_PROPERTY( QString logFilter READ logFilter NOTIFY logFilterChanged )
+    Q_PROPERTY( QString logFilter READ logFilter WRITE setlogFilter NOTIFY logFilterChanged )
     Q_PROPERTY( int logBuffer READ logBuffer WRITE setlogBuffer NOTIFY logBufferChanged )
     Q_PROPERTY(QString logList READ logList NOTIFY logListChanged)
 public:
@@ -63,8 +63,6 @@ protected:
     int mBuffer;
     QString mlogFilter;
     QString mList;
-
-
 };
 
 #endif // LOGVIEWER_H

@@ -70,7 +70,7 @@ Page {
         }
         ToolbarButton {
             action: Action {
-                text: doselection? i18n.tr("Select") : i18n.tr("Copy")
+                text: doselection? i18n.tr("Copy") : i18n.tr("Select")
                 onTriggered: {
                     if (doselection) {
                         Clipboard.push(logText.selectedText)

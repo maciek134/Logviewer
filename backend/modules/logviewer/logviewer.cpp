@@ -31,7 +31,8 @@ void LogViewer::loadLogs(){
     connect(mService, SIGNAL(fileloadingDone()), this, SLOT(listServiceNotification()));
     connect(mService, SIGNAL(fileloadingDone()), serviceThread, SLOT(quit()));
     mService->setDir(mDir);
-    qDebug() << "loading logs for "<< mDir;
+    mService->setFilter(mlogFilter);
+    qDebug() << "loading logs for "<< mDir << " with filter is " << mlogFilter;
     serviceThread->start();
 }
 
