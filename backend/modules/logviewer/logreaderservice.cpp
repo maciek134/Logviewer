@@ -74,19 +74,21 @@ LogReaderService::~LogReaderService(){
 }
 
 void LogReaderService::readLogFiles() {
-    QString icmd = mCmd + mDir + mFilter;
-    qDebug() << "command is" <<icmd;
-    QByteArray ba = icmd.toLocal8Bit();
-    const char *cmd_char = ba.data();
+    // QString icmd = mCmd + mDir + mFilter;
 
-    FILE* pipe = popen(cmd_char, "r");
-    if (!pipe) {qDebug()<<"error running cmd";return;}
-    char buffer[128];
-    while(!feof(pipe)) {
-        if(fgets(buffer, 128, pipe) != NULL) {
-            mListResults.append(buffer);
-        }
+    QDir logDir(mDir);
+    QStringList filters;
+    filters << mFilter;
+    logDir.setNameFilters(filters);
+
+    QStringList iresults = logDir.entryList();
+
+
+    for (int i = 0; i < iresults.size(); ++i) {
+
+        mListResults.append(iresults[i]+"\n");
+
+        qDebug() << "logs are " << iresults[i];
     }
-    qDebug() << "line is " << mListResults;
     Q_EMIT fileloadingDone();
 }

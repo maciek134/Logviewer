@@ -123,9 +123,9 @@ MainView {
 
                             //iname is now the title page
                             var iname= iLogPath.slice(startpos+1,lastpos)
-                            console.log("in page creation, title is " +iname + "file is " +iLogPath)
+                            console.log("in page creation, title is " +iname + "file is " +preferences.dir+iLogPath)
                             //create page
-                            pageDelegate=createLog(iLogPath,iname,preferences.buffer)
+                            pageDelegate=createLog(preferences.dir+iLogPath,iname,preferences.buffer)
                             pageDelegate.fontsize=msettings.fontSize
                             pageDelegate.filter=preferences.filter
 

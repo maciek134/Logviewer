@@ -3,6 +3,7 @@ import Ubuntu.Components 0.1
 import logviewer 1.0
 import Ubuntu.Components.ListItems 0.1 as ListItem
 
+
 Page {
     id:logPage
     property string logname
@@ -75,6 +76,7 @@ Page {
                     if (doselection) {
                         Clipboard.push(logText.selectedText)
                         logText.select(0,0)
+
                     }
                     doselection =!doselection
                 }

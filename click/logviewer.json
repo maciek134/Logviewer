@@ -1,8 +1,8 @@
 {
-    "policy_groups": [
-        "networking"
-    ],
-    "policy_version": 1,
-    "template": "unconfined"
-
+    "policy_groups": [],
+    "policy_version": 1.0,
+    "read_path": [
+     "/var/log/",
+     "/home/phablet/.cache/"
+    ]
 }
