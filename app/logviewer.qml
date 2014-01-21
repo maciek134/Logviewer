@@ -28,7 +28,7 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(75)
-    property var preferences: {"dir":"/home/phablet/.cache/upstart/", "filter":"*.log", "buffer":8000}
+    property var preferences: {"dir":"/home/phablet/.cache/upstart/", "filter":"*.log", "buffer":8000, "username":"Guest"}
 
 
     PageStack {
@@ -45,6 +45,7 @@ MainView {
                 preferences.dir=msettings.directory
                 logs.logDir=msettings.directory
                 logs.logFilter=msettings.filter
+                preferences.username =msettings.username
                 preferences.filter=msettings.filter
                 pStack.pop()
                 logs.loadLogs()
@@ -57,6 +58,7 @@ MainView {
                 msettings.bufferSize= preferences.buffer
                 msettings.directory=preferences.dir
                 msettings.filter=preferences.filter
+                msettings.username=preferences.username
             }
         }
         Page {
@@ -128,7 +130,7 @@ MainView {
                             pageDelegate=createLog(preferences.dir+iLogPath,iname,preferences.buffer)
                             pageDelegate.fontsize=msettings.fontSize
                             pageDelegate.filter=preferences.filter
-
+                            pageDelegate.username=preferences.username
                         }
                     }
 

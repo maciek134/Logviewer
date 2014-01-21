@@ -2,12 +2,15 @@ import QtQuick 2.0
 import Ubuntu.Components 0.1
 import logviewer 1.0
 import Ubuntu.Components.ListItems 0.1 as ListItem
+import Ubuntu.Components.Popups 0.1
+import "../libs/pastebin.js" as PasteBin
 
 
 Page {
     id:logPage
     property string logname
     property alias path:mLogViewer.filePath
+    property string username
     property alias filter: mLogViewer.logFilter
     property bool readingLog : true
     property bool autoscroll: true
@@ -17,6 +20,10 @@ Page {
     property int maxTitle:14
     property int iconSize:units.gu(4)
     property bool logDie: false
+    property var __popover: null
+    property bool dialogError:false
+    property string dialogText
+
     title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length) :
                                      logname
     visible: false
@@ -84,38 +91,108 @@ Page {
                                          Qt.resolvedUrl("image://theme/edit")
             }
         }
+        ToolbarButton {
+            visible: doselection
+            action: Action {
+                text: i18n.tr("PasteBin")
+                onTriggered: {
+                    __popover=PopupUtils.open(progress)
+                    PasteBin.post(i18n.tr("From file ")+ path+ ":\n" + logText.selectedText,username,
+                                  function on_success(url){
+                                      console.log("url is "+url)
+                                      Clipboard.push(url)
+                                      logText.select(0,0)
+                                      PopupUtils.close(__popover)
+                                      __popover=null
+                                      logPage.dialogError = false;
+                                      logPage.dialogText = url
+                                      PopupUtils.open(resultsD)
+                                  },
+                                  function on_failure(why){
+                                      console.log("error is " + why)
+                                      logText.select(0,0)
+                                      PopupUtils.close(__popover)
+                                      __popover=null
+                                      logPage.dialogError = true;
+                                      PopupUtils.open(resultsD)
+                                  })
+                    doselection =!doselection
+
+                }
+                iconSource:Qt.resolvedUrl("image://theme/keyboard-caps-lock")
+            }
+        }
     }
 
+    Component {
+        id: progress
+        Popover {
+            id: mpopover
+            autoClose: false
+            anchors.centerIn: parent
 
-    Flickable {
-        id: flickArea
-        anchors.fill: parent
-        contentWidth: logText.width; contentHeight: logText.height
-        flickableDirection: Flickable.VerticalFlick
-        clip: true
-        onFlickStarted: autoscroll =false;
-        onFlickEnded:{
-            console.log("contenty is " + flickArea.contentY)
-            console.log("log text is "+ logText.height + " and page is " + logPage.height)
-            if (flickArea.contentY > logText.height-logPage.height*2) autoscroll=true
+            ActivityIndicator {
+                id: spinner_pastebin
+                running: true
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.leftMargin: units.gu(1)
+                anchors.left: parent.left
+
+            }
+            ListItem.Standard {
+                anchors.verticalCenter: parent.verticalCenter
+                text: i18n.tr("Sending to Pastebin..")
+                anchors.left: spinner_pastebin.right
+                anchors.leftMargin: units.gu(1)
+            }
+        }
+    }
+
+    Component {
+        id: resultsD
+        Dialog {
+            id: dialogue
+            title: logPage.dialogError?i18n.tr("Pastebin Error"): i18n.tr("Pastebin Successful")
+            text: logPage.dialogError? i18n.tr("Error ocurred uploading to Pastebin"): logPage.dialogText +
+                                        i18n.tr("\n(copied to clipboard)")
+            Button {
+                text: "OK"
+                onClicked: PopupUtils.close(dialogue)
+            }
 
         }
-        TextEdit{
-            id: logText
-            wrapMode: TextEdit.Wrap
-            width:logPage.width
-            text:mLogViewer.logText
-            readOnly:true
-            font.pointSize:12
-            selectByMouse:doselection
-            mouseSelectionMode:TextEdit.SelectWords
+    }
+
+
+        Flickable {
+            id: flickArea
+            anchors.fill: parent
+            contentWidth: logText.width; contentHeight: logText.height
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
+            onFlickStarted: autoscroll =false;
+            onFlickEnded:{
+                console.log("contenty is " + flickArea.contentY)
+                console.log("log text is "+ logText.height + " and page is " + logPage.height)
+                if (flickArea.contentY > logText.height-logPage.height*2) autoscroll=true
+
+            }
+            TextEdit{
+                id: logText
+                wrapMode: TextEdit.Wrap
+                width:logPage.width
+                text:mLogViewer.logText
+                readOnly:true
+                font.pointSize:12
+                selectByMouse:doselection
+                mouseSelectionMode:TextEdit.SelectWords
+
+            }
 
         }
-
+        Scrollbar {
+            flickableItem: flickArea
+            align: Qt.AlignTrailing
+        }
+        Component.onCompleted: mLogViewer.openLog()
     }
-    Scrollbar {
-        flickableItem: flickArea
-        align: Qt.AlignTrailing
-    }
-    Component.onCompleted: mLogViewer.openLog()
-}

@@ -11,6 +11,7 @@ Page {
     property alias directory:dirPath.text
     property alias filter:filterText.text
     property alias fontSize:fontslider.value
+    property alias username:userText.text
 
     signal applyChanges
     signal cancelChanges
@@ -27,7 +28,7 @@ Page {
 
             Label {
                 id:dirlabel
-                text: "Directory"
+                text: i18n.tr("Directory")
                 fontSize: "medium"
             }
             TextField {
@@ -37,7 +38,7 @@ Page {
             }
             Label {
                 id:filterlabel
-                text: "Filter"
+                text: i18n.tr("Filter")
                 fontSize: "medium"
 
             }
@@ -48,7 +49,7 @@ Page {
             }
             Label {
                 id:bufferlabel
-                text: "Buffer"
+                text: i18n.tr("Buffer")
                 fontSize: "medium"
 
             }
@@ -64,7 +65,7 @@ Page {
             }
             Label {
                 id:fontlabel
-                text: "Font Size"
+                text: i18n.tr("Font Size")
                 fontSize: "medium"
 
             }
@@ -77,6 +78,18 @@ Page {
                 value: 24
                 live: true
                 width:mgrid.itemsize
+            }
+            Label {
+                id:userlabel
+                text: i18n.tr("Pastebin user")
+                fontSize: "medium"
+
+            }
+            TextField {
+                id:userText
+                width:mgrid.itemsize
+                maximumLength: 30
+
             }
 
         }
