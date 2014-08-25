@@ -48,7 +48,7 @@ private:
     QString mFilter;
     QString mListResults;
     QString mFilePath;
-    QFile * inputFile;
+    QFile *inputFile;
 };
 
 #endif // LOGREADERSERVICE_H

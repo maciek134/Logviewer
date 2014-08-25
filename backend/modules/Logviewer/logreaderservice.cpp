@@ -5,6 +5,7 @@ LogReaderService::LogReaderService(QString filepath) :
 {
     mFilePath = filepath;
     inputFile =NULL;
+    mlog = NULL;
     resultsFile ="logls.txt";
     mRead = true;
     mDie = false;
