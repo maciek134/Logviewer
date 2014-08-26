@@ -1,30 +1,30 @@
 import QtQuick 2.0
-import Ubuntu.Components 0.1
-import logviewer 1.0
-import Ubuntu.Components.ListItems 0.1 as ListItem
-import Ubuntu.Components.Popups 0.1
+import Ubuntu.Components 1.1
+import Logviewer 1.0
+import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Components.Popups 1.0
 import "../libs/pastebin.js" as PasteBin
 
 
 Page {
-    id:logPage
+    id: logPage
     property string logname
-    property alias path:mLogViewer.filePath
+    property alias path: mLogViewer.filePath
     property string username
     property alias filter: mLogViewer.logFilter
     property bool readingLog : true
     property bool autoscroll: true
     property alias buffer: mLogViewer.logBuffer
-    property bool doselection:false
+    property bool doselection: false
     property alias fontsize: logText.font.pointSize
-    property int maxTitle:14
-    property int iconSize:units.gu(4)
+    property int maxTitle: 14
+    property int iconSize: units.gu(4)
     property bool logDie: false
     property var __popover: null
-    property bool dialogError:false
+    property bool dialogError: false
     property string dialogText
 
-    title:logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length) :
+    title: logname.length > maxTitle? ".."+logname.slice(logname.length-maxTitle-1,logname.length) :
                                      logname
     visible: false
 
@@ -38,91 +38,79 @@ Page {
         }
     }
     ListModel {  id:logsList  }
-    tools: ToolbarItems {
-        id:toolbar
-        back: ToolbarButton {
-            action: Action {
-                text: "Back"
-                onTriggered: {
-                    toolbar.pageStack.pop()
-                    logDie=true
-                    mLogViewer.stopLog()
-                }
-                iconSource:Qt.resolvedUrl("image://theme/back")
-            }
-        }
-        ToolbarButton {
-            action: Action {
-                id:pauseaction
-                text: readingLog? i18n.tr("Pause") : i18n.tr("Start")
-                onTriggered: {
-                    if (readingLog){
-                        mLogViewer.stopLog()
-                    } else {
-                        mLogViewer.openLog()
-                    }
-                    readingLog = !readingLog
-                    console.log("Action is " + pauseaction.text)
-                }
-                iconSource: readingLog?Qt.resolvedUrl("image://theme/media-playback-pause"):
-                                        Qt.resolvedUrl("image://theme/media-playback-start")
-            }
 
-        }
-        ToolbarButton {
-            action: Action {
-                text: i18n.tr("Clear")
-                onTriggered: mLogViewer.clearLog()
-                iconSource: Qt.resolvedUrl("image://theme/clear")
-            }
-        }
-        ToolbarButton {
-            action: Action {
-                text: doselection? i18n.tr("Copy") : i18n.tr("Select")
-                onTriggered: {
-                    if (doselection) {
-                        Clipboard.push(logText.selectedText)
-                        logText.select(0,0)
-
-                    }
-                    doselection =!doselection
-                }
-                iconSource: doselection?Qt.resolvedUrl("image://theme/browser-tabs"):
-                                         Qt.resolvedUrl("image://theme/edit")
-            }
-        }
-        ToolbarButton {
-            visible: doselection
-            action: Action {
-                text: i18n.tr("PasteBin")
-                onTriggered: {
-                    __popover=PopupUtils.open(progress)
-                    PasteBin.post(i18n.tr("From file ")+ path+ ":\n" + logText.selectedText,username,
-                                  function on_success(url){
-                                      console.log("url is "+url)
-                                      Clipboard.push(url)
-                                      logText.select(0,0)
-                                      PopupUtils.close(__popover)
-                                      __popover=null
-                                      logPage.dialogError = false;
-                                      logPage.dialogText = url
-                                      PopupUtils.open(resultsD)
-                                  },
-                                  function on_failure(why){
-                                      console.log("error is " + why)
-                                      logText.select(0,0)
-                                      PopupUtils.close(__popover)
-                                      __popover=null
-                                      logPage.dialogError = true;
-                                      PopupUtils.open(resultsD)
-                                  })
-                    doselection =!doselection
-
-                }
-                iconSource:Qt.resolvedUrl("image://theme/keyboard-caps-lock")
-            }
+    Connections {
+        target: head.backAction
+        onTriggered: {
+            toolbar.pageStack.pop()
+            logDie=true
+            mLogViewer.stopLog()
         }
     }
+
+    head.actions: [
+        Action {
+            id: pauseaction
+            text: readingLog ? i18n.tr("Pause") : i18n.tr("Start")
+            onTriggered: {
+                if (readingLog){
+                    mLogViewer.stopLog()
+                } else {
+                    mLogViewer.openLog()
+                }
+                readingLog = !readingLog
+                console.log("Action is " + pauseaction.text)
+            }
+            iconName: readingLog ? "media-playback-pause" : "media-playback-start"
+        },
+        Action {
+            text: i18n.tr("Clear")
+            onTriggered: mLogViewer.clearLog()
+            iconName: "clear"
+        },
+        Action {
+            text: doselection? i18n.tr("Copy") : i18n.tr("Select")
+            onTriggered: {
+                if (doselection) {
+                    Clipboard.push(logText.selectedText)
+                    logText.select(0,0)
+
+                }
+                doselection =!doselection
+            }
+            iconName: doselection ? "browser-tabs" : "edit"
+        },
+        Action {
+            text: i18n.tr("PasteBin")
+            onTriggered: {
+                __popover=PopupUtils.open(progress)
+                var uploadText = logText.selectedText
+                if (uploadText === "") uploadText = logText.text
+                PasteBin.post(i18n.tr("From file ")+ path+ ":\n" + uploadText, username,
+                              function on_success(url){
+                                  console.log("url is "+url)
+                                  Clipboard.push(url)
+                                  logText.select(0,0)
+                                  PopupUtils.close(__popover)
+                                  __popover=null
+                                  logPage.dialogError = false;
+                                  logPage.dialogText = "<a href=\""+url+"\">"+url+"</a>"
+                                  PopupUtils.open(resultsD)
+                              },
+                              function on_failure(why){
+                                  console.log("error is " + why)
+                                  logText.select(0,0)
+                                  PopupUtils.close(__popover)
+                                  __popover=null
+                                  logPage.dialogError = true;
+                                  PopupUtils.open(resultsD)
+                              })
+                doselection =!doselection
+
+            }
+            iconName: "keyboard-caps-disabled"
+        }
+    ]
 
     Component {
         id: progress
@@ -152,9 +140,18 @@ Page {
         id: resultsD
         Dialog {
             id: dialogue
-            title: logPage.dialogError?i18n.tr("Pastebin Error"): i18n.tr("Pastebin Successful")
-            text: logPage.dialogError? i18n.tr("Error ocurred uploading to Pastebin"): logPage.dialogText +
-                                        i18n.tr("\n(copied to clipboard)")
+            title: logPage.dialogError ? i18n.tr("Pastebin Error") : i18n.tr("Pastebin Successful")
+
+            Label {
+                width: parent.width
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                text: logPage.dialogError ? i18n.tr("Error ocurred uploading to Pastebin") : logPage.dialogText +
+                                            i18n.tr("<br>(Copied to clipboard)")
+
+                onLinkActivated: Qt.openUrlExternally(link)
+            }
+
             Button {
                 text: "OK"
                 onClicked: PopupUtils.close(dialogue)
@@ -164,35 +161,35 @@ Page {
     }
 
 
-        Flickable {
-            id: flickArea
-            anchors.fill: parent
-            contentWidth: logText.width; contentHeight: logText.height
-            flickableDirection: Flickable.VerticalFlick
-            clip: true
-            onFlickStarted: autoscroll =false;
-            onFlickEnded:{
-                console.log("contenty is " + flickArea.contentY)
-                console.log("log text is "+ logText.height + " and page is " + logPage.height)
-                if (flickArea.contentY > logText.height-logPage.height*2) autoscroll=true
-
-            }
-            TextEdit{
-                id: logText
-                wrapMode: TextEdit.Wrap
-                width:logPage.width
-                text:mLogViewer.logText
-                readOnly:true
-                font.pointSize:12
-                selectByMouse:doselection
-                mouseSelectionMode:TextEdit.SelectWords
-
-            }
+    Flickable {
+        id: flickArea
+        anchors.fill: parent
+        contentWidth: logText.width; contentHeight: logText.height
+        flickableDirection: Flickable.VerticalFlick
+        clip: true
+        onFlickStarted: autoscroll =false;
+        onFlickEnded:{
+            console.log("contenty is " + flickArea.contentY)
+            console.log("log text is "+ logText.height + " and page is " + logPage.height)
+            if (flickArea.contentY > logText.height-logPage.height*2) autoscroll=true
 
         }
-        Scrollbar {
-            flickableItem: flickArea
-            align: Qt.AlignTrailing
+        TextEdit {
+            id: logText
+            wrapMode: TextEdit.Wrap
+            width: logPage.width
+            text: mLogViewer.logText
+            readOnly: true
+            font.pointSize: 12
+            selectByMouse: doselection
+            mouseSelectionMode: TextEdit.SelectWords
+
         }
-        Component.onCompleted: mLogViewer.openLog()
+
     }
+    Scrollbar {
+        flickableItem: flickArea
+        align: Qt.AlignTrailing
+    }
+    Component.onCompleted: mLogViewer.openLog()
+}

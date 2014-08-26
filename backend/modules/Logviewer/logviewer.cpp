@@ -1,5 +1,7 @@
 #include "logviewer.h"
 
+#include <typeinfo>
+
 LogViewer::LogViewer(QObject *parent) :
     QObject(parent),
     m_filePath(""),
@@ -10,6 +12,7 @@ LogViewer::LogViewer(QObject *parent) :
     inputFile=NULL;
     mlog =NULL;
     mService=NULL;
+    serviceThread=NULL;
 }
 
 LogViewer::~LogViewer() {
@@ -25,6 +28,7 @@ void LogViewer::listServiceNotification(){
     Q_EMIT logListChanged();
 }
 void LogViewer::loadLogs(){
+    qDebug() << "load";
     mService = new LogReaderService();
     serviceThread = new QThread() ;
     connect( serviceThread, SIGNAL(started()), mService, SLOT(readLogFiles()) );
@@ -38,7 +42,8 @@ void LogViewer::loadLogs(){
 
 
 void LogViewer::openLog(){
-    if (serviceThread ==NULL){
+    qDebug() << "open";
+    if (serviceThread ==NULL) {
         mService = new LogReaderService(mDir + m_filePath);
         serviceThread = new QThread();
         mService->setBuffer(mBuffer);

@@ -1,17 +1,12 @@
 import QtQuick 2.0
-import Ubuntu.Components 0.1
+import Ubuntu.Components 1.1
 import "ui"
 import "./libs/logviewer.js" as LogViewLib
-import logviewer 1.0
-import Ubuntu.Components.ListItems 0.1 as ListItem
+import Logviewer 1.0
+import Ubuntu.Components.ListItems 1.0 as ListItem
+import Qt.labs.settings 1.0
 
 
-
-/*!
-    \brief MainView with Tabs element.
-           First Tab has a single Label and
-           second Tab has a single ToolbarAction.
-*/
 
 MainView {
     // objectName for functional testing purposes (autopilot-qt5)
@@ -28,19 +23,32 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(75)
-    property var preferences: {"dir":"/home/phablet/.cache/upstart/", "filter":"*.log", "buffer":8000, "username":"Guest"}
 
+    useDeprecatedToolbar: false
+    anchorToKeyboard: true
+
+    Settings { //This will also save the settings as soon as this patch gets merged into the UI Toolkit trunk repo: https://bugs.launchpad.net/ubuntu-ui-toolkit/+bug/1354321
+        id: preferences
+        property string dir: "/home/phablet/.cache/upstart/"
+        property string filter: "*.log"
+        property int buffer: 8000
+        property int fontSize: 24
+        property string username: "Guest"
+    }
 
     PageStack {
         id: pStack
+
         Component.onCompleted: push(page0)
-        PerfPage {
+
+        PrefPage {
             id:msettings
             onCancelChanges: {
                 loadStandardSettings()
                 pStack.pop()
             }
             onApplyChanges: {
+                preferences.fontSize=msettings.fontSize
                 preferences.buffer=msettings.bufferSize
                 preferences.dir=msettings.directory
                 logs.logDir=msettings.directory
@@ -55,34 +63,46 @@ MainView {
             Component.onCompleted:loadStandardSettings()
 
             function loadStandardSettings(){
-                msettings.bufferSize= preferences.buffer
+                msettings.fontSize=preferences.fontSize
+                msettings.bufferSize=preferences.buffer
                 msettings.directory=preferences.dir
                 msettings.filter=preferences.filter
                 msettings.username=preferences.username
             }
         }
+
+        AboutPage {
+            id: aboutPage
+        }
+
         Page {
-            id:page0
-            title: "Ubuntu Logs"
+            id: page0
+            title: i18n.tr("Ubuntu Logs")
             visible: false
             ListModel {  id:logsList  }
-            tools: ToolbarItems {
-                ToolbarButton {
-                    action: Action {
-                        text: i18n.tr("Settings")
-                        onTriggered: pStack.push(msettings)
-                        iconSource: Qt.resolvedUrl("image://theme/properties")
-                    }
-                }
 
-                ToolbarButton {
-                    action: Action {
-                        text: "Reload"
-                        onTriggered:logs.loadLogs()
-                        iconSource:Qt.resolvedUrl("image://theme/reload")
+            head.actions: [
+                Action {
+                    text: i18n.tr("Reload")
+                    onTriggered: {
+                        emptyLabel.text = ""
+                        logsList.clear()
+                        logs.loadLogs()
                     }
+                    iconName: "reload"
+                },
+                Action {
+                    text: i18n.tr("Settings")
+                    onTriggered: pStack.push(msettings)
+                    iconName: "settings"
+                },
+                Action {
+                    text: i18n.tr("About")
+                    onTriggered: pStack.push(aboutPage)
+                    iconName: "info"
                 }
-            }
+            ]
+
             Component{
                 id:logDelegate
 
@@ -125,12 +145,21 @@ MainView {
 
                             //iname is now the title page
                             var iname= iLogPath.slice(startpos+1,lastpos)
-                            console.log("in page creation, title is " +iname + "file is " +preferences.dir+iLogPath)
+                            console.log("in page creation, title is " +iname + "\nfile is " +preferences.dir+iLogPath)
                             //create page
                             pageDelegate=createLog(preferences.dir+iLogPath,iname,preferences.buffer)
-                            pageDelegate.fontsize=msettings.fontSize
+                            pageDelegate.fontsize=preferences.fontSize
                             pageDelegate.filter=preferences.filter
                             pageDelegate.username=preferences.username
+                            console.log("page loaded")
+
+//                            Should be: => Error in createLog()
+//                            qml: creating page
+//                            qml: in page creation, title is application-click-com.ubuntu.developer.nikwen.logviewer.logviewer_Logviewer_0.1file is /home/phablet/.cache/upstart/application-click-com.ubuntu.developer.nikwen.logviewer.logviewer_Logviewer_0.1.log
+//                            readlog called
+//                            filed opened succesfully  "/home/phablet/.cache/upstart/application-click-com.ubuntu.developer.nikwen.logviewer.logviewer_Logviewer_0.1.log"
+//                            seek of file was  true
+//                            qml: page loaded
                         }
                     }
 
@@ -143,6 +172,13 @@ MainView {
                 model: logsList
                 delegate: logDelegate
                 focus: true
+            }
+
+            Label {
+                property string textToShow: i18n.tr("No logs found for the set filter") //Don't show text while (re)loading
+                id: emptyLabel
+                anchors.centerIn: parent
+                visible: logsListView.model.count === 0
             }
 
             LogViewer {
@@ -167,6 +203,8 @@ MainView {
                             logsList.append(itemtmp)
                         }
                     }
+
+                    emptyLabel.text = emptyLabel.textToShow
 
                 }
 

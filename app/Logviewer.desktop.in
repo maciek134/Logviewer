@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Logviewer
+Comment=Logviewer for Ubuntu Touch
+Exec=@EXEC@
+Icon=@ICON@
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+
+
+
