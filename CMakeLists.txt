@@ -1,56 +1,76 @@
 project(logviewer C CXX)
 cmake_minimum_required(VERSION 2.8.9)
 
-set (UBUNTU_PROJECT_TYPE "ClickApp" CACHE INTERNAL "Tells QtCreator this is a Click application project")
+# Do not remove this line, its required for the correct functionality of the Ubuntu-SDK
+set(UBUNTU_MANIFEST_PATH "manifest.json.in" CACHE INTERNAL "Tells QtCreator location and name of the manifest file")
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 find_package(Qt5Core)
 find_package(Qt5Qml)
 find_package(Qt5Quick)
-#find_package(ubuntu-sdk-libs)
+# find_package(ubuntu-sdk-libs)
 
-#automatically create moc files
+# Automatically create moc files
 set(CMAKE_AUTOMOC ON)
 
-# components PATH
+# Components PATH
 execute_process(
     COMMAND dpkg-architecture -qDEB_HOST_MULTIARCH
     OUTPUT_VARIABLE ARCH_TRIPLET
     OUTPUT_STRIP_TRAILING_WHITESPACE
 )
+
 set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 
 option(INSTALL_TESTS "Install the tests on make install" on)
 
 set(APP_NAME          logviewer)
-set(LOGVIEWER_DIR     "app")
-set(MAIN_QML          "logviewer.qml")
-set(ICON              "icon.png")
+set(APP_ID            "com.ubuntu.developer.vtuson.logviewer")
+set(LOGVIEWER_DIR "share/qml/logviewer")
+set(MAIN_QML          "Main.qml")
+set(ICON              "graphics/logviewer.png")
 
-#set install paths
+# Set install paths
 set(CMAKE_INSTALL_PREFIX /)
 set(DATA_DIR /)
 set(DESKTOP_DIR ${DATA_DIR})
+set(DESKTOP_FILE_NAME "logviewer.desktop")
 
-set(EXEC "qmlscene $@ ${LOGVIEWER_DIR}/${MAIN_QML}")
+set(EXEC "qmlscene %U ${LOGVIEWER_DIR}/${MAIN_QML}")
 
-install(FILES manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
+# This command figures out the target architecture for use in the manifest file
+execute_process(
+  COMMAND dpkg-architecture -qDEB_HOST_ARCH
+  OUTPUT_VARIABLE CLICK_ARCH
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
+configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json
+        DESTINATION ${CMAKE_INSTALL_PREFIX})
+
 install(DIRECTORY "app/graphics" DESTINATION ${DATA_DIR})
-install(FILES "Logviewer.json" ${ICON} DESTINATION ${DATA_DIR})
+install(FILES "logviewer.apparmor" DESTINATION ${DATA_DIR})
 
 add_subdirectory(app)
 add_subdirectory(backend)
+add_subdirectory(po)
 
 add_custom_target("autopilot" chmod +x ${CMAKE_SOURCE_DIR}/app/tests/autopilot/run
                     COMMAND ${CMAKE_SOURCE_DIR}/app/tests/autopilot/run
-                    DEPENDS logviewerbackend logviewerbackend-qmldir
+                    DEPENDS Logviewerbackend Logviewerbackend-qmldir
                     WORKING_DIRECTORY ./app)
 
-add_custom_target("check" /usr/bin/qmltestrunner -input ${CMAKE_SOURCE_DIR}/app/tests/unit -import ${CMAKE_BINARY_DIR}/backend
-                    DEPENDS logviewerbackend logviewerbackend-qmldir
+add_custom_target("check"
+                    COMMAND /usr/bin/qmltestrunner -input ${CMAKE_SOURCE_DIR}/backend/tests/unit -import ${CMAKE_BINARY_DIR}/backend
+                    COMMAND /usr/bin/qmltestrunner -input ${CMAKE_SOURCE_DIR}/app/tests/unit -import ${CMAKE_BINARY_DIR}/backend
+                    DEPENDS Logviewerbackend Logviewerbackend-qmldir
                     WORKING_DIRECTORY ./app)
 
-add_custom_target("run" /usr/bin/qmlscene -I ${CMAKE_BINARY_DIR}/backend  ${CMAKE_SOURCE_DIR}/app/logviewer.qml
-                    DEPENDS logviewerbackend logviewerbackend-qmldir
+add_custom_target("run" /usr/bin/qmlscene -I ${CMAKE_BINARY_DIR}/backend  ${CMAKE_SOURCE_DIR}/app/Main.qml
+                    DEPENDS Logviewerbackend Logviewerbackend-qmldir
                     WORKING_DIRECTORY ./app)
+
+# No op custom target for all not compiled files, so they show up in the QtCreator project tree
+add_custom_target("logviewer_ClickFiles" ALL SOURCES "logviewer.apparmor" "manifest.json.in")
 

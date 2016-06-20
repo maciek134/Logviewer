@@ -1,6 +1,6 @@
-import QtQuick 2.0
+import QtQuick 2.4
 import QtTest 1.0
-import Ubuntu.Components 0.1
+import Ubuntu.Components 1.3
 import Logviewer 1.0
 
 // See more details @ http://qt-project.org/doc/qt-5.0/qtquick/qml-testcase.html

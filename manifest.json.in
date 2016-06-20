@@ -1,0 +1,17 @@
+{
+    "name": "@APP_ID@",
+    "description": "Logviewer app for Ubuntu touch",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Logviewer",
+    "hooks": {
+        "logviewer": {
+            "apparmor": "logviewer.apparmor",
+            "desktop":  "logviewer.desktop"
+        }
+    },
+    "version": "0.9",
+    "maintainer": "Victor Palau <vtuson@gmail.com>",
+    "framework" : "ubuntu-sdk-15.04.4"
+}
+
+

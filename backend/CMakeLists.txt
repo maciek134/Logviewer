@@ -9,6 +9,9 @@ set(
     modules/Logviewer/logviewer.cpp
 )
 
+# Make the unit test files visible on qtcreator
+add_custom_target(Logviewerbackend_UNITTEST_QML_FILES ALL SOURCES "tests/unit/tst_mytype.qml")
+
 add_library(Logviewerbackend MODULE
     ${Logviewerbackend_SRCS}
 )
