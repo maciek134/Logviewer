@@ -1,30 +1,41 @@
-import QtQuick 2.0
-import Ubuntu.Components 1.1
-import Ubuntu.Layouts 1.0
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 
 Page {
     id: aboutPage
-    title: i18n.tr("About")
-    visible:false
 
-    Flickable {
-        id: flickable
-        anchors.fill: parent
+    header: PageHeader {
+        title: i18n.tr("About")
+    }
+
+    ScrollView {
+        id: scrollView
+        anchors {
+            top: aboutPage.header.bottom
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
+        }
+
         clip: true
-
-        contentHeight: aboutColumn.height + 2 * aboutColumn.marginTop //doubled marginTop to get the same margin at the bottom
 
         Column {
             id: aboutColumn
             spacing: units.gu(2)
-            width: parent.width
-            property real marginTop: units.gu(3)
-            y: marginTop
+            width: scrollView.width
+
+            // TODO: Qt 5.6 added 'topPadding' property.
+            Item { width: 1; height: units.gu(3) /* top margin */ }
 
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: i18n.tr("<b>Logviewer</b>")
-                fontSize: "x-large"
+                text: i18n.tr("Logviewer")
+                textSize: Label.XLarge
+            }
+
+            Label {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: i18n.tr("Version %1").arg("0.9")
             }
 
             UbuntuShape {
@@ -33,16 +44,16 @@ Page {
                 width: Math.min(parent.width, maxWidth)/2
                 height: Math.min(parent.width, maxWidth)/2
                 image: Image {
-                    source: "../../icon.png"
+                    source: "../graphics/logviewer.png"
                     smooth: true
                     fillMode: Image.PreserveAspectFit
-
                 }
             }
 
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: i18n.tr("<b>Authors:</b>")
+                text: i18n.tr("Authors:")
+                font.weight: Font.DemiBold
             }
 
             Label {
@@ -54,7 +65,8 @@ Page {
 
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: i18n.tr("<b>Source code:</b>")
+                text: i18n.tr("Source code:")
+                font.weight: Font.DemiBold
             }
 
             Label {
@@ -65,13 +77,8 @@ Page {
 
             Label {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: i18n.tr("Version: <b>0.8</b>")
-            }
-
-            Label {
-                anchors.horizontalCenter: parent.horizontalCenter
-                font.bold: true;
-                text: "2014"
+                font.weight: Font.DemiBold
+                text: "2014-2016"
             }
         }
     }

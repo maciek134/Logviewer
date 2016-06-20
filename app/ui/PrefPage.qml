@@ -1,101 +1,106 @@
-import QtQuick 2.0
-import Ubuntu.Components 1.1
-import Ubuntu.Components.Pickers 1.0
-import Ubuntu.Components.ListItems 1.0 as ListItem
-
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 
 Page {
-    id:settingPage
-    title:"Settings"
-    visible: false
+    id: settingPage
+
     property alias bufferSize: bufferslider.value
-    property alias directory:dirPath.text
-    property alias filter:filterText.text
-    property alias fontSize:fontslider.value
-    property alias username:userText.text
+    property alias directory: dirPath.text
+    property alias filter: filterText.text
+    property alias dpFontSize: fontslider.value
+    property alias username: userText.text
 
     signal applyChanges
     signal cancelChanges
 
-    head.backAction: Action {
-        id: cancelAction
-        text: i18n.tr("Cancel")
-        iconName: "close"
-        onTriggered: cancelChanges()
-    }
+    header: PageHeader {
+        title: i18n.tr("Settings")
+        flickable: scrollView.flickableItem
 
-    head.actions: [
-        Action {
-            id: applyAction
+        leadingActionBar.actions: Action {
+            text: i18n.tr("Cancel")
+            iconName: "close"
+            onTriggered: {
+                settingPage.cancelChanges()
+                pageStack.pop()
+            }
+        }
+
+        trailingActionBar.actions: Action {
             text: i18n.tr("Apply")
             iconName: "ok"
-            onTriggered: applyChanges()
+            onTriggered: {
+                settingPage.applyChanges()
+                pageStack.pop()
+            }
         }
-    ]
+    }
 
-    Flickable {
+    ScrollView {
+        id: scrollView
         anchors.fill: parent
-        contentHeight: column.height
 
         Column {
             id: column
-            anchors {
-                right: parent.right
-                left: parent.left
-                rightMargin: units.gu(2)
-                leftMargin: anchors.rightMargin
-            }
-            height: childrenRect.height
+            width: scrollView.width
 
-            property real mSpacing: units.gu(2)
+            property int mSpacing: units.gu(1)
 
-            ListItem.Empty {
+            ListItem {
                 height: dirlabel.height + dirPath.height + 2 * column.mSpacing
                 Label {
                     id: dirlabel
                     text: i18n.tr("Directory:")
-                    fontSize: "medium"
-                    anchors.top: parent.top
-                    anchors.topMargin: column.mSpacing
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
                 TextField {
                     id: dirPath
                     width: parent.width
                     anchors.top: dirlabel.bottom
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
             }
 
-            ListItem.Empty {
+            ListItem {
                 height: filterlabel.height + filterText.height + 2 * column.mSpacing
                 Label {
                     id: filterlabel
                     text: i18n.tr("Filter:")
-                    fontSize: "medium"
-                    anchors.top: parent.top
-                    anchors.topMargin: column.mSpacing
-
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
                 TextField {
                     id: filterText
                     width: parent.width
                     anchors.top: filterlabel.bottom
-
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
             }
 
-            ListItem.Empty {
+            ListItem {
                 height: bufferlabel.height + bufferslider.height + column.mSpacing
                 Label {
                     id:bufferlabel
                     text: i18n.tr("Buffer:")
-                    fontSize: "medium"
-                    anchors.top: parent.top
-                    anchors.topMargin: column.mSpacing
-
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
                 Slider {
                     id:bufferslider
                     function formatValue(v) { return v.toFixed(0) }
@@ -105,54 +110,62 @@ Page {
                     live: true
                     width: parent.width
                     anchors.top: bufferlabel.bottom
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
             }
 
-            ListItem.Empty {
+            ListItem {
                 height: fontlabel.height + fontslider.height + column.mSpacing
                 Label {
                     id:fontlabel
                     text: i18n.tr("Font Size:")
-                    fontSize: "medium"
-                    anchors.top: parent.top
-                    anchors.topMargin: column.mSpacing
-
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
                 Slider {
                     id:fontslider
                     function formatValue(v) { return v.toFixed(0) }
-                    minimumValue: 8
-                    maximumValue: 38
-                    value: 24
+                    minimumValue: 4
+                    maximumValue: 24
+                    value: 10
                     live: true
                     width: parent.width
                     anchors.top: fontlabel.bottom
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
-
             }
 
-            ListItem.Empty {
+            ListItem {
                 height: userlabel.height + userText.height + 2 * column.mSpacing
-                divider.visible: false //No divider at the end of the list
                 Label {
                     id:userlabel
                     text: i18n.tr("Pastebin user:")
-                    fontSize: "medium"
-                    anchors.top: parent.top
-                    anchors.topMargin: column.mSpacing
-
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
                 TextField {
                     id:userText
                     maximumLength: 30
                     width: parent.width
                     anchors.top: userlabel.bottom
-
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
                 }
             }
-
         }
     }
 }

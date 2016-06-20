@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-20 13:34+0200\n"
+"POT-Creation-Date: 2016-06-20 16:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,91 +17,92 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../app/Main.qml:80
-msgid "Ubuntu Logs"
-msgstr ""
-
-#: ../app/Main.qml:86
-msgid "Reload"
-msgstr ""
-
-#: ../app/Main.qml:95
-msgid "Settings"
-msgstr ""
-
-#: ../app/Main.qml:100 ../app/ui/AboutPage.qml:7
+#: ../app/ui/AboutPage.qml:8 ../app/ui/MainPage.qml:23
 msgid "About"
 msgstr ""
 
-#: ../app/Main.qml:178
-msgid "No logs found for the set filter"
+#: ../app/ui/AboutPage.qml:32
+msgid "Logviewer"
 msgstr ""
 
-#: ../app/ui/AboutPage.qml:26
-msgid "<b>Logviewer</b>"
+#: ../app/ui/AboutPage.qml:38
+#, qt-format
+msgid "Version %1"
 msgstr ""
 
-#: ../app/ui/AboutPage.qml:45
-msgid "<b>Authors:</b>"
-msgstr ""
-
-#: ../app/ui/AboutPage.qml:57
-msgid "<b>Source code:</b>"
+#: ../app/ui/AboutPage.qml:55
+msgid "Authors:"
 msgstr ""
 
 #: ../app/ui/AboutPage.qml:68
-msgid "Version: <b>0.8</b>"
+msgid "Source code:"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:54
+#: ../app/ui/LogPage.qml:32
+msgid "Back"
+msgstr ""
+
+#: ../app/ui/LogPage.qml:49
 msgid "Pause"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:54
+#: ../app/ui/LogPage.qml:49
 msgid "Start"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:67
+#: ../app/ui/LogPage.qml:58
 msgid "Clear"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:72
-msgid "Copy"
-msgstr ""
-
-#: ../app/ui/LogPage.qml:72
-msgid "Select"
-msgstr ""
-
-#: ../app/ui/LogPage.qml:84
+#: ../app/ui/LogPage.qml:63
 msgid "PasteBin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:89
+#: ../app/ui/LogPage.qml:74
 msgid "From file "
 msgstr ""
 
-#: ../app/ui/LogPage.qml:132
+#: ../app/ui/LogPage.qml:117
 msgid "Sending to Pastebin.."
 msgstr ""
 
-#: ../app/ui/LogPage.qml:143
+#: ../app/ui/LogPage.qml:131
 msgid "Pastebin Error"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:143
+#: ../app/ui/LogPage.qml:131
 msgid "Pastebin Successful"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:149
+#: ../app/ui/LogPage.qml:137
 msgid "Error ocurred uploading to Pastebin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:150
+#: ../app/ui/LogPage.qml:138
 msgid "<br>(Copied to clipboard)"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:22
+#: ../app/ui/LogPage.qml:144
+msgid "OK"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:8
+msgid "Ubuntu Logs"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:13
+msgid "Reload"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:18 ../app/ui/PrefPage.qml:17
+msgid "Settings"
+msgstr ""
+
+#: ../app/ui/MainPage.qml:44
+msgid "No logs found for the set filter"
+msgstr ""
+
+#: ../app/ui/PrefPage.qml:21
 msgid "Cancel"
 msgstr ""
 
@@ -109,23 +110,23 @@ msgstr ""
 msgid "Apply"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:56
+#: ../app/ui/PrefPage.qml:53
 msgid "Directory:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:73
+#: ../app/ui/PrefPage.qml:75
 msgid "Filter:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:92
+#: ../app/ui/PrefPage.qml:97
 msgid "Buffer:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:116
+#: ../app/ui/PrefPage.qml:124
 msgid "Font Size:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:141
+#: ../app/ui/PrefPage.qml:151
 msgid "Pastebin user:"
 msgstr ""
 
