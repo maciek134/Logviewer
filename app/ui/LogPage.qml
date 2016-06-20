@@ -162,7 +162,7 @@ Page {
         persistentSelection: true
 
         // Remove UbuntuShape background
-        StyleHints { background: fakeBg }
+        StyleHints { background: fakeBg; frameSpacing: 0 }
         Component { id: fakeBg; Item {} }
     }
 

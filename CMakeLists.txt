@@ -26,9 +26,9 @@ option(INSTALL_TESTS "Install the tests on make install" on)
 
 set(APP_NAME          logviewer)
 set(APP_ID            "com.ubuntu.developer.vtuson.logviewer")
-set(LOGVIEWER_DIR "share/qml/logviewer")
+set(LOGVIEWER_DIR     "share/qml/logviewer")
 set(MAIN_QML          "Main.qml")
-set(ICON              "graphics/logviewer.png")
+set(ICON              "${LOGVIEWER_DIR}/graphics/logviewer.png")
 
 # Set install paths
 set(CMAKE_INSTALL_PREFIX /)
@@ -49,7 +49,7 @@ configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json
         DESTINATION ${CMAKE_INSTALL_PREFIX})
 
-install(DIRECTORY "app/graphics" DESTINATION ${DATA_DIR})
+install(DIRECTORY "app/graphics" DESTINATION ${LOGVIEWER_DIR})
 install(FILES "logviewer.apparmor" DESTINATION ${DATA_DIR})
 
 add_subdirectory(app)
