@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-20 16:31+0200\n"
+"POT-Creation-Date: 2016-06-20 19:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,34 +55,42 @@ msgid "Clear"
 msgstr ""
 
 #: ../app/ui/LogPage.qml:63
+msgid "Copy"
+msgstr ""
+
+#: ../app/ui/LogPage.qml:63
+msgid "Select"
+msgstr ""
+
+#: ../app/ui/LogPage.qml:75
 msgid "PasteBin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:74
+#: ../app/ui/LogPage.qml:86
 msgid "From file "
 msgstr ""
 
-#: ../app/ui/LogPage.qml:117
+#: ../app/ui/LogPage.qml:132
 msgid "Sending to Pastebin.."
 msgstr ""
 
-#: ../app/ui/LogPage.qml:131
+#: ../app/ui/LogPage.qml:146
 msgid "Pastebin Error"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:131
+#: ../app/ui/LogPage.qml:146
 msgid "Pastebin Successful"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:137
+#: ../app/ui/LogPage.qml:152
 msgid "Error ocurred uploading to Pastebin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:138
+#: ../app/ui/LogPage.qml:153
 msgid "<br>(Copied to clipboard)"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:144
+#: ../app/ui/LogPage.qml:159
 msgid "OK"
 msgstr ""
 
@@ -131,5 +139,5 @@ msgid "Pastebin user:"
 msgstr ""
 
 #: /tmp/logviewer-build/po/logviewer.desktop.in.h:1
-msgid "logviewer"
+msgid "Logviewer for Ubuntu Touch"
 msgstr ""
