@@ -5,16 +5,16 @@ import Logviewer 1.0
 
 import "../libs/pastebin.js" as PasteBin
 
-// TODO: Restore autoscroll
-
 Page {
     id: logPage
     property string logname
     property alias path: mLogViewer.filePath
     property string username
     property alias filter: mLogViewer.logFilter
-    property bool readingLog : true
+    property bool readingLog: true
+    property bool autoscroll: true
     property alias buffer: mLogViewer.logBuffer
+    property bool doselection: false
     property alias fontSize: logText.font.pixelSize
     property int maxTitle: 14
     property int iconSize: units.gu(4)
@@ -60,6 +60,18 @@ Page {
                 iconName: "edit-clear"
             },
             Action {
+                text: doselection? i18n.tr("Copy") : i18n.tr("Select")
+                onTriggered: {
+                    if (doselection) {
+                        Clipboard.push(logText.selectedText)
+                        logText.select(0,0)
+
+                    }
+                    doselection =!doselection
+                }
+                iconName: doselection ? "browser-tabs" : "edit"
+            },
+            Action {
                 text: i18n.tr("PasteBin")
                 iconName: "external-link"
                 onTriggered: {
@@ -100,6 +112,9 @@ Page {
     LogViewer {
         id: mLogViewer
         onLogStopped: if (logDie) pageStack.pop()
+        onLogTextChanged: {
+            if(autoscroll) flickArea.contentY= logText.height-scrollView.height
+        }
     }
 
     ListModel {  id:logsList  }
@@ -147,8 +162,8 @@ Page {
         }
     }
 
-    TextArea {
-        id: logText
+    ScrollView {
+        id: scrollView
         anchors {
             top: logPage.header.bottom
             left: parent.left
@@ -156,14 +171,34 @@ Page {
             bottom: parent.bottom
         }
 
-        wrapMode: TextEdit.Wrap
-        text: mLogViewer.logText
-        readOnly: true
-        persistentSelection: true
+        Flickable {
+            id: flickArea
+            anchors.fill: parent
+            contentWidth: logText.width; contentHeight: logText.height
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
+            onFlickStarted: autoscroll =false;
+            onFlickEnded:{
+                console.log("contenty is " + flickArea.contentY)
+                console.log("log text is "+ logText.height + " and scrollview is " + scrollView.height)
+                if (flickArea.contentY > logText.height-scrollView.height*2) autoscroll=true
+            }
 
-        // Remove UbuntuShape background
-        StyleHints { background: fakeBg; frameSpacing: 0 }
-        Component { id: fakeBg; Item {} }
+            TextEdit {
+                id: logText
+                wrapMode: TextEdit.Wrap
+                width: scrollView.width
+                text: mLogViewer.logText
+                readOnly: true
+                font.pointSize: 12
+                selectByMouse: doselection
+                mouseSelectionMode: TextEdit.SelectWords
+                persistentSelection: true
+                color: theme.palette.normal.fieldText
+                selectedTextColor: theme.palette.selected.selectionText
+                selectionColor: theme.palette.selected.selection
+            }
+        }
     }
 
     Component.onCompleted: mLogViewer.openLog()
