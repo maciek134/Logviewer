@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=logviewer
-Comment=My project description
+Name=Logviewer
+_Comment=Logviewer for Ubuntu Touch
 Exec=@EXEC@
 Icon=@ICON@
 Terminal=false
