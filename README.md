@@ -1,10 +1,11 @@
 # Logviewer for Ubuntu Touch
 
-This application lets you view logs on Ubuntu Touch devices.
+This application lets you view logs on Ubuntu Touch devices. Based on the original work of Victor Tuson Palau and Niklas Wenzel.
 
 ## License
 
-Copyright (C) 2017 [Jan Sprinz](https://neothethrird.de)
+ - Copyright (C) 2017 [Jan Sprinz](https://neothethrird.de)
+ - Copyright (C) 2014-2016 Tuson Palau and Niklas Wenzel
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
