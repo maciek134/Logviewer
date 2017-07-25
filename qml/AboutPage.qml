@@ -15,6 +15,8 @@ Page {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
+            leftMargin: units.gu(2)
+            rightMargin: units.gu(2)
         }
 
         clip: true
