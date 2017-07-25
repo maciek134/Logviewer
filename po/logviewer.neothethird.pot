@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-20 19:00+0200\n"
+"POT-Creation-Date: 2017-07-25 00:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,127 +17,122 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../app/ui/AboutPage.qml:8 ../app/ui/MainPage.qml:23
-msgid "About"
-msgstr ""
-
-#: ../app/ui/AboutPage.qml:32
-msgid "Logviewer"
-msgstr ""
-
-#: ../app/ui/AboutPage.qml:38
-#, qt-format
-msgid "Version %1"
-msgstr ""
-
-#: ../app/ui/AboutPage.qml:55
-msgid "Authors:"
-msgstr ""
-
-#: ../app/ui/AboutPage.qml:68
-msgid "Source code:"
-msgstr ""
-
-#: ../app/ui/LogPage.qml:32
+#: ../qml/LogPage.qml:32
 msgid "Back"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:49
+#: ../qml/LogPage.qml:49
 msgid "Pause"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:49
+#: ../qml/LogPage.qml:49
 msgid "Start"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:58
+#: ../qml/LogPage.qml:58
 msgid "Clear"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:63
+#: ../qml/LogPage.qml:63
 msgid "Copy"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:63
+#: ../qml/LogPage.qml:63
 msgid "Select"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:75
+#: ../qml/LogPage.qml:75
 msgid "PasteBin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:86
+#: ../qml/LogPage.qml:86
 msgid "From file "
 msgstr ""
 
-#: ../app/ui/LogPage.qml:132
+#: ../qml/LogPage.qml:132
 msgid "Sending to Pastebin.."
 msgstr ""
 
-#: ../app/ui/LogPage.qml:146
+#: ../qml/LogPage.qml:146
 msgid "Pastebin Error"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:146
+#: ../qml/LogPage.qml:146
 msgid "Pastebin Successful"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:152
+#: ../qml/LogPage.qml:152
 msgid "Error ocurred uploading to Pastebin"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:153
+#: ../qml/LogPage.qml:153
 msgid "<br>(Copied to clipboard)"
 msgstr ""
 
-#: ../app/ui/LogPage.qml:159
+#: ../qml/LogPage.qml:159
 msgid "OK"
 msgstr ""
 
-#: ../app/ui/MainPage.qml:8
+#: ../qml/MainPage.qml:8
 msgid "Ubuntu Logs"
 msgstr ""
 
-#: ../app/ui/MainPage.qml:13
+#: ../qml/MainPage.qml:13
 msgid "Reload"
 msgstr ""
 
-#: ../app/ui/MainPage.qml:18 ../app/ui/PrefPage.qml:17
+#: ../qml/MainPage.qml:18 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr ""
 
-#: ../app/ui/MainPage.qml:44
+#: ../qml/MainPage.qml:23 ../qml/AboutPage.qml:8
+msgid "About"
+msgstr ""
+
+#: ../qml/MainPage.qml:44
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:21
+#: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
+msgid "Logviewer"
+msgstr ""
+
+#: ../qml/AboutPage.qml:38
+msgid "Version %1"
+msgstr ""
+
+#: ../qml/AboutPage.qml:55
+msgid "Authors:"
+msgstr ""
+
+#: ../qml/AboutPage.qml:68
+msgid "Source code:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:30
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:53
+#: ../qml/PrefPage.qml:53
 msgid "Directory:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:75
+#: ../qml/PrefPage.qml:75
 msgid "Filter:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:97
+#: ../qml/PrefPage.qml:97
 msgid "Buffer:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:124
+#: ../qml/PrefPage.qml:124
 msgid "Font Size:"
 msgstr ""
 
-#: ../app/ui/PrefPage.qml:151
+#: ../qml/PrefPage.qml:151
 msgid "Pastebin user:"
-msgstr ""
-
-#: /tmp/logviewer-build/po/logviewer.desktop.in.h:1
-msgid "Logviewer for Ubuntu Touch"
 msgstr ""

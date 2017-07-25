@@ -5,28 +5,19 @@ import Logviewer 1.0
 
 MainView {
     id: mainView
-
-    // objectName for functional testing purposes (autopilot-qt5)
     objectName: "mainView"
-
-    // Note! applicationName needs to match the "name" field of the click manifest
-    applicationName: "com.ubuntu.developer.vtuson.logviewer"
-
-    /*
-     This property enables the application to change orientation
-     when the device is rotated. The default is false.
-    */
-    //automaticOrientation: true
+    applicationName: "logviewer.neothethird"
+    automaticOrientation: true
     anchorToKeyboard: true
 
     width: units.gu(100)
     height: units.gu(75)
 
     Component.onCompleted: {
-        pStack.push(Qt.resolvedUrl("ui/MainPage.qml"))
+        pStack.push(Qt.resolvedUrl("MainPage.qml"))
     }
 
-    Settings { //This will also save the settings as soon as this patch gets merged into the UI Toolkit trunk repo: https://bugs.launchpad.net/ubuntu-ui-toolkit/+bug/1354321
+    Settings {
         id: preferences
         property string dir: "/home/phablet/.cache/upstart/"
         property string filter: "*.log"
@@ -98,9 +89,8 @@ MainView {
             logs.loadLogs()
         }
 
-        var settingPage = pStack.push(Qt.resolvedUrl("ui/PrefPage.qml"), prop)
+        var settingPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), prop)
 
         settingPage.applyChanges.connect(function() { slot_applyChanges(settingPage) })
     }
 }
-
