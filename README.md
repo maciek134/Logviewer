@@ -2,10 +2,12 @@
 
 This application lets you view logs on Ubuntu Touch devices. Based on the original work of Victor Tuson Palau and Niklas Wenzel.
 
+[![Logviewer](assets/logo.png)](https://open.uappexplorer.com/app/logviewer.neothethird)
+
 ## License
 
  - Copyright (C) 2017 [Jan Sprinz](https://neothethrird.de)
- - Copyright (C) 2014-2016 Tuson Palau and Niklas Wenzel
+ - Copyright (C) 2014-2016 Victor Tuson Palau and Niklas Wenzel
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
