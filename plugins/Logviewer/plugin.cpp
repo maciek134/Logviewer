@@ -6,5 +6,10 @@
 
 void LogViewerPlugin::registerTypes(const char *uri) {
     //@uri Template
-    qmlRegisterSingletonType<LogViewer>(uri, 1, 0, "LogViewer", [](QQmlEngine*, QJSEngine*) -> QObject* { return new LogViewer; });
+    qmlRegisterType<LogViewer>(uri, 1, 0, "LogViewer");
+}
+
+void LogViewerPlugin::initializeEngine(QQmlEngine *engine, const char *uri)
+{
+    QQmlExtensionPlugin::initializeEngine(engine, uri);
 }

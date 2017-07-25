@@ -1,5 +1,5 @@
-#ifndef TEMPLATEPLUGIN_H
-#define TEMPLATEPLUGIN_H
+#ifndef LOGVIEWERPLUGIN_H
+#define LOGVIEWERPLUGIN_H
 
 #include <QQmlExtensionPlugin>
 
@@ -9,6 +9,7 @@ class LogViewerPlugin : public QQmlExtensionPlugin {
 
 public:
     void registerTypes(const char *uri);
+    void initializeEngine(QQmlEngine *engine, const char *uri);
 };
 
 #endif
