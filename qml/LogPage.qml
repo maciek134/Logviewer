@@ -3,7 +3,7 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import Logviewer 1.0
 
-import "../libs/pastebin.js" as PasteBin
+import "libs/pastebin.js" as PasteBin
 
 Page {
     id: logPage
