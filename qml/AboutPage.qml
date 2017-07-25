@@ -36,7 +36,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 radius: "medium"
                 image: Image {
-                    source: Qt.resolvedUrl("../assets/logo.png")
+                    source: Qt.resolvedUrl("../assets/logo.svg")
                 }
             }
 
