@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 01:40+0000\n"
+"POT-Creation-Date: 2017-07-25 01:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,22 +93,22 @@ msgstr ""
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/AboutPage.qml:30 logviewer.neothethird.desktop.in.h:1
+#: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
 msgid "Logviewer"
 msgstr ""
 
-#: ../qml/AboutPage.qml:48
+#: ../qml/AboutPage.qml:50
 msgid "Version: "
 msgstr ""
 
-#: ../qml/AboutPage.qml:56
+#: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Ubuntu Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
 
 #. TRANSLATORS: Please make sure the URLs are correct
-#: ../qml/AboutPage.qml:65
+#: ../qml/AboutPage.qml:67
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -120,23 +120,23 @@ msgid ""
 "License</a> for more details."
 msgstr ""
 
-#: ../qml/AboutPage.qml:74
+#: ../qml/AboutPage.qml:76
 msgid "SOURCE"
 msgstr ""
 
-#: ../qml/AboutPage.qml:74
+#: ../qml/AboutPage.qml:76
 msgid "ISSUES"
 msgstr ""
 
-#: ../qml/AboutPage.qml:74
+#: ../qml/AboutPage.qml:76
 msgid "DONATE"
 msgstr ""
 
-#: ../qml/AboutPage.qml:84 ../qml/AboutPage.qml:93
+#: ../qml/AboutPage.qml:86 ../qml/AboutPage.qml:95
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/AboutPage.qml:93
+#: ../qml/AboutPage.qml:95
 msgid "and"
 msgstr ""
 
