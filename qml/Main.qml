@@ -23,7 +23,7 @@ MainView {
         property string filter: "*.log"
         property int buffer: 8000
         property int dpFontSize: 10
-        property string username: "Guest"
+        property string username: "Ubuntu Touch User"
     }
 
     ListModel {

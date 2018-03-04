@@ -21,8 +21,8 @@ Page {
             text: i18n.tr("Cancel")
             iconName: "close"
             onTriggered: {
-                settingPage.cancelChanges()
-                pageStack.pop()
+                settingPage.cancelChanges();
+                pageStack.pop();
             }
         }
 
@@ -30,8 +30,8 @@ Page {
             text: i18n.tr("Apply")
             iconName: "ok"
             onTriggered: {
-                settingPage.applyChanges()
-                pageStack.pop()
+                settingPage.applyChanges();
+                pageStack.pop();
             }
         }
     }
@@ -103,7 +103,7 @@ Page {
                 }
                 Slider {
                     id:bufferslider
-                    function formatValue(v) { return v.toFixed(0) }
+                    function formatValue(v) { return v.toFixed(0); }
                     minimumValue: 5000
                     maximumValue: 30000
                     value: 8000
