@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 01:53+0000\n"
+"POT-Creation-Date: 2018-03-04 13:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,54 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:18
+msgid "Settings"
+msgstr ""
+
+#: ../qml/PrefPage.qml:21
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/PrefPage.qml:30
+msgid "Apply"
+msgstr ""
+
+#: ../qml/PrefPage.qml:53
+msgid "Directory:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:75
+msgid "Filter:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:97
+msgid "Buffer:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:124
+msgid "Font Size:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:151
+msgid "Pastebin user:"
+msgstr ""
+
+#: ../qml/MainPage.qml:8
+msgid "Ubuntu Logs"
+msgstr ""
+
+#: ../qml/MainPage.qml:13
+msgid "Reload"
+msgstr ""
+
+#: ../qml/MainPage.qml:23 ../qml/AboutPage.qml:8
+msgid "About"
+msgstr ""
+
+#: ../qml/MainPage.qml:44
+msgid "No logs found for the set filter"
+msgstr ""
 
 #: ../qml/LogPage.qml:32
 msgid "Back"
@@ -73,26 +121,6 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: ../qml/MainPage.qml:8
-msgid "Ubuntu Logs"
-msgstr ""
-
-#: ../qml/MainPage.qml:13
-msgid "Reload"
-msgstr ""
-
-#: ../qml/MainPage.qml:18 ../qml/PrefPage.qml:17
-msgid "Settings"
-msgstr ""
-
-#: ../qml/MainPage.qml:23 ../qml/AboutPage.qml:8
-msgid "About"
-msgstr ""
-
-#: ../qml/MainPage.qml:44
-msgid "No logs found for the set filter"
-msgstr ""
-
 #: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
 msgid "Logviewer"
 msgstr ""
@@ -138,32 +166,4 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:95
 msgid "and"
-msgstr ""
-
-#: ../qml/PrefPage.qml:21
-msgid "Cancel"
-msgstr ""
-
-#: ../qml/PrefPage.qml:30
-msgid "Apply"
-msgstr ""
-
-#: ../qml/PrefPage.qml:53
-msgid "Directory:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:75
-msgid "Filter:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:97
-msgid "Buffer:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:124
-msgid "Font Size:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:151
-msgid "Pastebin user:"
 msgstr ""
