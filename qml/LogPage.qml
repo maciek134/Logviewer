@@ -82,7 +82,7 @@ Page {
                     uploadText = logText.text;
                 }
 
-                PasteBin.post(i18n.tr("From file ") + path + ":\n" + uploadText, username,
+                PasteBin.post("Published using Logviewer for Ubuntu Touch\nFrom file " + path + ":\n" + uploadText, username,
                 function on_success(url) {
                     console.log("url is " + url);
                     Clipboard.push(url);
