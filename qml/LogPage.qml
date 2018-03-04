@@ -190,6 +190,7 @@ Page {
                 text: mLogViewer.logText
                 readOnly: true
                 font.pointSize: 12
+                font.family: "Ubuntu Mono"
                 selectByMouse: doselection
                 mouseSelectionMode: TextEdit.SelectWords
                 persistentSelection: true
