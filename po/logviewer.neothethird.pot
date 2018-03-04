@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-04 13:28+0000\n"
+"POT-Creation-Date: 2018-03-04 17:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,35 +89,35 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: ../qml/LogPage.qml:75
+#: ../qml/LogPage.qml:74
 msgid "PasteBin"
 msgstr ""
 
-#: ../qml/LogPage.qml:86
+#: ../qml/LogPage.qml:85
 msgid "From file "
 msgstr ""
 
-#: ../qml/LogPage.qml:132
+#: ../qml/LogPage.qml:130
 msgid "Sending to Pastebin.."
 msgstr ""
 
-#: ../qml/LogPage.qml:146
+#: ../qml/LogPage.qml:144
 msgid "Pastebin Error"
 msgstr ""
 
-#: ../qml/LogPage.qml:146
+#: ../qml/LogPage.qml:144
 msgid "Pastebin Successful"
 msgstr ""
 
-#: ../qml/LogPage.qml:152
+#: ../qml/LogPage.qml:151
 msgid "Error ocurred uploading to Pastebin"
 msgstr ""
 
-#: ../qml/LogPage.qml:153
+#: ../qml/LogPage.qml:152
 msgid "<br>(Copied to clipboard)"
 msgstr ""
 
-#: ../qml/LogPage.qml:159
+#: ../qml/LogPage.qml:158
 msgid "OK"
 msgstr ""
 

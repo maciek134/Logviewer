@@ -14,7 +14,7 @@ MainView {
     height: units.gu(75)
 
     Component.onCompleted: {
-        pStack.push(Qt.resolvedUrl("MainPage.qml"))
+        pStack.push(Qt.resolvedUrl("MainPage.qml"));
     }
 
     Settings {
@@ -27,40 +27,40 @@ MainView {
     }
 
     ListModel {
-        id:logsList
+        id: logsList
         property bool loading: false
     }
 
     LogViewer {
-        id:logs
+        id: logs
         logDir: preferences.dir
         logFilter: preferences.filter
 
         onLogListChanged: {
-            logsList.loading = true
+            logsList.loading = true;
 
             //this signal indicates that the directory files where loaded
-            console.log("logs are: " + logs.logList)
+            console.log("logs are: " + logs.logList);
 
             //clear any old list
-            logsList.clear()
+            logsList.clear();
 
-            var tmplogs= logs.logList;
+            var tmplogs = logs.logList;
             var alogs = {}
-            alogs = tmplogs.split("\n")
-            var itemtmp= {}
+            alogs = tmplogs.split("\n");
+            var itemtmp = {}
             for (var logitem in alogs){
                 if(alogs[logitem].trim()!== "") {
-                    itemtmp["iLogPath"] =alogs[logitem]
-                    logsList.append(itemtmp)
+                    itemtmp["iLogPath"] = alogs[logitem];
+                    logsList.append(itemtmp);
                 }
             }
 
-            logsList.loading = false
+            logsList.loading = false;
         }
 
         Component.onCompleted: {
-            logs.loadLogs()
+            logs.loadLogs();
         }
     }
 
@@ -79,18 +79,18 @@ MainView {
 
         var slot_applyChanges = function(msettings) {
             console.log("Save changes...")
-            preferences.dpFontSize = msettings.dpFontSize
-            preferences.buffer = msettings.bufferSize
-            preferences.dir = msettings.directory
-            logs.logDir = msettings.directory
-            logs.logFilter = msettings.filter
-            preferences.username = msettings.username
-            preferences.filter = msettings.filter
-            logs.loadLogs()
+            preferences.dpFontSize = msettings.dpFontSize;
+            preferences.buffer = msettings.bufferSize;
+            preferences.dir = msettings.directory;
+            logs.logDir = msettings.directory;
+            logs.logFilter = msettings.filter;
+            preferences.username = msettings.username;
+            preferences.filter = msettings.filter;
+            logs.loadLogs();
         }
 
-        var settingPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), prop)
+        var settingPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), prop);
 
-        settingPage.applyChanges.connect(function() { slot_applyChanges(settingPage) })
+        settingPage.applyChanges.connect(function() { slot_applyChanges(settingPage) });
     }
 }

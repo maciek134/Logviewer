@@ -24,9 +24,9 @@ Page {
     property string dialogText
 
     header: PageHeader {
-        title: logname.length > maxTitle
-               ? ".."+logname.slice(logname.length-maxTitle-1,logname.length)
-               : logname
+        title: logname.length > maxTitle ?
+        ".." + logname.slice(logname.length-maxTitle - 1, logname.length) :
+        logname
 
         leadingActionBar.actions: Action {
             text: i18n.tr("Back")
@@ -36,75 +36,73 @@ Page {
                     // Page gets closed by mLogViewer.onLogStopped slot,
                     // after we have cleaned all the threads.
                     logDie = true;
-                    mLogViewer.stopLog()
+                    mLogViewer.stopLog();
                 } else {
-                    pageStack.pop()
+                    pageStack.pop();
                 }
             }
         }
 
         trailingActionBar.actions: [
-            Action {
-                id: pauseaction
-                text: readingLog ? i18n.tr("Pause") : i18n.tr("Start")
-                onTriggered: {
-                    readingLog ? mLogViewer.stopLog() : mLogViewer.openLog()
-                    readingLog = !readingLog
-                    console.log("Action is " + pauseaction.text)
-                }
-                iconName: readingLog ? "media-playback-pause" : "media-playback-start"
-            },
-            Action {
-                text: i18n.tr("Clear")
-                onTriggered: mLogViewer.clearLog()
-                iconName: "edit-clear"
-            },
-            Action {
-                text: doselection? i18n.tr("Copy") : i18n.tr("Select")
-                onTriggered: {
-                    if (doselection) {
-                        Clipboard.push(logText.selectedText)
-                        logText.select(0,0)
-
-                    }
-                    doselection =!doselection
-                }
-                iconName: doselection ? "browser-tabs" : "edit"
-            },
-            Action {
-                text: i18n.tr("PasteBin")
-                iconName: "external-link"
-                onTriggered: {
-                    __popover=PopupUtils.open(progress)
-                    var uploadText = logText.selectedText
-
-                    if (uploadText === "") {
-                        console.log("Text to upload is empty. Pasting the whole text...")
-                        uploadText = logText.text
-                    }
-
-                    PasteBin.post(i18n.tr("From file ")+ path + ":\n" + uploadText, username,
-                                  function on_success(url) {
-                                      console.log("url is "+url)
-                                      Clipboard.push(url)
-                                      logText.select(0,0)
-                                      PopupUtils.close(__popover)
-                                      __popover=null
-                                      logPage.dialogError = false;
-                                      logPage.dialogText = "<a href=\""+url+"\">"+url+"</a>"
-                                      PopupUtils.open(resultsD)
-                                  },
-                                  function on_failure(why ){
-                                      console.log("error is " + why)
-                                      logText.select(0,0)
-                                      PopupUtils.close(__popover)
-                                      __popover=null
-                                      logPage.dialogError = true;
-                                      PopupUtils.open(resultsD)
-                                  })
-                }
+        Action {
+            id: pauseaction
+            text: readingLog ? i18n.tr("Pause") : i18n.tr("Start")
+            onTriggered: {
+                readingLog ? mLogViewer.stopLog() : mLogViewer.openLog();
+                readingLog = !readingLog;
+                console.log("Action is " + pauseaction.text);
             }
-        ]
+            iconName: readingLog ? "media-playback-pause" : "media-playback-start"
+        },
+        Action {
+            text: i18n.tr("Clear")
+            onTriggered: mLogViewer.clearLog()
+            iconName: "edit-clear"
+        },
+        Action {
+            text: doselection ? i18n.tr("Copy") : i18n.tr("Select")
+            onTriggered: {
+                if (doselection) {
+                    Clipboard.push(logText.selectedText);
+                    logText.select(0,0);
+                }
+                doselection =! doselection;
+            }
+            iconName: doselection ? "browser-tabs" : "edit"
+        },
+        Action {
+            text: i18n.tr("PasteBin")
+            iconName: "external-link"
+            onTriggered: {
+                __popover=PopupUtils.open(progress);
+                var uploadText = logText.selectedText;
+
+                if (uploadText === "") {
+                    console.log("Text to upload is empty. Pasting the whole text...");
+                    uploadText = logText.text;
+                }
+
+                PasteBin.post(i18n.tr("From file ") + path + ":\n" + uploadText, username,
+                function on_success(url) {
+                    console.log("url is " + url);
+                    Clipboard.push(url);
+                    logText.select(0, 0);
+                    PopupUtils.close(__popover);
+                    __popover=null;
+                    logPage.dialogError = false;
+                    logPage.dialogText = "<a href=\"" + url + "\">" + url + "</a>";
+                    PopupUtils.open(resultsD);
+                },
+                function on_failure(why) {
+                    console.log("error is " + why);
+                    logText.select(0, 0);
+                    PopupUtils.close(__popover);
+                    __popover = null;
+                    logPage.dialogError = true;
+                    PopupUtils.open(resultsD);
+                })
+            }
+        }]
     }
 
     visible: false
@@ -113,11 +111,11 @@ Page {
         id: mLogViewer
         onLogStopped: if (logDie) pageStack.pop()
         onLogTextChanged: {
-            if(autoscroll) flickArea.contentY= logText.height-scrollView.height
+            if(autoscroll) flickArea.contentY = logText.height-scrollView.height;
         }
     }
 
-    ListModel {  id:logsList  }
+    ListModel { id: logsList }
 
     Component {
         id: progress
@@ -149,8 +147,9 @@ Page {
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Text.AlignHCenter
-                text: logPage.dialogError ? i18n.tr("Error ocurred uploading to Pastebin") : logPage.dialogText +
-                                            i18n.tr("<br>(Copied to clipboard)")
+                text: logPage.dialogError ?
+                      i18n.tr("Error ocurred uploading to Pastebin") :
+                      logPage.dialogText + i18n.tr("<br>(Copied to clipboard)");
 
                 onLinkActivated: Qt.openUrlExternally(link)
             }
@@ -178,10 +177,10 @@ Page {
             flickableDirection: Flickable.VerticalFlick
             clip: true
             onFlickStarted: autoscroll =false;
-            onFlickEnded:{
-                console.log("contenty is " + flickArea.contentY)
-                console.log("log text is "+ logText.height + " and scrollview is " + scrollView.height)
-                if (flickArea.contentY > logText.height-scrollView.height*2) autoscroll=true
+            onFlickEnded: {
+                console.log("contenty is " + flickArea.contentY);
+                console.log("log text is "+ logText.height + " and scrollview is " + scrollView.height);
+                autoscroll = flickArea.contentY > logText.height-scrollView.height * 2;
             }
 
             TextEdit {
