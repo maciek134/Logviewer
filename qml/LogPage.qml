@@ -9,7 +9,6 @@ Page {
     property string logname
     property string path
     property string username
-    property bool autoscroll: true
     property bool doselection: false
     property int fontSize
     property var __popover: null
@@ -28,12 +27,12 @@ Page {
         trailingActionBar.actions: [
         Action {
             id: pauseaction
-            text: autoscroll ? i18n.tr("Pause") : i18n.tr("Start")
+            text: updateTimer.running ? i18n.tr("Pause") : i18n.tr("Start")
             onTriggered: {
-                autoscroll = !autoscroll;
+                updateTimer.running = !updateTimer.running;
                 console.log("Action is " + pauseaction.text);
             }
-            iconName: autoscroll ? "media-playback-pause" : "media-playback-start"
+            iconName: updateTimer.running ? "media-playback-pause" : "media-playback-start"
         },
         Action {
             text: doselection ? i18n.tr("Copy") : i18n.tr("Select")
@@ -126,6 +125,22 @@ Page {
         }
     }
 
+    Timer {
+        id: updateTimer
+        running: true
+        interval: 50
+        repeat: true
+        onTriggered: {
+            var xhr = new XMLHttpRequest;
+            xhr.open("GET", path);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE)
+                    logText.text = xhr.responseText;
+            };
+            xhr.send();
+        }
+    }
+
     ScrollView {
         id: scrollView
         anchors {
@@ -142,21 +157,14 @@ Page {
             readOnly: true
             font.pointSize: fontSize
             font.family: "Ubuntu Mono"
+            textFormat: TextEdit.PlainText
             selectByMouse: doselection
             mouseSelectionMode: TextEdit.SelectWords
             persistentSelection: true
             color: theme.palette.normal.fieldText
             selectedTextColor: theme.palette.selected.selectionText
             selectionColor: theme.palette.selected.selection
-            Component.onCompleted: {
-                var xhr = new XMLHttpRequest;
-                xhr.open("GET", path);
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState == XMLHttpRequest.DONE)
-                        logText.text = xhr.responseText;
-                };
-                xhr.send();
-            }
+            Component.onCompleted: updateTimer.start();
         }
     }
 }
