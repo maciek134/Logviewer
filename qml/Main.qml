@@ -1,7 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
-import Logviewer 1.0
 
 MainView {
     id: mainView
@@ -24,44 +23,6 @@ MainView {
         property int buffer: 8000
         property int dpFontSize: 10
         property string username: "Ubuntu Touch User"
-    }
-
-    ListModel {
-        id: logsList
-        property bool loading: false
-    }
-
-    LogViewer {
-        id: logs
-        logDir: preferences.dir
-        logFilter: preferences.filter
-
-        onLogListChanged: {
-            logsList.loading = true;
-
-            //this signal indicates that the directory files where loaded
-            console.log("logs are: " + logs.logList);
-
-            //clear any old list
-            logsList.clear();
-
-            var tmplogs = logs.logList;
-            var alogs = {}
-            alogs = tmplogs.split("\n");
-            var itemtmp = {}
-            for (var logitem in alogs){
-                if(alogs[logitem].trim()!== "") {
-                    itemtmp["iLogPath"] = alogs[logitem];
-                    logsList.append(itemtmp);
-                }
-            }
-
-            logsList.loading = false;
-        }
-
-        Component.onCompleted: {
-            logs.loadLogs();
-        }
     }
 
     PageStack {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-04 18:26+0000\n"
+"POT-Creation-Date: 2018-05-07 23:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:18
+#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:19
 msgid "Settings"
 msgstr ""
 
@@ -49,71 +49,67 @@ msgstr ""
 msgid "Pastebin user:"
 msgstr ""
 
-#: ../qml/MainPage.qml:8
+#: ../qml/MainPage.qml:9
 msgid "Ubuntu Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:13
+#: ../qml/MainPage.qml:14
 msgid "Reload"
 msgstr ""
 
-#: ../qml/MainPage.qml:23 ../qml/AboutPage.qml:8
+#: ../qml/MainPage.qml:24 ../qml/AboutPage.qml:8
 msgid "About"
 msgstr ""
 
-#: ../qml/MainPage.qml:44
+#: ../qml/MainPage.qml:51
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/LogPage.qml:32
+#: ../qml/LogPage.qml:23
 msgid "Back"
 msgstr ""
 
-#: ../qml/LogPage.qml:49
+#: ../qml/LogPage.qml:31
 msgid "Pause"
 msgstr ""
 
-#: ../qml/LogPage.qml:49
+#: ../qml/LogPage.qml:31
 msgid "Start"
 msgstr ""
 
-#: ../qml/LogPage.qml:58
-msgid "Clear"
-msgstr ""
-
-#: ../qml/LogPage.qml:63
+#: ../qml/LogPage.qml:39
 msgid "Copy"
 msgstr ""
 
-#: ../qml/LogPage.qml:63
+#: ../qml/LogPage.qml:39
 msgid "Select"
 msgstr ""
 
-#: ../qml/LogPage.qml:74
+#: ../qml/LogPage.qml:50
 msgid "PasteBin"
 msgstr ""
 
-#: ../qml/LogPage.qml:130
+#: ../qml/LogPage.qml:95
 msgid "Sending to Pastebin.."
 msgstr ""
 
-#: ../qml/LogPage.qml:144
+#: ../qml/LogPage.qml:109
 msgid "Pastebin Error"
 msgstr ""
 
-#: ../qml/LogPage.qml:144
+#: ../qml/LogPage.qml:109
 msgid "Pastebin Successful"
 msgstr ""
 
-#: ../qml/LogPage.qml:151
+#: ../qml/LogPage.qml:116
 msgid "Error ocurred uploading to Pastebin"
 msgstr ""
 
-#: ../qml/LogPage.qml:152
+#: ../qml/LogPage.qml:117
 msgid "<br>(Copied to clipboard)"
 msgstr ""
 
-#: ../qml/LogPage.qml:158
+#: ../qml/LogPage.qml:123
 msgid "OK"
 msgstr ""
 

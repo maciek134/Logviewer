@@ -1,79 +1,56 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
-import Logviewer 1.0
 
 import "libs/pastebin.js" as PasteBin
 
 Page {
     id: logPage
     property string logname
-    property alias path: mLogViewer.filePath
+    property string path
     property string username
-    property alias filter: mLogViewer.logFilter
-    property bool readingLog: true
     property bool autoscroll: true
-    property alias buffer: mLogViewer.logBuffer
     property bool doselection: false
-    property alias fontSize: logText.font.pixelSize
-    property int maxTitle: 14
-    property int iconSize: units.gu(4)
-    property bool logDie: false
+    property int fontSize
     property var __popover: null
     property bool dialogError: false
     property string dialogText
 
     header: PageHeader {
-        title: logname.length > maxTitle ?
-        ".." + logname.slice(logname.length-maxTitle - 1, logname.length) :
-        logname
+        title: logname
 
         leadingActionBar.actions: Action {
             text: i18n.tr("Back")
             iconName: "back"
-            onTriggered: {
-                if (readingLog) {
-                    // Page gets closed by mLogViewer.onLogStopped slot,
-                    // after we have cleaned all the threads.
-                    logDie = true;
-                    mLogViewer.stopLog();
-                } else {
-                    pageStack.pop();
-                }
-            }
+            onTriggered: pageStack.pop()
         }
 
         trailingActionBar.actions: [
         Action {
             id: pauseaction
-            text: readingLog ? i18n.tr("Pause") : i18n.tr("Start")
+            text: autoscroll ? i18n.tr("Pause") : i18n.tr("Start")
             onTriggered: {
-                readingLog ? mLogViewer.stopLog() : mLogViewer.openLog();
-                readingLog = !readingLog;
+                autoscroll = !autoscroll;
                 console.log("Action is " + pauseaction.text);
             }
-            iconName: readingLog ? "media-playback-pause" : "media-playback-start"
-        },
-        Action {
-            text: i18n.tr("Clear")
-            onTriggered: mLogViewer.clearLog()
-            iconName: "edit-clear"
+            iconName: autoscroll ? "media-playback-pause" : "media-playback-start"
         },
         Action {
             text: doselection ? i18n.tr("Copy") : i18n.tr("Select")
+            iconName: doselection ? "browser-tabs" : "edit"
             onTriggered: {
                 if (doselection) {
                     Clipboard.push(logText.selectedText);
                     logText.select(0,0);
                 }
-                doselection =! doselection;
+                doselection = !doselection;
             }
-            iconName: doselection ? "browser-tabs" : "edit"
         },
         Action {
             text: i18n.tr("PasteBin")
             iconName: "external-link"
             onTriggered: {
+                console.log("try to paste to pastebin");
                 __popover=PopupUtils.open(progress);
                 var uploadText = logText.selectedText;
 
@@ -104,18 +81,6 @@ Page {
             }
         }]
     }
-
-    visible: false
-
-    LogViewer {
-        id: mLogViewer
-        onLogStopped: if (logDie) pageStack.pop()
-        onLogTextChanged: {
-            if(autoscroll) flickArea.contentY = logText.height-scrollView.height;
-        }
-    }
-
-    ListModel { id: logsList }
 
     Component {
         id: progress
@@ -170,36 +135,28 @@ Page {
             bottom: parent.bottom
         }
 
-        Flickable {
-            id: flickArea
-            anchors.fill: parent
-            contentWidth: logText.width; contentHeight: logText.height
-            flickableDirection: Flickable.VerticalFlick
-            clip: true
-            onFlickStarted: autoscroll =false;
-            onFlickEnded: {
-                console.log("contenty is " + flickArea.contentY);
-                console.log("log text is "+ logText.height + " and scrollview is " + scrollView.height);
-                autoscroll = flickArea.contentY > logText.height-scrollView.height * 2;
-            }
-
-            TextEdit {
-                id: logText
-                wrapMode: TextEdit.Wrap
-                width: scrollView.width
-                text: mLogViewer.logText
-                readOnly: true
-                font.pointSize: 12
-                font.family: "Ubuntu Mono"
-                selectByMouse: doselection
-                mouseSelectionMode: TextEdit.SelectWords
-                persistentSelection: true
-                color: theme.palette.normal.fieldText
-                selectedTextColor: theme.palette.selected.selectionText
-                selectionColor: theme.palette.selected.selection
+        TextEdit {
+            id: logText
+            wrapMode: TextEdit.Wrap
+            width: scrollView.width
+            readOnly: true
+            font.pointSize: fontSize
+            font.family: "Ubuntu Mono"
+            selectByMouse: doselection
+            mouseSelectionMode: TextEdit.SelectWords
+            persistentSelection: true
+            color: theme.palette.normal.fieldText
+            selectedTextColor: theme.palette.selected.selectionText
+            selectionColor: theme.palette.selected.selection
+            Component.onCompleted: {
+                var xhr = new XMLHttpRequest;
+                xhr.open("GET", path);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == XMLHttpRequest.DONE)
+                        logText.text = xhr.responseText;
+                };
+                xhr.send();
             }
         }
     }
-
-    Component.onCompleted: mLogViewer.openLog()
 }

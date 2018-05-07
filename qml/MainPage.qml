@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Qt.labs.folderlistmodel 1.0
 
 Page {
     id: mainPage
@@ -25,6 +26,12 @@ Page {
             iconName: "info"
         }
         ]
+    }
+
+    FolderListModel {
+        id: logsList
+        folder: preferences.dir
+        nameFilters: [ preferences.filter ]
     }
 
     ScrollView {
@@ -58,24 +65,22 @@ Page {
                 console.log("creating page");
 
                 //remove the file extension if any
-                var lastpos = iLogPath.lastIndexOf(".");
-                if (lastpos === -1) lastpos = iLogPath.length;
+                var lastpos = model.fileName.lastIndexOf(".");
+                if (lastpos === -1) lastpos = model.fileName.length;
 
                 //remove path
-                var startpos = iLogPath.lastIndexOf("/");
+                var startpos = model.fileName.lastIndexOf("/");
 
                 //iname is now the title page
-                var iname= iLogPath.slice(startpos + 1, lastpos);
+                var iname= model.fileName.slice(startpos + 1, lastpos);
                 console.log("title is " + iname);
-                console.log("file is " + preferences.dir + iLogPath);
+                console.log("file is " + preferences.dir + model.fileName);
 
                 //create page
                 var pref = {
                     logname: iname,
-                    path: preferences.dir + iLogPath,
-                    buffer: preferences.buffer,
+                    path: preferences.dir + model.fileName,
                     fontSize: FontUtils.sizeToPixels("medium") * preferences.dpFontSize / 10,
-                    filter: preferences.filter,
                     username: preferences.username
                 }
 
@@ -87,7 +92,7 @@ Page {
             ListItemLayout {
                 anchors.centerIn: parent
 
-                title.text:iLogPath.slice(iLogPath.lastIndexOf("/")+1,iLogPath.length)
+                title.text:model.fileName.slice(model.fileName.lastIndexOf("/")+1,model.fileName.length)
 
                 Icon {
                     width: units.gu(2); height: width
