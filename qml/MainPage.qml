@@ -81,6 +81,7 @@ Page {
                     logname: iname,
                     path: preferences.dir + model.fileName,
                     fontSize: FontUtils.sizeToPixels("medium") * preferences.dpFontSize / 10,
+                    interval: preferences.interval,
                     username: preferences.username
                 }
 

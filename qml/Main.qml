@@ -20,7 +20,7 @@ MainView {
         id: preferences
         property string dir: "/home/phablet/.cache/upstart/"
         property string filter: "*.log"
-        property int buffer: 8000
+        property int interval: 100
         property int dpFontSize: 10
         property string username: "Ubuntu Touch User"
     }
@@ -32,7 +32,7 @@ MainView {
     function showSettings() {
         var prop = {
             dpFontSize: preferences.dpFontSize,
-            bufferSize: preferences.buffer,
+            interval: preferences.interval,
             directory: preferences.dir,
             filter: preferences.filter,
             username: preferences.username
@@ -41,7 +41,7 @@ MainView {
         var slot_applyChanges = function(msettings) {
             console.log("Save changes...")
             preferences.dpFontSize = msettings.dpFontSize;
-            preferences.buffer = msettings.bufferSize;
+            preferences.interval = msettings.interval;
             preferences.dir = msettings.directory;
             logs.logDir = msettings.directory;
             logs.logFilter = msettings.filter;

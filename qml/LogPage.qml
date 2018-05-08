@@ -9,6 +9,7 @@ Page {
     property string logname
     property string path
     property string username
+    property int interval
     property bool doselection: false
     property int fontSize
     property var __popover: null
@@ -29,8 +30,8 @@ Page {
             id: pauseaction
             text: updateTimer.running ? i18n.tr("Pause") : i18n.tr("Start")
             onTriggered: {
+                console.log(pauseaction.text);
                 updateTimer.running = !updateTimer.running;
-                console.log("Action is " + pauseaction.text);
             }
             iconName: updateTimer.running ? "media-playback-pause" : "media-playback-start"
         },
@@ -128,7 +129,7 @@ Page {
     Timer {
         id: updateTimer
         running: true
-        interval: 50
+        interval: interval
         repeat: true
         onTriggered: {
             var xhr = new XMLHttpRequest;

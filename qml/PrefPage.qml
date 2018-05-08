@@ -4,7 +4,7 @@ import Ubuntu.Components 1.3
 Page {
     id: settingPage
 
-    property alias bufferSize: bufferslider.value
+    property alias interval: intervalSlider.value
     property alias directory: dirPath.text
     property alias filter: filterText.text
     property alias dpFontSize: fontslider.value
@@ -91,10 +91,10 @@ Page {
             }
 
             ListItem {
-                height: bufferlabel.height + bufferslider.height + column.mSpacing
+                height: intervalLabel.height + intervalSlider.height + column.mSpacing
                 Label {
-                    id:bufferlabel
-                    text: i18n.tr("Buffer:")
+                    id:intervalLabel
+                    text: i18n.tr("Refresh interval (ms):")
                     anchors {
                         top: parent.top; topMargin: column.mSpacing
                         left: parent.left; leftMargin: units.gu(1)
@@ -102,14 +102,14 @@ Page {
                     }
                 }
                 Slider {
-                    id:bufferslider
+                    id:intervalSlider
                     function formatValue(v) { return v.toFixed(0); }
-                    minimumValue: 5000
-                    maximumValue: 30000
-                    value: 8000
+                    minimumValue: 50
+                    maximumValue: 5000
+                    value: 100
                     live: true
                     width: parent.width
-                    anchors.top: bufferlabel.bottom
+                    anchors.top: intervalLabel.bottom
                     anchors {
                         left: parent.left; leftMargin: units.gu(1)
                         right: parent.right; rightMargin: units.gu(1)
@@ -121,7 +121,7 @@ Page {
                 height: fontlabel.height + fontslider.height + column.mSpacing
                 Label {
                     id:fontlabel
-                    text: i18n.tr("Font Size:")
+                    text: i18n.tr("Font size:")
                     anchors {
                         top: parent.top; topMargin: column.mSpacing
                         left: parent.left; leftMargin: units.gu(1)
