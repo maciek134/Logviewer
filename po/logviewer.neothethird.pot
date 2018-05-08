@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 00:10+0000\n"
+"POT-Creation-Date: 2018-05-08 00:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:19
+#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
 msgid "Settings"
 msgstr ""
 
@@ -50,18 +50,14 @@ msgid "Pastebin user:"
 msgstr ""
 
 #: ../qml/MainPage.qml:9
-msgid "Ubuntu Logs"
+msgid "Ubuntu Touch Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:14
-msgid "Reload"
-msgstr ""
-
-#: ../qml/MainPage.qml:24 ../qml/AboutPage.qml:8
+#: ../qml/MainPage.qml:19 ../qml/AboutPage.qml:8
 msgid "About"
 msgstr ""
 
-#: ../qml/MainPage.qml:51
+#: ../qml/MainPage.qml:47
 msgid "No logs found for the set filter"
 msgstr ""
 

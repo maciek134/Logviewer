@@ -43,11 +43,8 @@ MainView {
             preferences.dpFontSize = msettings.dpFontSize;
             preferences.interval = msettings.interval;
             preferences.dir = msettings.directory;
-            logs.logDir = msettings.directory;
-            logs.logFilter = msettings.filter;
             preferences.username = msettings.username;
             preferences.filter = msettings.filter;
-            logs.loadLogs();
         }
 
         var settingPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), prop);

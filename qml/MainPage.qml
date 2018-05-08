@@ -6,15 +6,10 @@ Page {
     id: mainPage
 
     header: PageHeader {
-        title: i18n.tr("Ubuntu Logs")
+        title: i18n.tr("Ubuntu Touch Logs")
         flickable: scrollView.flickableItem
 
         trailingActionBar.actions: [
-        Action {
-            text: i18n.tr("Reload")
-            onTriggered: logs.loadLogs()
-            iconName: "reload"
-        },
         Action {
             text: i18n.tr("Settings")
             onTriggered: mainView.showSettings()
@@ -32,6 +27,7 @@ Page {
         id: logsList
         folder: preferences.dir
         nameFilters: [ preferences.filter ]
+        showOnlyReadable: true
     }
 
     ScrollView {
