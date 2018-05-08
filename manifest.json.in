@@ -1,7 +1,6 @@
 {
     "name": "logviewer.neothethird",
     "description": "View logs on Ubuntu Touch devices",
-    "architecture": "@CLICK_ARCH@",
     "title": "Logviewer",
     "hooks": {
         "logviewer": {
@@ -11,5 +10,5 @@
     },
     "version": "2.0",
     "maintainer": "Jan Sprinz <neo@neothethird.de>",
-    "framework" : "ubuntu-sdk-15.04.6"
+    "framework" : "ubuntu-sdk-16.04"
 }
