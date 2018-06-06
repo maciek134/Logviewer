@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-25 01:53+0000\n"
-"PO-Revision-Date: 2018-03-01 08:25+0100\n"
+"POT-Creation-Date: 2018-05-08 00:34+0000\n"
+"PO-Revision-Date: 2018-05-20 12:55+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -17,96 +17,112 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/LogPage.qml:32
-msgid "Back"
-msgstr "Atrás"
-
-#: ../qml/LogPage.qml:49
-msgid "Pause"
-msgstr "Pausa"
-
-#: ../qml/LogPage.qml:49
-msgid "Start"
-msgstr "Comenzar"
-
-#: ../qml/LogPage.qml:58
-msgid "Clear"
-msgstr "Borrar"
-
-#: ../qml/LogPage.qml:63
-msgid "Copy"
-msgstr "Copiar"
-
-#: ../qml/LogPage.qml:63
-msgid "Select"
-msgstr "Seleccionar"
-
-#: ../qml/LogPage.qml:75
-msgid "PasteBin"
-msgstr "PasteBin"
-
-#: ../qml/LogPage.qml:86
-msgid "From file "
-msgstr "Desde el archivo "
-
-#: ../qml/LogPage.qml:132
-msgid "Sending to Pastebin.."
-msgstr "Enviando a Pastebin.."
-
-#: ../qml/LogPage.qml:146
-msgid "Pastebin Error"
-msgstr "Error de Pastebin"
-
-#: ../qml/LogPage.qml:146
-msgid "Pastebin Successful"
-msgstr "Pastebin exitoso"
-
-#: ../qml/LogPage.qml:152
-msgid "Error ocurred uploading to Pastebin"
-msgstr "Se produjo un error subiendo a Pastebin"
-
-#: ../qml/LogPage.qml:153
-msgid "<br>(Copied to clipboard)"
-msgstr "<br>(Copiado al portapapeles)"
-
-#: ../qml/LogPage.qml:159
-msgid "OK"
-msgstr "Vale"
-
-#: ../qml/MainPage.qml:8
-msgid "Ubuntu Logs"
-msgstr "Registros (logs) de Ubuntu"
-
-#: ../qml/MainPage.qml:13
-msgid "Reload"
-msgstr "Recargar"
-
-#: ../qml/MainPage.qml:18 ../qml/PrefPage.qml:17
+#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
 msgid "Settings"
 msgstr "Configuración"
 
-#: ../qml/MainPage.qml:23 ../qml/AboutPage.qml:8
+#: ../qml/PrefPage.qml:21
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../qml/PrefPage.qml:30
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../qml/PrefPage.qml:53
+msgid "Directory:"
+msgstr "Directorio:"
+
+#: ../qml/PrefPage.qml:75
+msgid "Filter:"
+msgstr "Filtro:"
+
+#: ../qml/PrefPage.qml:97
+msgid "Refresh interval (ms):"
+msgstr "Intervalo de refresco (ms):"
+
+#: ../qml/PrefPage.qml:124
+msgid "Font size:"
+msgstr "Tamaño de fuente:"
+
+#: ../qml/PrefPage.qml:151
+msgid "Pastebin user:"
+msgstr "Usuario en Pastebin:"
+
+#: ../qml/MainPage.qml:9
+msgid "Ubuntu Touch Logs"
+msgstr "Registros (logs) de Ubuntu Touch"
+
+#: ../qml/MainPage.qml:19 ../qml/AboutPage.qml:8
 msgid "About"
 msgstr "Acerca de"
 
-#: ../qml/MainPage.qml:44
+#: ../qml/MainPage.qml:47
 msgid "No logs found for the set filter"
 msgstr "No se encontraron registros (logs) para el filtro establecido"
 
+#: ../qml/LogPage.qml:23
+msgid "Back"
+msgstr "Atrás"
+
+#: ../qml/LogPage.qml:31
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../qml/LogPage.qml:31
+msgid "Start"
+msgstr "Comenzar"
+
+#: ../qml/LogPage.qml:39
+msgid "Copy"
+msgstr "Copiar"
+
+#: ../qml/LogPage.qml:39
+msgid "Select"
+msgstr "Seleccionar"
+
+#: ../qml/LogPage.qml:50
+msgid "PasteBin"
+msgstr "Pastebin"
+
+#: ../qml/LogPage.qml:95
+msgid "Sending to Pastebin.."
+msgstr "Enviando a Pastebin.."
+
+#: ../qml/LogPage.qml:109
+msgid "Pastebin Error"
+msgstr "Error de Pastebin"
+
+#: ../qml/LogPage.qml:109
+msgid "Pastebin Successful"
+msgstr "Pastebin exitoso"
+
+#: ../qml/LogPage.qml:116
+msgid "Error ocurred uploading to Pastebin"
+msgstr "Se produjo un error subiendo a Pastebin"
+
+#: ../qml/LogPage.qml:117
+msgid "<br>(Copied to clipboard)"
+msgstr "<br>(Copiado al portapapeles)"
+
+#: ../qml/LogPage.qml:123
+msgid "OK"
+msgstr "Aceptar"
+
 #: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
 msgid "Logviewer"
-msgstr "Visor de registros"
+msgstr "Logviewer"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr "Versión:"
+msgstr "Versión: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Ubuntu Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Esta aplicación le permite ver los regitros (logs) en dispositivos Ubuntu Touch. "
+"Esta aplicación le permite ver los regitros (logs) en dispositivos con Ubuntu Touch. "
 "Basado en el trabajo original de Victor Tuson Palau y Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
@@ -148,32 +164,4 @@ msgstr "Copyright"
 
 #: ../qml/AboutPage.qml:95
 msgid "and"
-msgstr "y"
-
-#: ../qml/PrefPage.qml:21
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../qml/PrefPage.qml:30
-msgid "Apply"
-msgstr "Aplicar"
-
-#: ../qml/PrefPage.qml:53
-msgid "Directory:"
-msgstr "Directorio:"
-
-#: ../qml/PrefPage.qml:75
-msgid "Filter:"
-msgstr "Filtro:"
-
-#: ../qml/PrefPage.qml:97
-msgid "Buffer:"
-msgstr "Buffer:"
-
-#: ../qml/PrefPage.qml:124
-msgid "Font Size:"
-msgstr "Tamaño de fuente:"
-
-#: ../qml/PrefPage.qml:151
-msgid "Pastebin user:"
-msgstr "Usuario de Pastebin:" 
+msgstr "y" 
