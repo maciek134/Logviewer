@@ -136,7 +136,8 @@ Page {
             xhr.open("GET", path);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == XMLHttpRequest.DONE)
-                    logText.text = xhr.responseText;
+                    var formatedText = xhr.responseText.replace(/\n/g, "\n\n")
+                    logText.text = formatedText;
             };
             xhr.send();
         }
@@ -159,6 +160,7 @@ Page {
             font.pointSize: fontSize
             font.family: "Ubuntu Mono"
             textFormat: TextEdit.PlainText
+            textMargin: preferences.commonMargin
             selectByMouse: doselection
             mouseSelectionMode: TextEdit.SelectWords
             persistentSelection: true

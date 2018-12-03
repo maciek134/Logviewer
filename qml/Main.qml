@@ -23,6 +23,7 @@ MainView {
         property int interval: 100
         property int dpFontSize: 10
         property string username: "Ubuntu Touch User"
+        property int commonMargin: units.gu(2)
     }
 
     PageStack {
