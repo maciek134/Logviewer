@@ -4,7 +4,7 @@ function post(message, name, on_success, on_failure) {
     var args = new Array();
 
     args.push("content=" + encodeURIComponent(message));
-    args.push("poster=" + encodeURIComponent(name));
+    args.push("poster=" + encodeURIComponent(name + " " + Math.random()));
     args.push("syntax=text")
 
     var req = new XMLHttpRequest();

@@ -135,9 +135,10 @@ Page {
             var xhr = new XMLHttpRequest;
             xhr.open("GET", path);
             xhr.onreadystatechange = function() {
-                if (xhr.readyState == XMLHttpRequest.DONE)
+                if (xhr.readyState == XMLHttpRequest.DONE && xhr.responseText) {
                     var formatedText = xhr.responseText.replace(/\n/g, "\n\n")
                     logText.text = formatedText;
+                }
             };
             xhr.send();
         }
