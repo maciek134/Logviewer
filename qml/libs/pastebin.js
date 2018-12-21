@@ -3,9 +3,18 @@ var UBUNTU_PASTEBIN_URL="http://paste.ubuntu.com/"
 function post(message, name, on_success, on_failure) {
     var args = new Array();
 
-    args.push("content=" + encodeURIComponent(message.replace(/\n\n/g, "\n")));
+    message = message.replace(/\n\n/g, "\n"); // remove blank lines
+    var lines = message.split('\n');
+    if (lines.length > 150) {
+        message = "";
+        for (var i = lines.length - 150; i < lines.length; i++) {
+            message += lines[i] + "\n";
+        }
+    }
+
+    args.push("content=" + encodeURIComponent(message));
     args.push("poster=" + encodeURIComponent(name + " " + Math.random()));
-    args.push("syntax=text")
+    args.push("syntax=text");
 
     var req = new XMLHttpRequest();
     req.open("post", UBUNTU_PASTEBIN_URL);
