@@ -8,7 +8,7 @@
             "desktop":  "logviewer.neothethird.desktop"
         }
     },
-    "version": "2.1",
+    "version": "2.2",
     "maintainer": "Jan Sprinz <neo@neothethird.de>",
-    "framework" : "ubuntu-sdk-15.04.6"
+    "framework" : "ubuntu-sdk-16.04"
 }
