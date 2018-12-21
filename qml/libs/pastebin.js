@@ -3,7 +3,7 @@ var UBUNTU_PASTEBIN_URL="http://paste.ubuntu.com/"
 function post(message, name, on_success, on_failure) {
     var args = new Array();
 
-    args.push("content=" + encodeURIComponent(message));
+    args.push("content=" + encodeURIComponent(message.replace(/\n\n/g, "\n")));
     args.push("poster=" + encodeURIComponent(name + " " + Math.random()));
     args.push("syntax=text")
 
