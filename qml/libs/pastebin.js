@@ -17,8 +17,10 @@ function post(message, name, on_success, on_failure) {
             if(response.toLowerCase().indexOf("bad") != 0) { // "Bad xxx: yyy"
                 console.log("response is " + response)
                 if(response.search("/plain/") === -1) on_failure(response);
-                var result = response.slice(response.lastIndexOf("href=\"") + 7,
-                                            response.lastIndexOf("/plain/"));
+                var result = response.slice(
+                    response.lastIndexOf("href=\"") + 7,
+                    response.lastIndexOf("/plain/")
+                );
                 console.log("url is in here:" + result)
                 on_success(UBUNTU_PASTEBIN_URL + result+ "/");
             } else {
