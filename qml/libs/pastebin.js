@@ -13,7 +13,7 @@ function post(message, name, on_success, on_failure) {
     }
 
     args.push("content=" + encodeURIComponent(message));
-    args.push("poster=" + encodeURIComponent(name + " " + Math.random()));
+    args.push("poster=" + encodeURIComponent(name));
     args.push("syntax=text");
 
     var req = new XMLHttpRequest();
