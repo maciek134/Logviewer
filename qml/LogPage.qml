@@ -150,7 +150,8 @@ Page {
             top: logPage.header.bottom
             left: parent.left
             right: parent.right
-            bottom: parent.bottom
+            bottom: navigationArea.top
+            bottomMargin: units.gu(1)
         }
 
         TextEdit {
@@ -169,6 +170,73 @@ Page {
             selectedTextColor: theme.palette.selected.selectionText
             selectionColor: theme.palette.selected.selection
             Component.onCompleted: updateTimer.start();
+        }
+    }
+
+    Rectangle {
+        id: navigationArea
+        width: parent.width
+        height: units.gu(5)
+        color: theme.palette.normal.background
+        anchors.bottom: parent.bottom
+
+        Rectangle {
+            id: dividerRect
+            width: parent.width
+            height: 1
+            color: theme.palette.normal.backgroundSecondaryText
+        }
+
+        Row {
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: units.gu(2)
+
+            Icon {
+                width: units.gu(3)
+                height: width
+                name: "media-skip-backward"
+                rotation: 90
+                color: theme.palette.normal.baseText
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: scrollView.flickableItem.contentY = 0
+                }
+            }
+
+            Icon {
+                width: units.gu(3)
+                height: width
+                name: "media-playback-start-rtl"
+                color: theme.palette.normal.baseText
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: scrollView.flickableItem.contentY = scrollView.flickableItem.contentY - scrollView.height*0.95
+                }
+            }
+
+            Icon {
+                width: units.gu(3)
+                height: width
+                name: "media-playback-start"
+                color: theme.palette.normal.baseText
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: scrollView.flickableItem.contentY = scrollView.flickableItem.contentY + scrollView.height*0.95
+                }
+            }
+
+            Icon {
+                width: units.gu(3)
+                height: width
+                name: "media-skip-forward"
+                rotation: 90
+                color: theme.palette.normal.baseText
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: scrollView.flickableItem.contentY = scrollView.flickableItem.contentHeight - scrollView.height
+                }
+            }
         }
     }
 }
