@@ -18,7 +18,20 @@ Page {
     property bool isLogging: true
 
     header: PageHeader {
-        title: logname
+        title: i18n.tr("Log")
+
+        height: units.gu(8)
+
+        Label {
+            id: lognameString
+            width: parent.width - units.gu(5) //subtract the left margin from parent width
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: units.gu(1)
+            anchors.leftMargin: units.gu(5)
+            anchors.left: parent.left
+            elide: Text.ElideRight
+            text: logname
+        }
 
         leadingActionBar.actions: Action {
             text: i18n.tr("Back")

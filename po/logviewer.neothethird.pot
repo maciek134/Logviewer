@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-21 20:52+0000\n"
+"POT-Creation-Date: 2020-01-15 20:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,96 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
-msgid "Settings"
-msgstr ""
-
-#: ../qml/PrefPage.qml:21
-msgid "Cancel"
-msgstr ""
-
-#: ../qml/PrefPage.qml:30
-msgid "Apply"
-msgstr ""
-
-#: ../qml/PrefPage.qml:53
-msgid "Directory:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:75
-msgid "Filter:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:97
-msgid "Refresh interval (ms):"
-msgstr ""
-
-#: ../qml/PrefPage.qml:124
-msgid "Font size:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:151
-msgid "Pastebin user:"
-msgstr ""
-
-#: ../qml/MainPage.qml:9
-msgid "Ubuntu Touch Logs"
-msgstr ""
-
-#: ../qml/MainPage.qml:19 ../qml/AboutPage.qml:8
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
 msgid "About"
-msgstr ""
-
-#: ../qml/MainPage.qml:47
-msgid "No logs found for the set filter"
-msgstr ""
-
-#: ../qml/LogPage.qml:23
-msgid "Back"
-msgstr ""
-
-#: ../qml/LogPage.qml:31
-msgid "Pause"
-msgstr ""
-
-#: ../qml/LogPage.qml:31
-msgid "Start"
-msgstr ""
-
-#: ../qml/LogPage.qml:39
-msgid "Copy"
-msgstr ""
-
-#: ../qml/LogPage.qml:39
-msgid "Select"
-msgstr ""
-
-#: ../qml/LogPage.qml:50
-msgid "PasteBin"
-msgstr ""
-
-#: ../qml/LogPage.qml:95
-msgid "Sending to Pastebin.."
-msgstr ""
-
-#: ../qml/LogPage.qml:109
-msgid "Pastebin Error"
-msgstr ""
-
-#: ../qml/LogPage.qml:109
-msgid "Pastebin Successful"
-msgstr ""
-
-#: ../qml/LogPage.qml:116
-msgid "Error ocurred uploading to Pastebin"
-msgstr ""
-
-#: ../qml/LogPage.qml:117
-msgid "<br>(Copied to clipboard)"
-msgstr ""
-
-#: ../qml/LogPage.qml:123
-msgid "OK"
 msgstr ""
 
 #: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
@@ -154,4 +66,100 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:95
 msgid "and"
+msgstr ""
+
+#: ../qml/LogPage.qml:22
+msgid "Log"
+msgstr ""
+
+#: ../qml/LogPage.qml:38
+msgid "Back"
+msgstr ""
+
+#: ../qml/LogPage.qml:46
+msgid "Pause"
+msgstr ""
+
+#: ../qml/LogPage.qml:46
+msgid "Start"
+msgstr ""
+
+#: ../qml/LogPage.qml:54
+msgid "Copy"
+msgstr ""
+
+#: ../qml/LogPage.qml:54
+msgid "Select"
+msgstr ""
+
+#: ../qml/LogPage.qml:65
+msgid "PasteBin"
+msgstr ""
+
+#: ../qml/LogPage.qml:110
+msgid "Sending to Pastebin.."
+msgstr ""
+
+#: ../qml/LogPage.qml:124
+msgid "Pastebin Error"
+msgstr ""
+
+#: ../qml/LogPage.qml:124
+msgid "Pastebin Successful"
+msgstr ""
+
+#: ../qml/LogPage.qml:131
+msgid "Error ocurred uploading to Pastebin"
+msgstr ""
+
+#: ../qml/LogPage.qml:132
+msgid "<br>(Copied to clipboard)"
+msgstr ""
+
+#: ../qml/LogPage.qml:138
+msgid "OK"
+msgstr ""
+
+#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
+msgid "Settings"
+msgstr ""
+
+#: ../qml/PrefPage.qml:21
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/PrefPage.qml:30
+msgid "Apply"
+msgstr ""
+
+#: ../qml/PrefPage.qml:53
+msgid "Directory:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:75
+msgid "Filter:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:97
+msgid "Refresh interval (ms):"
+msgstr ""
+
+#: ../qml/PrefPage.qml:124
+msgid "Font size:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:151
+msgid "Pastebin user:"
+msgstr ""
+
+#: ../qml/MainPage.qml:9
+msgid "Ubuntu Touch Logs"
+msgstr ""
+
+#: ../qml/MainPage.qml:47
+msgid "No logs found for the set filter"
+msgstr ""
+
+#: ../qml/MainPage.qml:94
+msgid "file"
 msgstr ""

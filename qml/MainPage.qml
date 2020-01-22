@@ -74,7 +74,7 @@ Page {
 
                 //create page
                 var pref = {
-                    logname: iname,
+                    logname: iname.replace("application-click-",""),
                     path: preferences.dir + model.fileName,
                     fontSize: FontUtils.sizeToPixels("medium") * preferences.dpFontSize / 10,
                     interval: preferences.interval,
@@ -88,8 +88,10 @@ Page {
 
             ListItemLayout {
                 anchors.centerIn: parent
-
-                title.text:model.fileName.slice(model.fileName.lastIndexOf("/")+1,model.fileName.length)
+                //extract app name and version from log filename
+                //distinguish between app logs and other logs because they do have different name structures
+                title.text: model.fileName.lastIndexOf("_") > 1 ? "v" + model.fileName.split("_")[2].replace(".log","") + " " + model.fileName.split("_")[1] : model.fileName.replace(".log","")
+                subtitle.text: i18n.tr("file") + ": " + model.fileName.slice(model.fileName.lastIndexOf("/")+1,model.fileName.length)
 
                 Icon {
                     width: units.gu(2); height: width
