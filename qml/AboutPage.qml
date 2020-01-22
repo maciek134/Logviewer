@@ -47,7 +47,7 @@ Page {
                 linkColor: UbuntuColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("Version: ") + "2.2"
+                text: i18n.tr("Version: ") + "2.3"
             }
 
             Label {
@@ -73,7 +73,7 @@ Page {
                 linkColor: UbuntuColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: "<a href='https://github.com/NeoTheThird/logviewer/tree/" + "1.0" + "'>" + i18n.tr("SOURCE") + "</a> | <a href='https://github.com/NeoTheThird/logviewer/issues'>" + i18n.tr("ISSUES") + "</a> | <a href='https://paypal.me/neothethird'>" + i18n.tr("DONATE") + "</a>"
+                text: "<a href='https://github.com/NeoTheThird/logviewer/tree/" + "2.3" + "'>" + i18n.tr("SOURCE") + "</a> | <a href='https://github.com/NeoTheThird/logviewer/issues'>" + i18n.tr("ISSUES") + "</a> | <a href='https://paypal.me/neothethird'>" + i18n.tr("DONATE") + "</a>"
                 onLinkActivated: Qt.openUrlExternally(link)
             }
 
@@ -83,7 +83,7 @@ Page {
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
-                text: i18n.tr("Copyright") + " (c) 2017 Jan Sprinz <neo@neothethird.de>"
+                text: i18n.tr("Copyright") + " (c) 2017 - 2020 Jan Sprinz <neo@neothethird.de>"
             }
 
             Label {
@@ -92,7 +92,7 @@ Page {
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
-                text: i18n.tr("Copyright") + " (c) 2014-2016 Tuson Palau " + i18n.tr("and") + " Niklas Wenzel"
+                text: i18n.tr("Copyright") + " (c) 2014 - 2016 Tuson Palau " + i18n.tr("and") + " Niklas Wenzel"
             }
         }
     }

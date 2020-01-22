@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-15 20:09+0000\n"
+"POT-Creation-Date: 2020-01-22 15:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,60 +68,20 @@ msgstr ""
 msgid "and"
 msgstr ""
 
-#: ../qml/LogPage.qml:22
-msgid "Log"
+#: ../qml/MainPage.qml:9
+msgid "Ubuntu Touch Logs"
 msgstr ""
 
-#: ../qml/LogPage.qml:38
-msgid "Back"
-msgstr ""
-
-#: ../qml/LogPage.qml:46
-msgid "Pause"
-msgstr ""
-
-#: ../qml/LogPage.qml:46
-msgid "Start"
-msgstr ""
-
-#: ../qml/LogPage.qml:54
-msgid "Copy"
-msgstr ""
-
-#: ../qml/LogPage.qml:54
-msgid "Select"
-msgstr ""
-
-#: ../qml/LogPage.qml:65
-msgid "PasteBin"
-msgstr ""
-
-#: ../qml/LogPage.qml:110
-msgid "Sending to Pastebin.."
-msgstr ""
-
-#: ../qml/LogPage.qml:124
-msgid "Pastebin Error"
-msgstr ""
-
-#: ../qml/LogPage.qml:124
-msgid "Pastebin Successful"
-msgstr ""
-
-#: ../qml/LogPage.qml:131
-msgid "Error ocurred uploading to Pastebin"
-msgstr ""
-
-#: ../qml/LogPage.qml:132
-msgid "<br>(Copied to clipboard)"
-msgstr ""
-
-#: ../qml/LogPage.qml:138
-msgid "OK"
-msgstr ""
-
-#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
+#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:17
 msgid "Settings"
+msgstr ""
+
+#: ../qml/MainPage.qml:47
+msgid "No logs found for the set filter"
+msgstr ""
+
+#: ../qml/MainPage.qml:94
+msgid "file"
 msgstr ""
 
 #: ../qml/PrefPage.qml:21
@@ -152,14 +112,54 @@ msgstr ""
 msgid "Pastebin user:"
 msgstr ""
 
-#: ../qml/MainPage.qml:9
-msgid "Ubuntu Touch Logs"
+#: ../qml/LogPage.qml:21
+msgid "Log"
 msgstr ""
 
-#: ../qml/MainPage.qml:47
-msgid "No logs found for the set filter"
+#: ../qml/LogPage.qml:37
+msgid "Back"
 msgstr ""
 
-#: ../qml/MainPage.qml:94
-msgid "file"
+#: ../qml/LogPage.qml:45
+msgid "Pause"
+msgstr ""
+
+#: ../qml/LogPage.qml:45
+msgid "Start"
+msgstr ""
+
+#: ../qml/LogPage.qml:53
+msgid "Copy"
+msgstr ""
+
+#: ../qml/LogPage.qml:53
+msgid "Select"
+msgstr ""
+
+#: ../qml/LogPage.qml:64
+msgid "PasteBin"
+msgstr ""
+
+#: ../qml/LogPage.qml:109
+msgid "Sending to Pastebin.."
+msgstr ""
+
+#: ../qml/LogPage.qml:123
+msgid "Pastebin Error"
+msgstr ""
+
+#: ../qml/LogPage.qml:123
+msgid "Pastebin Successful"
+msgstr ""
+
+#: ../qml/LogPage.qml:130
+msgid "Error ocurred uploading to Pastebin"
+msgstr ""
+
+#: ../qml/LogPage.qml:131
+msgid "<br>(Copied to clipboard)"
+msgstr ""
+
+#: ../qml/LogPage.qml:137
+msgid "OK"
 msgstr ""
