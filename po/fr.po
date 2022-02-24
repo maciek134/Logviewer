@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: logviewer.neothethird\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-05 19:01+0000\n"
+"PO-Revision-Date: 2021-12-18 20:22+0100\n"
+"Last-Translator: Anne017\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/LogPage.qml:19
+msgid "Log"
+msgstr "Journal"
+
+#: ../qml/LogPage.qml:35
+msgid "Back"
+msgstr "Retour"
+
+#: ../qml/LogPage.qml:44
+msgid "Pause"
+msgstr "Pause"
+
+#: ../qml/LogPage.qml:44
+msgid "Start"
+msgstr "Démarrer"
+
+#: ../qml/LogPage.qml:52
+msgid "Copy"
+msgstr "Copier"
+
+#: ../qml/LogPage.qml:52
+msgid "Select"
+msgstr "Sélectionner"
+
+#: ../qml/LogPage.qml:63
+msgid "Copy all"
+msgstr "Tout copier"
+
+#: ../qml/LogPage.qml:68
+msgid "Dpaste"
+msgstr "Dpaste"
+
+#: ../qml/LogPage.qml:102
+msgid "Share"
+msgstr "Partager"
+
+#: ../qml/LogPage.qml:118
+msgid "Sending to dpaste.."
+msgstr "Envoi vers Dpaste..."
+
+#: ../qml/LogPage.qml:132
+msgid "Dpaste Error"
+msgstr "Erreur avec Dpaste"
+
+#: ../qml/LogPage.qml:132
+msgid "Dpaste Successful"
+msgstr "Envoi vers Dpaste réussi"
+
+#: ../qml/LogPage.qml:139
+msgid "Error ocurred uploading to Pastebin"
+msgstr "Une erreur s'est produite lors de l'envoi au bac de copie"
+
+#: ../qml/LogPage.qml:140
+msgid "<br>(Copied to clipboard)"
+msgstr "<br>(Copié dans le presse-papiers)"
+
+#: ../qml/LogPage.qml:146
+msgid "OK"
+msgstr "Valider"
+
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
+msgid "About"
+msgstr "À propos"
+
+#: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
+msgid "Logviewer"
+msgstr "Visionneuse de journaux"
+
+#: ../qml/AboutPage.qml:50
+msgid "Version: "
+msgstr "Version :"
+
+#: ../qml/AboutPage.qml:58
+msgid ""
+"This application lets you view logs on Ubuntu Touch devices. Based on the "
+"original work of Victor Tuson Palau and Niklas Wenzel."
+msgstr ""
+"Cette application vous permet de consulter les journaux des appareils sous "
+"Ubuntu Touch. Elle est basée à l'origine sur le travail de Victor Tuson "
+"Palau et de Niklas Wenzel."
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/AboutPage.qml:67
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+"Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le "
+"modifier sous les termes de la Licence Publique Générale GNU telle que "
+"publiée par la Fondation du Logiciel Libre, soit selon la version 3 de la "
+"licence soit (selon votre convenance) n'importe quelle version ultérieure. "
+"Ce programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE "
+"GARANTIE, ni explicite ni implicite, y compris les garanties de "
+"COMMERCIALISATION ou d'ADAPTATION DANS UN BUT SPÉCIFIQUE. Consultez la <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.fr.html'>Licence Publique "
+"Générale GNU</a> pour plus de détails."
+
+#: ../qml/AboutPage.qml:76
+msgid "SOURCE"
+msgstr "SOURCE"
+
+#: ../qml/AboutPage.qml:76
+msgid "ISSUES"
+msgstr "PROBLÈMES"
+
+#: ../qml/AboutPage.qml:76
+msgid "DONATE"
+msgstr "DONNER"
+
+#: ../qml/AboutPage.qml:86
+msgid "Maintainer"
+msgstr "Mainteneur"
+
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../qml/AboutPage.qml:104
+msgid "and"
+msgstr "et"
+
+#: ../qml/AboutPage.qml:113
+msgid "General contributions: "
+msgstr "Contributions générales : "
+
+#: ../qml/MainPage.qml:9
+msgid "Ubuntu Touch Logs"
+msgstr "Journaux d'Ubuntu Touch"
+
+#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
+msgid "Settings"
+msgstr "Paramètres"
+
+#: ../qml/MainPage.qml:47
+msgid "No logs found for the set filter"
+msgstr "Aucun journal trouvé pour le filtre défini"
+
+#: ../qml/MainPage.qml:93
+msgid "file"
+msgstr "fichier"
+
+#: ../qml/SharePage.qml:17
+msgid "Share with"
+msgstr "Partager avec"
+
+#: ../qml/PrefPage.qml:20
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../qml/PrefPage.qml:29
+msgid "Apply"
+msgstr "Appliquer"
+
+#: ../qml/PrefPage.qml:52
+msgid "Directory:"
+msgstr "Répertoire :"
+
+#: ../qml/PrefPage.qml:74
+msgid "Filter:"
+msgstr "Filtre :"
+
+#: ../qml/PrefPage.qml:96
+msgid "Refresh interval (ms):"
+msgstr "Intervalle d'actualisation (ms) :"
+
+#: ../qml/PrefPage.qml:123
+msgid "Font size:"
+msgstr "Taille de la police :"
+
+#~ msgid "Pastebin user:"
+#~ msgstr "Utilisateur du bac de copie :"
+
+#~ msgid "PasteBin"
+#~ msgstr "Bac de copie"
+
+#~ msgid "Buffer:"
+#~ msgstr "Tampon :"
+
+#~ msgid "Reload"
+#~ msgstr "Actualiser"
+
+#~ msgid "Clear"
+#~ msgstr "Effacer"

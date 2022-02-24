@@ -1,0 +1,15 @@
+{
+    "name": "logviewer.ruditimmer",
+    "description": "View logs on Ubuntu Touch devices",
+    "architecture": "all",
+    "title": "Logviewer",
+    "hooks": {
+        "logviewer": {
+            "apparmor": "logviewer.ruditimmer.apparmor",
+            "desktop":  "logviewer.ruditimmer.desktop"
+        }
+    },
+    "version": "2.6.0",
+    "maintainer": "Rudi Timmermans <rudi.timmer@gmx.com>",
+    "framework" : "ubuntu-sdk-16.04.5"
+}

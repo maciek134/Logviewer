@@ -1,0 +1,6 @@
+clickable_minimum_required:
+    "7.0.0"
+builder:
+    "pure-qml-cmake"
+kill:
+    "qmlscene"
