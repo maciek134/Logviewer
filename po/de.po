@@ -1,28 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the logviewer.neothethird package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-05 19:01+0000\n"
-"PO-Revision-Date: 2021-12-18 20:22+0100\n"
-"Last-Translator: Anne017\n"
+"POT-Creation-Date: 2021-12-04 20:29+0000\n"
+"PO-Revision-Date: 2021-12-04 22:28+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../qml/LogPage.qml:19
 msgid "Log"
-msgstr "Journal"
+msgstr "Log"
 
 #: ../qml/LogPage.qml:35
 msgid "Back"
-msgstr "Retour"
+msgstr "Zurück"
 
 #: ../qml/LogPage.qml:44
 msgid "Pause"
@@ -30,72 +32,64 @@ msgstr "Pause"
 
 #: ../qml/LogPage.qml:44
 msgid "Start"
-msgstr "Démarrer"
+msgstr "Start"
 
 #: ../qml/LogPage.qml:52
 msgid "Copy"
-msgstr "Copier"
+msgstr "Kopieren"
 
 #: ../qml/LogPage.qml:52
 msgid "Select"
-msgstr "Sélectionner"
+msgstr "Auswählen"
 
 #: ../qml/LogPage.qml:63
 msgid "Copy all"
-msgstr "Tout copier"
+msgstr "Kopieren alles"
 
 #: ../qml/LogPage.qml:68
 msgid "Dpaste"
 msgstr "Dpaste"
 
-#: ../qml/LogPage.qml:102
+#: ../qml/LogPage.qml:103
 msgid "Share"
-msgstr "Partager"
+msgstr "Teilen"
 
-#: ../qml/LogPage.qml:118
+#: ../qml/LogPage.qml:119
 msgid "Sending to dpaste.."
-msgstr "Envoi vers Dpaste..."
+msgstr "Sende an Dpaste.."
 
-#: ../qml/LogPage.qml:132
-msgid "Dpaste Error"
-msgstr "Erreur avec Dpaste"
-
-#: ../qml/LogPage.qml:132
+#: ../qml/LogPage.qml:133
 msgid "Dpaste Successful"
-msgstr "Envoi vers Dpaste réussi"
+msgstr "Dpaste erfolgreich"
 
-#: ../qml/LogPage.qml:139
-msgid "Error ocurred uploading to Pastebin"
-msgstr "Une erreur s'est produite lors de l'envoi au bac de copie"
-
-#: ../qml/LogPage.qml:140
+#: ../qml/LogPage.qml:140 ../qml/LogPage.qml:141
 msgid "<br>(Copied to clipboard)"
-msgstr "<br>(Copié dans le presse-papiers)"
+msgstr "<br>(In Zwischenablage kopiert)"
 
-#: ../qml/LogPage.qml:146
+#: ../qml/LogPage.qml:147
 msgid "OK"
-msgstr "Valider"
+msgstr "OK"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
 msgid "About"
-msgstr "À propos"
+msgstr "Über"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr "Visionneuse de journaux"
+msgstr "Logviewer"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr "Version :"
+msgstr "Version:"
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Ubuntu Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Cette application vous permet de consulter les journaux des appareils sous "
-"Ubuntu Touch. Elle est basée à l'origine sur le travail de Victor Tuson "
-"Palau et de Niklas Wenzel."
+"Diese App ermöglicht das Betrachten von Logdateien auf Ubuntu Touch Geräten. "
+"Sie basiert auf der originären Arbeit von Victor Tuson Palau und Niklas "
+"Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -109,99 +103,92 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
-"Ce programme est un logiciel libre : vous pouvez le redistribuer et/ou le "
-"modifier sous les termes de la Licence Publique Générale GNU telle que "
-"publiée par la Fondation du Logiciel Libre, soit selon la version 3 de la "
-"licence soit (selon votre convenance) n'importe quelle version ultérieure. "
-"Ce programme est distribué dans l'espoir d'être utile, mais SANS AUCUNE "
-"GARANTIE, ni explicite ni implicite, y compris les garanties de "
-"COMMERCIALISATION ou d'ADAPTATION DANS UN BUT SPÉCIFIQUE. Consultez la <a "
-"href='https://www.gnu.org/licenses/gpl-3.0.fr.html'>Licence Publique "
-"Générale GNU</a> pour plus de détails."
+"Dieses Programm ist freie Software: Du kannst es verteilen und/oder "
+"modifizieren unter den Bedingungen der GNU General Public License so wie von "
+"der Free Software Foundation veröffentlicht, entweder in Version 3 der "
+"Lizenz, oder (nach deiner Wahl) eine der späteren Versionen. Dieses Programm "
+"wird in der Hoffnung vertrieben, dass es nützlich ist, aber OHNE JEGLICHE "
+"GARANTIE, auch ohne die implizierte Garantie der VERKÄUFLICHKEIT oder "
+"GEEIGNETHEIT FÜR IRGENDWELCHE SPEZIFISCHEN ZWECKE. Mehr Details können der "
+"<a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> entnommen werden."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr "SOURCE"
+msgstr "QUELLE"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr "PROBLÈMES"
+msgstr "FEHLER"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr "DONNER"
+msgstr "SPENDEN"
 
-#: ../qml/AboutPage.qml:86
-msgid "Maintainer"
-msgstr "Mainteneur"
-
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
+#: ../qml/AboutPage.qml:86 ../qml/AboutPage.qml:95
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../qml/AboutPage.qml:104
+#: ../qml/AboutPage.qml:95
 msgid "and"
-msgstr "et"
+msgstr "und"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr "Contributions générales : "
+msgstr "Mitwirkende: "
 
 #: ../qml/MainPage.qml:9
 msgid "Ubuntu Touch Logs"
-msgstr "Journaux d'Ubuntu Touch"
+msgstr "Ubuntu Touch Logs"
 
 #: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "Einstellungen"
 
 #: ../qml/MainPage.qml:47
 msgid "No logs found for the set filter"
-msgstr "Aucun journal trouvé pour le filtre défini"
+msgstr "Keine Logs gefunden für den gesetzten Filter"
 
 #: ../qml/MainPage.qml:93
 msgid "file"
-msgstr "fichier"
+msgstr "Datei"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr "Partager avec"
+msgstr "Teilen mit"
 
 #: ../qml/PrefPage.qml:20
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "Abbruch"
 
 #: ../qml/PrefPage.qml:29
 msgid "Apply"
-msgstr "Appliquer"
+msgstr "Anwenden"
 
 #: ../qml/PrefPage.qml:52
 msgid "Directory:"
-msgstr "Répertoire :"
+msgstr "Verzeichnis:"
 
 #: ../qml/PrefPage.qml:74
 msgid "Filter:"
-msgstr "Filtre :"
+msgstr "Filter:"
 
 #: ../qml/PrefPage.qml:96
 msgid "Refresh interval (ms):"
-msgstr "Intervalle d'actualisation (ms) :"
+msgstr "Aktualisierungsintervall (ms):"
 
 #: ../qml/PrefPage.qml:123
 msgid "Font size:"
-msgstr "Taille de la police :"
-
-#~ msgid "Pastebin user:"
-#~ msgstr "Utilisateur du bac de copie :"
+msgstr "Schriftgröße:"
 
 #~ msgid "PasteBin"
-#~ msgstr "Bac de copie"
+#~ msgstr "PasteBin"
 
-#~ msgid "Buffer:"
-#~ msgstr "Tampon :"
+#~ msgid "Pastebin Error"
+#~ msgstr "Pastebin Fehler"
 
-#~ msgid "Reload"
-#~ msgstr "Actualiser"
+#~ msgid "Error ocurred uploading to Pastebin"
+#~ msgstr "Fehler beim Hochladen zu PasteBin"
 
-#~ msgid "Clear"
-#~ msgstr "Effacer"
+#~ msgid "Pastebin user:"
+#~ msgstr "Pastebin Nutzer:"

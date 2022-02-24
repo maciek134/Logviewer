@@ -1,14 +1,12 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
-
 import "libs/pastebin.js" as PasteBin
 
 Page {
     id: logPage
     property string logname
     property string path
-    property string username
     property int interval
     property bool doselection: false
     property int fontSize
@@ -39,6 +37,7 @@ Page {
             onTriggered: pageStack.pop()
         }
 
+        trailingActionBar.numberOfSlots: 5
         trailingActionBar.actions: [
         Action {
             id: pauseaction
@@ -61,10 +60,15 @@ Page {
             }
         },
         Action {
-            text: i18n.tr("PasteBin")
+            text: i18n.tr("Copy all")
+            iconName: "edit-copy"
+            onTriggered: Clipboard.push(logText.text);
+        },
+        Action {
+            text: i18n.tr("Dpaste")
             iconName: "external-link"
             onTriggered: {
-                console.log("try to paste to pastebin");
+                console.log("try to paste to dpaste");
                 __popover=PopupUtils.open(progress);
                 var uploadText = logText.selectedText;
 
@@ -73,7 +77,7 @@ Page {
                     uploadText = logText.text;
                 }
 
-                PasteBin.post("Published using Logviewer for Ubuntu Touch\nFrom file " + path + ":\n" + uploadText, username,
+                PasteBin.post("Published using Logviewer for Ubuntu Touch\nFrom file " + path + ":\n" + uploadText,
                 function on_success(url) {
                     console.log("url is " + url);
                     Clipboard.push(url);
@@ -93,6 +97,11 @@ Page {
                     PopupUtils.open(resultsD);
                 })
             }
+        },
+        Action {
+            text: i18n.tr("Share")
+            onTriggered: pStack.push(Qt.resolvedUrl("SharePage.qml"), {"url": path})
+            iconName: "share"
         }]
     }
 
@@ -106,7 +115,7 @@ Page {
             ListItemLayout {
                 anchors.verticalCenter: parent.verticalCenter
 
-                title.text: i18n.tr("Sending to Pastebin..")
+                title.text: i18n.tr("Sending to dpaste..")
 
                 ActivityIndicator {
                     running: true
@@ -120,7 +129,7 @@ Page {
         id: resultsD
         Dialog {
             id: dialogue
-            title: logPage.dialogError ? i18n.tr("Pastebin Error") : i18n.tr("Pastebin Successful")
+            title: logPage.dialogError ? i18n.tr("Dpaste Error") : i18n.tr("Dpaste Successful")
 
             Label {
                 width: parent.width

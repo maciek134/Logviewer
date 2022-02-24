@@ -1,11 +1,11 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
 
 MainView {
     id: mainView
     objectName: "mainView"
-    applicationName: "logviewer.neothethird"
+    applicationName: "logviewer.ruditimmer"
     automaticOrientation: true
     anchorToKeyboard: true
 
@@ -22,7 +22,6 @@ MainView {
         property string filter: "*.log"
         property int interval: 100
         property int dpFontSize: 10
-        property string username: "Ubuntu Touch User"
         property int commonMargin: units.gu(2)
     }
 
@@ -36,7 +35,6 @@ MainView {
             interval: preferences.interval,
             directory: preferences.dir,
             filter: preferences.filter,
-            username: preferences.username
         }
 
         var slot_applyChanges = function(msettings) {
@@ -44,7 +42,6 @@ MainView {
             preferences.dpFontSize = msettings.dpFontSize;
             preferences.interval = msettings.interval;
             preferences.dir = msettings.directory;
-            preferences.username = msettings.username;
             preferences.filter = msettings.filter;
         }
 

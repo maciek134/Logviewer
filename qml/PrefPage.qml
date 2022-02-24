@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 
 Page {
@@ -8,7 +8,6 @@ Page {
     property alias directory: dirPath.text
     property alias filter: filterText.text
     property alias dpFontSize: fontslider.value
-    property alias username: userText.text
 
     signal applyChanges
     signal cancelChanges
@@ -137,29 +136,6 @@ Page {
                     live: true
                     width: parent.width
                     anchors.top: fontlabel.bottom
-                    anchors {
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
-                    }
-                }
-            }
-
-            ListItem {
-                height: userlabel.height + userText.height + 2 * column.mSpacing
-                Label {
-                    id:userlabel
-                    text: i18n.tr("Pastebin user:")
-                    anchors {
-                        top: parent.top; topMargin: column.mSpacing
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
-                    }
-                }
-                TextField {
-                    id:userText
-                    maximumLength: 30
-                    width: parent.width
-                    anchors.top: userlabel.bottom
                     anchors {
                         left: parent.left; leftMargin: units.gu(1)
                         right: parent.right; rightMargin: units.gu(1)

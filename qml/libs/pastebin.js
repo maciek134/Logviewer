@@ -1,6 +1,6 @@
-var UBUNTU_PASTEBIN_URL="http://paste.ubuntu.com/"
+var UBUNTU_PASTEBIN_URL="https://dpaste.com/api/"
 
-function post(message, name, on_success, on_failure) {
+function post(message, on_success, on_failure) {
     var args = new Array();
 
     message = message.replace(/\n\n/g, "\n"); // remove blank lines
@@ -13,7 +13,6 @@ function post(message, name, on_success, on_failure) {
     }
 
     args.push("content=" + encodeURIComponent(message));
-    args.push("poster=" + encodeURIComponent(name));
     args.push("syntax=text");
 
     var req = new XMLHttpRequest();
@@ -25,18 +24,18 @@ function post(message, name, on_success, on_failure) {
             var response = req.responseText;
             if(response.toLowerCase().indexOf("bad") != 0) { // "Bad xxx: yyy"
                 console.log("response is " + response)
-                if(response.search("/plain/") === -1) on_failure(response);
                 var result = response.slice(
                     response.lastIndexOf("href=\"") + 7,
                     response.lastIndexOf("/plain/")
                 );
-                console.log("url is in here:" + result)
-                on_success(UBUNTU_PASTEBIN_URL + result+ "/");
+                console.log("url is in here:" + " https:"  + result)
+                on_success("https:" +result);
             } else {
                 on_failure(response);
             }
         }
     }
+    
 
     req.send(args.join('&'));
 }

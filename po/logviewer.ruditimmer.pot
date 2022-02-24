@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the logviewer.neothethird package.
+# This file is distributed under the same license as the logviewer.ruditimmer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: logviewer.neothethird\n"
+"Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-22 15:00+0000\n"
+"POT-Creation-Date: 2021-12-05 19:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,71 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../qml/LogPage.qml:19
+msgid "Log"
+msgstr ""
+
+#: ../qml/LogPage.qml:35
+msgid "Back"
+msgstr ""
+
+#: ../qml/LogPage.qml:44
+msgid "Pause"
+msgstr ""
+
+#: ../qml/LogPage.qml:44
+msgid "Start"
+msgstr ""
+
+#: ../qml/LogPage.qml:52
+msgid "Copy"
+msgstr ""
+
+#: ../qml/LogPage.qml:52
+msgid "Select"
+msgstr ""
+
+#: ../qml/LogPage.qml:63
+msgid "Copy all"
+msgstr ""
+
+#: ../qml/LogPage.qml:68
+msgid "Dpaste"
+msgstr ""
+
+#: ../qml/LogPage.qml:102
+msgid "Share"
+msgstr ""
+
+#: ../qml/LogPage.qml:118
+msgid "Sending to dpaste.."
+msgstr ""
+
+#: ../qml/LogPage.qml:132
+msgid "Dpaste Error"
+msgstr ""
+
+#: ../qml/LogPage.qml:132
+msgid "Dpaste Successful"
+msgstr ""
+
+#: ../qml/LogPage.qml:139
+msgid "Error ocurred uploading to Pastebin"
+msgstr ""
+
+#: ../qml/LogPage.qml:140
+msgid "<br>(Copied to clipboard)"
+msgstr ""
+
+#: ../qml/LogPage.qml:146
+msgid "OK"
+msgstr ""
+
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
 msgid "About"
 msgstr ""
 
-#: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
+#: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
 msgstr ""
 
@@ -60,19 +120,27 @@ msgstr ""
 msgid "DONATE"
 msgstr ""
 
-#: ../qml/AboutPage.qml:86 ../qml/AboutPage.qml:95
+#: ../qml/AboutPage.qml:86
+msgid "Maintainer"
+msgstr ""
+
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/AboutPage.qml:95
+#: ../qml/AboutPage.qml:104
 msgid "and"
+msgstr ""
+
+#: ../qml/AboutPage.qml:113
+msgid "General contributions: "
 msgstr ""
 
 #: ../qml/MainPage.qml:9
 msgid "Ubuntu Touch Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:17
+#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
 msgid "Settings"
 msgstr ""
 
@@ -80,86 +148,34 @@ msgstr ""
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/MainPage.qml:94
+#: ../qml/MainPage.qml:93
 msgid "file"
 msgstr ""
 
-#: ../qml/PrefPage.qml:21
+#: ../qml/SharePage.qml:17
+msgid "Share with"
+msgstr ""
+
+#: ../qml/PrefPage.qml:20
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/PrefPage.qml:30
+#: ../qml/PrefPage.qml:29
 msgid "Apply"
 msgstr ""
 
-#: ../qml/PrefPage.qml:53
+#: ../qml/PrefPage.qml:52
 msgid "Directory:"
 msgstr ""
 
-#: ../qml/PrefPage.qml:75
+#: ../qml/PrefPage.qml:74
 msgid "Filter:"
 msgstr ""
 
-#: ../qml/PrefPage.qml:97
+#: ../qml/PrefPage.qml:96
 msgid "Refresh interval (ms):"
 msgstr ""
 
-#: ../qml/PrefPage.qml:124
+#: ../qml/PrefPage.qml:123
 msgid "Font size:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:151
-msgid "Pastebin user:"
-msgstr ""
-
-#: ../qml/LogPage.qml:21
-msgid "Log"
-msgstr ""
-
-#: ../qml/LogPage.qml:37
-msgid "Back"
-msgstr ""
-
-#: ../qml/LogPage.qml:45
-msgid "Pause"
-msgstr ""
-
-#: ../qml/LogPage.qml:45
-msgid "Start"
-msgstr ""
-
-#: ../qml/LogPage.qml:53
-msgid "Copy"
-msgstr ""
-
-#: ../qml/LogPage.qml:53
-msgid "Select"
-msgstr ""
-
-#: ../qml/LogPage.qml:64
-msgid "PasteBin"
-msgstr ""
-
-#: ../qml/LogPage.qml:109
-msgid "Sending to Pastebin.."
-msgstr ""
-
-#: ../qml/LogPage.qml:123
-msgid "Pastebin Error"
-msgstr ""
-
-#: ../qml/LogPage.qml:123
-msgid "Pastebin Successful"
-msgstr ""
-
-#: ../qml/LogPage.qml:130
-msgid "Error ocurred uploading to Pastebin"
-msgstr ""
-
-#: ../qml/LogPage.qml:131
-msgid "<br>(Copied to clipboard)"
-msgstr ""
-
-#: ../qml/LogPage.qml:137
-msgid "OK"
 msgstr ""

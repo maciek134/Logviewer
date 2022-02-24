@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.folderlistmodel 1.0
 
@@ -78,7 +78,6 @@ Page {
                     path: preferences.dir + model.fileName,
                     fontSize: FontUtils.sizeToPixels("medium") * preferences.dpFontSize / 10,
                     interval: preferences.interval,
-                    username: preferences.username
                 }
 
                 pageStack.push(Qt.resolvedUrl("LogPage.qml"), pref);
