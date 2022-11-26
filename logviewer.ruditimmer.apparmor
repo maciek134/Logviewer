@@ -3,7 +3,7 @@
         "networking",
         "content_exchange_source"
     ],
-    "policy_version": 16.04,
+    "policy_version": 20.04,
     "read_path": [
         "/var/log/",
         "/home/phablet/.cache/"
