@@ -1,5 +1,5 @@
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Qt.labs.settings 1.0
 
 MainView {
@@ -11,6 +11,8 @@ MainView {
 
     width: units.gu(100)
     height: units.gu(75)
+    
+    property string appVersion : "5.13.0"     
 
     Component.onCompleted: {
         pStack.push(Qt.resolvedUrl("MainPage.qml"));

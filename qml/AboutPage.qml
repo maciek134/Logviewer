@@ -1,5 +1,5 @@
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Page {
     id: aboutPage
@@ -33,7 +33,7 @@ Page {
                 fontSize: "x-large"
             }
 
-            UbuntuShape {
+            LomiriShape {
                 width: units.gu(12); height: units.gu(12)
                 anchors.horizontalCenter: parent.horizontalCenter
                 radius: "medium"
@@ -44,23 +44,23 @@ Page {
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("Version: ") + "%1".arg(Qt.application.version)
+                text: i18n.tr("Version: "+mainView.appVersion)
             }
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("This application lets you view logs on Ubuntu Touch devices. Based on the original work of Victor Tuson Palau and Niklas Wenzel.")
+                text: i18n.tr("This application lets you view logs on Lomiri Touch devices. Based on the original work of Victor Tuson Palau and Niklas Wenzel.")
             }
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 //TRANSLATORS: Please make sure the URLs are correct
@@ -70,7 +70,7 @@ Page {
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: "<a href='https://github.com/ruditimmer/Logviewer'>" + i18n.tr("SOURCE") + "</a> | <a href='https://github.com/ruditimmer/Logviewer/issues'>" + i18n.tr("ISSUES") + "</a> | <a href='https://paypal.me/neothethird'>" + i18n.tr("DONATE") + "</a>"
@@ -79,16 +79,16 @@ Page {
             
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
-                text: i18n.tr("Maintainer") + " (c) 2021 - 2022 Rudi Timmermans <rudi.timmer@gmx.com>"
+                text: i18n.tr("Maintainer") + " (c) 2021 - 2022 Rudi Timmermans <rudi.timmermans@mailfence.com>"
             }            
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
@@ -97,7 +97,7 @@ Page {
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
@@ -106,7 +106,7 @@ Page {
 
             Label {
                 width: parent.width
-                linkColor: UbuntuColors.orange
+                linkColor: LomiriColors.orange
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
