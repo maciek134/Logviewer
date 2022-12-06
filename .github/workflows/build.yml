@@ -24,7 +24,7 @@ jobs:
           echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 
       - name: Build Logviewer
-        run: CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable build --arch all --output dist
+        run: CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable build review --arch all --output dist
 
       - uses: actions/upload-artifact@v3
         with:
