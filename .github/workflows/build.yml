@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Logviewer
         run: |
-          CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable clean-build --arch all --output dist
+          CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable build --arch all --output dist
           CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable review 
 
       - uses: actions/upload-artifact@v3
