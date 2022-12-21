@@ -83,8 +83,17 @@ Page {
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
-                text: i18n.tr("Maintainer") + " (c) 2021 - 2022 Rudi Timmermans <rudi.timmermans@mailfence.com>"
-            }            
+                text: i18n.tr("Maintainer") + " (c) 2021 - 2023 Rudi Timmermans <rudi.timmermans@mailfence.com>"
+            }    
+
+            Label {
+                width: parent.width
+                linkColor: LomiriColors.orange
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                style: Font.Bold
+                text: i18n.tr("General contributions: ") + "Maciek Sopyło"
+            }         
 
             Label {
                 width: parent.width

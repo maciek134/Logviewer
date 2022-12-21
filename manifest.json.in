@@ -9,7 +9,7 @@
             "desktop":  "logviewer.ruditimmer.desktop"
         }
     },
-    "version": "2.7.0",
+    "version": "2.8.0",
     "maintainer": "Rudi Timmermans <rudi.timmermans@mailfence.com>",
     "framework" : "ubuntu-sdk-20.04"
 }
