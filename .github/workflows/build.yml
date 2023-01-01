@@ -4,19 +4,24 @@ on: [ push, pull_request ]
 
 jobs:
   build:
+    strategy:
+      matrix:
+        arch: [amd64, arm64, armhf]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
       - name: Install clickable
         run: |
           python3 -m pip install clickable-ut
       - name: Build
         run: |
-          CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable build --arch all
+          CLICKABLE_FRAMEWORK=ubuntu-sdk-20.04 clickable build --libs --app --arch ${{ matrix.arch }}
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: Logviewer
-          path: build/all/app/*.click
+          name: LogViewer_${{ matrix.arch }}
+          path: build/*/app/*.click
           if-no-files-found: error
