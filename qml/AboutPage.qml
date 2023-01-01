@@ -92,8 +92,17 @@ Page {
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 style: Font.Bold
-                text: i18n.tr("General contributions: ") + "Maciek Sopyło"
-            }         
+                text: i18n.tr("General contributions: ") + "Maciek Sopyło" 
+            }      
+
+            Label {
+                width: parent.width
+                linkColor: LomiriColors.orange
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                style: Font.Bold
+                text: i18n.tr("General contributions: ") + "Daniel Frost"
+            }   
 
             Label {
                 width: parent.width
@@ -112,15 +121,6 @@ Page {
                 style: Font.Bold
                 text: i18n.tr("Copyright") + " (c) 2014 - 2016 Tuson Palau " + i18n.tr("and") + " Niklas Wenzel"
             }
-
-            Label {
-                width: parent.width
-                linkColor: LomiriColors.orange
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                style: Font.Bold
-                text: i18n.tr("General contributions: ") + "Daniel Frost"
-           }
         }
     }
 }
