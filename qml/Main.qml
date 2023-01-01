@@ -21,7 +21,7 @@ MainView {
     Settings {
         id: preferences
         property string dir: "/home/phablet/.cache/upstart/"
-        property string filter: "*.log"
+        property string unitFilter: "*.service"
         property int interval: 100
         property int dpFontSize: 10
         property int commonMargin: units.gu(2)
@@ -31,24 +31,20 @@ MainView {
         id: pStack
     }
 
+    function applyChanges(msettings) {
+        console.log("Save changes...")
+        preferences.dpFontSize = msettings.dpFontSize;
+        preferences.interval = msettings.interval;
+        preferences.unitFilter = msettings.filter;
+    }
+
     function showSettings() {
-        var prop = {
+        const settingsPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), {
             dpFontSize: preferences.dpFontSize,
             interval: preferences.interval,
-            directory: preferences.dir,
-            filter: preferences.filter,
-        }
+            filter: preferences.unitFilter,
+        });
 
-        var slot_applyChanges = function(msettings) {
-            console.log("Save changes...")
-            preferences.dpFontSize = msettings.dpFontSize;
-            preferences.interval = msettings.interval;
-            preferences.dir = msettings.directory;
-            preferences.filter = msettings.filter;
-        }
-
-        var settingPage = pStack.push(Qt.resolvedUrl("PrefPage.qml"), prop);
-
-        settingPage.applyChanges.connect(function() { slot_applyChanges(settingPage) });
+        settingsPage.applyChanges.connect(applyChanges.bind(this, settingsPage));
     }
 }

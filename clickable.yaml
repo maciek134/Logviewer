@@ -1,6 +1,21 @@
-clickable_minimum_required:
-    "7.0.0"
-builder:
-    "pure-qml-cmake"
-kill:
-    "qmlscene"
+clickable_minimum_required: 7.0.0
+builder: cmake
+kill: logviewer
+skip_review: true
+install_lib:
+  - libkjournald.so*
+dependencies_target:
+  - libsystemd-dev
+  - extra-cmake-modules
+  - libkf5coreaddons-dev
+  - libkf5i18n-dev
+libraries:
+  kjournald:
+    builder: cmake
+    dependencies_target:
+      - libsystemd-dev
+      - extra-cmake-modules
+      - libkf5coreaddons-dev
+      - libkf5i18n-dev
+    build_args:
+      - -DINSTALL_EXPERIMENTAL_HEADERS=ON

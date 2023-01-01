@@ -1,0 +1,3 @@
+[submodule "libs/kjournald/upstream"]
+	path = libs/kjournald/upstream
+	url = https://gitlab.com/klhio/kjournald-fork.git

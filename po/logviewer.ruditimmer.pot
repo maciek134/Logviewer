@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 06:09+0000\n"
+"POT-Creation-Date: 2023-01-01 16:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
 msgstr ""
 
@@ -64,115 +64,83 @@ msgstr ""
 msgid "Maintainer"
 msgstr ""
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
-msgid "Copyright"
-msgstr ""
-
-#: ../qml/AboutPage.qml:104
-msgid "and"
-msgstr ""
-
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
 msgstr ""
 
-#: ../qml/LogPage.qml:19
+#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+msgid "Copyright"
+msgstr ""
+
+#: ../qml/AboutPage.qml:113
+msgid "and"
+msgstr ""
+
+#: ../qml/LogPage.qml:99
 msgid "Log"
 msgstr ""
 
-#: ../qml/LogPage.qml:35
+#: ../qml/LogPage.qml:115
 msgid "Back"
 msgstr ""
 
-#: ../qml/LogPage.qml:44
+#: ../qml/LogPage.qml:124
 msgid "Pause"
 msgstr ""
 
-#: ../qml/LogPage.qml:44
+#: ../qml/LogPage.qml:124
 msgid "Start"
 msgstr ""
 
-#: ../qml/LogPage.qml:52
+#: ../qml/LogPage.qml:129
 msgid "Copy"
 msgstr ""
 
-#: ../qml/LogPage.qml:52
+#: ../qml/LogPage.qml:129
 msgid "Select"
 msgstr ""
 
-#: ../qml/LogPage.qml:63
+#: ../qml/LogPage.qml:140
 msgid "Copy all"
 msgstr ""
 
-#: ../qml/LogPage.qml:68
+#: ../qml/LogPage.qml:147
 msgid "Dpaste"
 msgstr ""
 
-#: ../qml/LogPage.qml:102
-msgid "Share"
-msgstr ""
-
-#: ../qml/LogPage.qml:118
-msgid "Sending to dpaste.."
-msgstr ""
-
-#: ../qml/LogPage.qml:132
-msgid "Dpaste Error"
-msgstr ""
-
-#: ../qml/LogPage.qml:132
-msgid "Dpaste Successful"
-msgstr ""
-
-#: ../qml/LogPage.qml:139
-msgid "Error ocurred uploading to Pastebin"
-msgstr ""
-
-#: ../qml/LogPage.qml:140
-msgid "<br>(Copied to clipboard)"
-msgstr ""
-
-#: ../qml/LogPage.qml:146
-msgid "OK"
-msgstr ""
-
-#: ../qml/MainPage.qml:9
+#: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
+#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
 msgstr ""
 
-#: ../qml/MainPage.qml:47
+#: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/MainPage.qml:93
-msgid "file"
+#: ../qml/MainPage.qml:88
+msgid "systemd unit"
 msgstr ""
 
-#: ../qml/PrefPage.qml:20
+#: ../qml/PrefPage.qml:19
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/PrefPage.qml:29
+#: ../qml/PrefPage.qml:28
 msgid "Apply"
 msgstr ""
 
-#: ../qml/PrefPage.qml:52
-msgid "Directory:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:74
+#: ../qml/PrefPage.qml:54
 msgid "Filter:"
 msgstr ""
 
-#: ../qml/PrefPage.qml:96
+#: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
 msgstr ""
 
-#: ../qml/PrefPage.qml:123
+#: ../qml/PrefPage.qml:119
 msgid "Font size:"
 msgstr ""
 
