@@ -1,41 +1,40 @@
-var UBUNTU_PASTEBIN_URL="https://dpaste.com/api/"
+const PASTEBIN_URL="https://dpaste.com/api/"
+const PASTE_CHAR_LIMIT = 250000;
+const PASTE_TITLE_LIMIT = 100;
 
-function post(message, on_success, on_failure) {
-    var args = new Array();
+function post(message, unit, on_success, on_failure) {
+    const args = [];
 
-    message = message.replace(/\n\n/g, "\n"); // remove blank lines
-    var lines = message.split('\n');
-    if (lines.length > 150) {
-        message = "";
-        for (var i = lines.length - 150; i < lines.length; i++) {
-            message += lines[i] + "\n";
-        }
-    }
-
-    args.push("content=" + encodeURIComponent(message));
+    args.push("content=" + encodeURIComponent(
+        message
+            .replace(/\n\n/g, "\n")     // remove blank lines
+            .slice(-PASTE_CHAR_LIMIT)   // make sure it fits
+        ),
+    );
     args.push("syntax=text");
+    args.push(`title=${encodeURIComponent(unit.slice(-PASTE_TITLE_LIMIT))}`)
 
-    var req = new XMLHttpRequest();
-    req.open("post", UBUNTU_PASTEBIN_URL);
+    const req = new XMLHttpRequest();
+    req.open("post", PASTEBIN_URL);
     req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    req.setRequestHeader("User-Agent", `LogViewer/${appVersion} Ubuntu Touch`);
 
-    req.onreadystatechange = function() {
-        if(req.readyState === XMLHttpRequest.DONE) {
-            var response = req.responseText;
-            if(response.toLowerCase().indexOf("bad") != 0) { // "Bad xxx: yyy"
-                console.log("response is " + response)
-                var result = response.slice(
-                    response.lastIndexOf("href=\"") + 7,
-                    response.lastIndexOf("/plain/")
-                );
-                console.log("url is in here:" + " https:"  + result)
-                on_success("https:" +result);
-            } else {
-                on_failure(response);
-            }
+    req.onreadystatechange = () => {
+        if (req.readyState !== XMLHttpRequest.DONE) {
+            return;
         }
+
+        const response = req.responseText;
+        if (req.status !== 201) {
+            return on_failure(response);
+        }
+
+        const result = response.slice(
+            response.lastIndexOf("href=\"") + 7,
+            response.lastIndexOf("/plain/")
+        );
+        on_success(`https:${result}`);
     }
     
-
-    req.send(args.join('&'));
+    req.send(args.join("&"));
 }

@@ -1,7 +1,7 @@
 {
     "name": "logviewer.ruditimmer",
     "description": "View logs on Ubuntu Touch devices",
-    "architecture": "all",
+    "architecture": "@CLICK_ARCH@",
     "title": "Logviewer",
     "hooks": {
         "logviewer": {

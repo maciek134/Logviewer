@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=Logviewer
-Exec=qmlscene qml/Main.qml
+Exec=logviewer.ruditimmer %U
 Icon=assets/logo.png
 Terminal=false
 Type=Application
