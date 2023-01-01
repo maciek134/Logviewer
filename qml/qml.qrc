@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/">
+    <file>Main.qml</file>
+    <file>MainPage.qml</file>
+    <file>AboutPage.qml</file>
+    <file>LogPage.qml</file>
+    <file>PrefPage.qml</file>
+    <file>SharePage.qml</file>
+    <file>libs/pastebin.js</file>
+    <file>libs/utils.js</file>
+  </qresource>
+</RCC>

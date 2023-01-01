@@ -5,7 +5,6 @@ Page {
     id: settingPage
 
     property alias interval: intervalSlider.value
-    property alias directory: dirPath.text
     property alias filter: filterText.text
     property alias dpFontSize: fontslider.value
 
@@ -45,55 +44,45 @@ Page {
 
             property int mSpacing: units.gu(1)
 
-            ListItem {
-                height: dirlabel.height + dirPath.height + 2 * column.mSpacing
-                Label {
-                    id: dirlabel
-                    text: i18n.tr("Directory:")
-                    anchors {
-                        top: parent.top; topMargin: column.mSpacing
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
-                    }
-                }
-                TextField {
-                    id: dirPath
-                    width: parent.width
-                    anchors.top: dirlabel.bottom
-                    anchors {
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
-                    }
-                }
-            }
+            // TODO: directory could be replaced by a system/user service switch?
 
             ListItem {
                 height: filterlabel.height + filterText.height + 2 * column.mSpacing
+
                 Label {
                     id: filterlabel
                     text: i18n.tr("Filter:")
+
                     anchors {
-                        top: parent.top; topMargin: column.mSpacing
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                        top: parent.top
+                        topMargin: column.mSpacing
+                        left: parent.left
+                        leftMargin: units.gu(1)
+                        right: parent.right
+                        rightMargin: units.gu(1)
                     }
                 }
                 TextField {
                     id: filterText
                     width: parent.width
-                    anchors.top: filterlabel.bottom
+
                     anchors {
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                        top: filterlabel.bottom
+                        left: parent.left
+                        leftMargin: units.gu(1)
+                        right: parent.right
+                        rightMargin: units.gu(1)
                     }
                 }
             }
 
             ListItem {
                 height: intervalLabel.height + intervalSlider.height + column.mSpacing
+
                 Label {
                     id:intervalLabel
                     text: i18n.tr("Refresh interval (ms):")
+
                     anchors {
                         top: parent.top; topMargin: column.mSpacing
                         left: parent.left; leftMargin: units.gu(1)
@@ -102,25 +91,33 @@ Page {
                 }
                 Slider {
                     id:intervalSlider
-                    function formatValue(v) { return v.toFixed(0); }
                     minimumValue: 50
                     maximumValue: 5000
                     value: 100
                     live: true
                     width: parent.width
-                    anchors.top: intervalLabel.bottom
+
                     anchors {
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                        top: intervalLabel.bottom
+                        left: parent.left
+                        leftMargin: units.gu(1)
+                        right: parent.right
+                        rightMargin: units.gu(1)
+                    }
+                    
+                    function formatValue(v) {
+                        return v.toFixed(0)
                     }
                 }
             }
 
             ListItem {
                 height: fontlabel.height + fontslider.height + column.mSpacing
+
                 Label {
-                    id:fontlabel
+                    id: fontlabel
                     text: i18n.tr("Font size:")
+
                     anchors {
                         top: parent.top; topMargin: column.mSpacing
                         left: parent.left; leftMargin: units.gu(1)
@@ -128,17 +125,23 @@ Page {
                     }
                 }
                 Slider {
-                    id:fontslider
-                    function formatValue(v) { return v.toFixed(0) }
+                    id: fontslider
                     minimumValue: 4
                     maximumValue: 24
                     value: 10
                     live: true
                     width: parent.width
-                    anchors.top: fontlabel.bottom
+
                     anchors {
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                        top: fontlabel.bottom
+                        left: parent.left
+                        leftMargin: units.gu(1)
+                        right: parent.right
+                        rightMargin: units.gu(1)
+                    }
+                    
+                    function formatValue(v) {
+                        return v.toFixed(0)
                     }
                 }
             }
