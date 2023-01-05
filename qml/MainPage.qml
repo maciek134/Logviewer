@@ -15,7 +15,7 @@ Page {
     }
 
     header: PageHeader {
-        title: i18n.tr("Ubuntu Touch Logs")
+        title: i18n.tr("Lomiri Touch Logs")
         flickable: scrollView.flickableItem
 
         trailingActionBar.actions: [
@@ -63,7 +63,7 @@ Page {
         ListItem {
             id: logItemDelegate
             visible: unitRegex.test(model.field)
-            
+
             property var parsed: Utils.parseServiceName(model.field)
 
             onVisibleChanged: {
