@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
 "PO-Revision-Date: 2023-01-06 00:10+0000\n"
-"Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/de/>\n"
 "Language: de\n"
@@ -32,15 +32,11 @@ msgid "Version: "
 msgstr "Version: "
 
 #: ../qml/AboutPage.qml:58
-#, fuzzy
-#| msgid ""
-#| "This application lets you view logs on Ubuntu Touch devices. Based on the "
-#| "original work of Victor Tuson Palau and Niklas Wenzel."
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Diese App ermöglicht das Betrachten von Logdateien auf Ubuntu Touch Geräten. "
+"Diese App ermöglicht das Betrachten von Logdateien auf Lomiri Touch Geräten. "
 "Sie basiert auf der originären Arbeit von Victor Tuson Palau und Niklas "
 "Wenzel."
 
@@ -140,7 +136,7 @@ msgstr "Keine Logs gefunden für den gesetzten Filter"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd Einheit"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
