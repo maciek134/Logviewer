@@ -1,46 +1,41 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the logviewer.neothethird package.
+# This file is distributed under the same license as the logviewer.ruditimmer package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: logviewer.neothethird\n"
+"Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2019-01-08 07:43+0100\n"
-"Last-Translator: Pavel Zlámal <zlamal.pavel@gmail.com>\n"
-"Language-Team: \n"
-"Language: cs_CZ\n"
+"PO-Revision-Date: 2023-01-05 14:05+0000\n"
+"Last-Translator: Rudi Timmermans <rudi.timmermans@mailfence.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/ubports/"
+"logviewer-fork/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr "O aplikaci"
+msgstr "Over"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr "Prohlížeč logů"
+msgstr ""
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr "Verze: "
+msgstr ""
 
 #: ../qml/AboutPage.qml:58
-#, fuzzy
-#| msgid ""
-#| "This application lets you view logs on Ubuntu Touch devices. Based on the "
-#| "original work of Victor Tuson Palau and Niklas Wenzel."
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Tato aplikace Vám dovolí prohlížet logy na Vašem Ubuntu Touch zařízení. "
-"Založeno na původní aplikaci od Victor Tuson Palau a Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -54,26 +49,18 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
-"Tento program je svobodný software: můžete ho sdílet anebo upravovat za "
-"podmínek GNU General Public License, zveřejněné Free Software Foundation, "
-"pod licencí ve verzi 3,  anebo (dle vaší volby) pod jakoukoli pozdější "
-"verzí. Tento program je distribuován v naději, že bude užitečný, avšak BEZ "
-"JAKÉKOLI V ZÁRUKY; a to i bez předpokládané záruky OBCHODOVATELNOSTI nebo "
-"VHODNOSTI PRO KONKRÉTNÍ ÚČEL. Další podrobnosti naleznete na stránkách <a "
-"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
-"Licence </a>."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr "ZDROJOVÝ KÓD"
+msgstr ""
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr "HLÁŠENÍ CHYB"
+msgstr ""
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr "PŘISPĚT"
+msgstr ""
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
@@ -85,11 +72,11 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr "Copyright"
+msgstr ""
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr "a"
+msgstr ""
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
@@ -97,29 +84,27 @@ msgstr ""
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr "Zpět"
+msgstr ""
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr "Pauza"
+msgstr ""
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr "Start"
+msgstr ""
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr ""
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr "Vybrat"
+msgstr ""
 
 #: ../qml/LogPage.qml:140
-#, fuzzy
-#| msgid "Copy"
 msgid "Copy all"
-msgstr "Kopírovat"
+msgstr ""
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
@@ -127,15 +112,15 @@ msgstr ""
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr "Logy Ubuntu Touch"
+msgstr ""
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr "Nastavení"
+msgstr ""
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr "Pro zadaný filtr nebyl nalezen žádný logovací soubor"
+msgstr ""
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
@@ -143,51 +128,24 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr ""
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr "Použít"
+msgstr ""
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr "Filtr:"
+msgstr ""
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr "Interval obnovy (ms):"
+msgstr ""
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr "Velikost písma:"
+msgstr ""
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr ""
-
-#~ msgid "Directory:"
-#~ msgstr "Složka:"
-
-#~ msgid "Pastebin user:"
-#~ msgstr "Uživatel Pastebin:"
-
-#~ msgid "PasteBin"
-#~ msgstr "PasteBin"
-
-#~ msgid "Sending to Pastebin.."
-#~ msgstr "Odesílám do Pastebin.."
-
-#~ msgid "Pastebin Error"
-#~ msgstr "Chyba Pastebin"
-
-#~ msgid "Pastebin Successful"
-#~ msgstr "Úspěšně odesláno do Pastebin"
-
-#~ msgid "Error ocurred uploading to Pastebin"
-#~ msgstr "Při odesílání do Pastebin došlo k chybě"
-
-#~ msgid "<br>(Copied to clipboard)"
-#~ msgstr "<br>(zkopírováno do schránky)"
-
-#~ msgid "OK"
-#~ msgstr "OK"
