@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 00:34+0000\n"
+"POT-Creation-Date: 2023-01-01 16:05+0000\n"
 "PO-Revision-Date: 2018-05-20 12:55+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
@@ -17,99 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/PrefPage.qml:17 ../qml/MainPage.qml:14
-msgid "Settings"
-msgstr "Configuración"
-
-#: ../qml/PrefPage.qml:21
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../qml/PrefPage.qml:30
-msgid "Apply"
-msgstr "Aplicar"
-
-#: ../qml/PrefPage.qml:53
-msgid "Directory:"
-msgstr "Directorio:"
-
-#: ../qml/PrefPage.qml:75
-msgid "Filter:"
-msgstr "Filtro:"
-
-#: ../qml/PrefPage.qml:97
-msgid "Refresh interval (ms):"
-msgstr "Intervalo de refresco (ms):"
-
-#: ../qml/PrefPage.qml:124
-msgid "Font size:"
-msgstr "Tamaño de fuente:"
-
-#: ../qml/PrefPage.qml:151
-msgid "Pastebin user:"
-msgstr "Usuario en Pastebin:"
-
-#: ../qml/MainPage.qml:9
-msgid "Ubuntu Touch Logs"
-msgstr "Registros (logs) de Ubuntu Touch"
-
-#: ../qml/MainPage.qml:19 ../qml/AboutPage.qml:8
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
 msgstr "Acerca de"
 
-#: ../qml/MainPage.qml:47
-msgid "No logs found for the set filter"
-msgstr "No se encontraron registros (logs) para el filtro establecido"
-
-#: ../qml/LogPage.qml:23
-msgid "Back"
-msgstr "Atrás"
-
-#: ../qml/LogPage.qml:31
-msgid "Pause"
-msgstr "Pausa"
-
-#: ../qml/LogPage.qml:31
-msgid "Start"
-msgstr "Comenzar"
-
-#: ../qml/LogPage.qml:39
-msgid "Copy"
-msgstr "Copiar"
-
-#: ../qml/LogPage.qml:39
-msgid "Select"
-msgstr "Seleccionar"
-
-#: ../qml/LogPage.qml:50
-msgid "PasteBin"
-msgstr "Pastebin"
-
-#: ../qml/LogPage.qml:95
-msgid "Sending to Pastebin.."
-msgstr "Enviando a Pastebin.."
-
-#: ../qml/LogPage.qml:109
-msgid "Pastebin Error"
-msgstr "Error de Pastebin"
-
-#: ../qml/LogPage.qml:109
-msgid "Pastebin Successful"
-msgstr "Pastebin exitoso"
-
-#: ../qml/LogPage.qml:116
-msgid "Error ocurred uploading to Pastebin"
-msgstr "Se produjo un error subiendo a Pastebin"
-
-#: ../qml/LogPage.qml:117
-msgid "<br>(Copied to clipboard)"
-msgstr "<br>(Copiado al portapapeles)"
-
-#: ../qml/LogPage.qml:123
-msgid "OK"
-msgstr "Aceptar"
-
-#: ../qml/AboutPage.qml:32 logviewer.neothethird.desktop.in.h:1
+#: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
 msgstr "Logviewer"
 
@@ -118,12 +30,17 @@ msgid "Version: "
 msgstr "Versión: "
 
 #: ../qml/AboutPage.qml:58
+#, fuzzy
+#| msgid ""
+#| "This application lets you view logs on Ubuntu Touch devices. Based on the "
+#| "original work of Victor Tuson Palau and Niklas Wenzel."
 msgid ""
-"This application lets you view logs on Ubuntu Touch devices. Based on the "
+"This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Esta aplicación le permite ver los regitros (logs) en dispositivos con Ubuntu Touch. "
-"Basado en el trabajo original de Victor Tuson Palau y Niklas Wenzel."
+"Esta aplicación le permite ver los regitros (logs) en dispositivos con "
+"Ubuntu Touch. Basado en el trabajo original de Victor Tuson Palau y Niklas "
+"Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -137,12 +54,12 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
-"Este programa es software libre: puede redistribuirlo y/o modificarlo "
-"según los términos de la GNU General Public License como publica la Free "
-"Software Foundation, tanto la versión 3 de la licencia o (a su criterio) "
-"cualquier versión posterior. Este programa se distribuye con la esperanza "
-"de que será útil, pero SIN NINGUNA GARANTÍA; sin siquiera la garantía "
-"implícita de COMERCIABILIDAD o ADECUACIÓN A UN PROPÓSITO CONCRETO. Vea la <a "
+"Este programa es software libre: puede redistribuirlo y/o modificarlo según "
+"los términos de la GNU General Public License como publica la Free Software "
+"Foundation, tanto la versión 3 de la licencia o (a su criterio) cualquier "
+"versión posterior. Este programa se distribuye con la esperanza de que será "
+"útil, pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de "
+"COMERCIABILIDAD o ADECUACIÓN A UN PROPÓSITO CONCRETO. Vea la <a "
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> para más detalles."
 
@@ -158,10 +75,119 @@ msgstr "PROBLEMAS"
 msgid "DONATE"
 msgstr "DONAR"
 
-#: ../qml/AboutPage.qml:86 ../qml/AboutPage.qml:95
+#: ../qml/AboutPage.qml:86
+msgid "Maintainer"
+msgstr ""
+
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+msgid "General contributions: "
+msgstr ""
+
+#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../qml/AboutPage.qml:95
+#: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr "y" 
+msgstr "y"
+
+#: ../qml/LogPage.qml:99
+msgid "Log"
+msgstr ""
+
+#: ../qml/LogPage.qml:115
+msgid "Back"
+msgstr "Atrás"
+
+#: ../qml/LogPage.qml:124
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../qml/LogPage.qml:124
+msgid "Start"
+msgstr "Comenzar"
+
+#: ../qml/LogPage.qml:129
+msgid "Copy"
+msgstr "Copiar"
+
+#: ../qml/LogPage.qml:129
+msgid "Select"
+msgstr "Seleccionar"
+
+#: ../qml/LogPage.qml:140
+#, fuzzy
+#| msgid "Copy"
+msgid "Copy all"
+msgstr "Copiar"
+
+#: ../qml/LogPage.qml:147
+msgid "Dpaste"
+msgstr ""
+
+#: ../qml/MainPage.qml:18
+msgid "Ubuntu Touch Logs"
+msgstr "Registros (logs) de Ubuntu Touch"
+
+#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+msgid "Settings"
+msgstr "Configuración"
+
+#: ../qml/MainPage.qml:54
+msgid "No logs found for the set filter"
+msgstr "No se encontraron registros (logs) para el filtro establecido"
+
+#: ../qml/MainPage.qml:88
+msgid "systemd unit"
+msgstr ""
+
+#: ../qml/PrefPage.qml:19
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../qml/PrefPage.qml:28
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../qml/PrefPage.qml:54
+msgid "Filter:"
+msgstr "Filtro:"
+
+#: ../qml/PrefPage.qml:84
+msgid "Refresh interval (ms):"
+msgstr "Intervalo de refresco (ms):"
+
+#: ../qml/PrefPage.qml:119
+msgid "Font size:"
+msgstr "Tamaño de fuente:"
+
+#: ../qml/SharePage.qml:17
+msgid "Share with"
+msgstr ""
+
+#~ msgid "Directory:"
+#~ msgstr "Directorio:"
+
+#~ msgid "Pastebin user:"
+#~ msgstr "Usuario en Pastebin:"
+
+#~ msgid "PasteBin"
+#~ msgstr "Pastebin"
+
+#~ msgid "Sending to Pastebin.."
+#~ msgstr "Enviando a Pastebin.."
+
+#~ msgid "Pastebin Error"
+#~ msgstr "Error de Pastebin"
+
+#~ msgid "Pastebin Successful"
+#~ msgstr "Pastebin exitoso"
+
+#~ msgid "Error ocurred uploading to Pastebin"
+#~ msgstr "Se produjo un error subiendo a Pastebin"
+
+#~ msgid "<br>(Copied to clipboard)"
+#~ msgstr "<br>(Copiado al portapapeles)"
+
+#~ msgid "OK"
+#~ msgstr "Aceptar"

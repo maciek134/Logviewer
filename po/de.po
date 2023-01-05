@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-04 20:29+0000\n"
+"POT-Creation-Date: 2023-01-01 16:05+0000\n"
 "PO-Revision-Date: 2021-12-04 22:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,59 +18,7 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../qml/LogPage.qml:19
-msgid "Log"
-msgstr "Log"
-
-#: ../qml/LogPage.qml:35
-msgid "Back"
-msgstr "Zurück"
-
-#: ../qml/LogPage.qml:44
-msgid "Pause"
-msgstr "Pause"
-
-#: ../qml/LogPage.qml:44
-msgid "Start"
-msgstr "Start"
-
-#: ../qml/LogPage.qml:52
-msgid "Copy"
-msgstr "Kopieren"
-
-#: ../qml/LogPage.qml:52
-msgid "Select"
-msgstr "Auswählen"
-
-#: ../qml/LogPage.qml:63
-msgid "Copy all"
-msgstr "Kopieren alles"
-
-#: ../qml/LogPage.qml:68
-msgid "Dpaste"
-msgstr "Dpaste"
-
-#: ../qml/LogPage.qml:103
-msgid "Share"
-msgstr "Teilen"
-
-#: ../qml/LogPage.qml:119
-msgid "Sending to dpaste.."
-msgstr "Sende an Dpaste.."
-
-#: ../qml/LogPage.qml:133
-msgid "Dpaste Successful"
-msgstr "Dpaste erfolgreich"
-
-#: ../qml/LogPage.qml:140 ../qml/LogPage.qml:141
-msgid "<br>(Copied to clipboard)"
-msgstr "<br>(In Zwischenablage kopiert)"
-
-#: ../qml/LogPage.qml:147
-msgid "OK"
-msgstr "OK"
-
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
 msgstr "Über"
 
@@ -83,8 +31,12 @@ msgid "Version: "
 msgstr "Version:"
 
 #: ../qml/AboutPage.qml:58
+#, fuzzy
+#| msgid ""
+#| "This application lets you view logs on Ubuntu Touch devices. Based on the "
+#| "original work of Victor Tuson Palau and Niklas Wenzel."
 msgid ""
-"This application lets you view logs on Ubuntu Touch devices. Based on the "
+"This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
 "Diese App ermöglicht das Betrachten von Logdateien auf Ubuntu Touch Geräten. "
@@ -125,61 +77,114 @@ msgstr "FEHLER"
 msgid "DONATE"
 msgstr "SPENDEN"
 
-#: ../qml/AboutPage.qml:86 ../qml/AboutPage.qml:95
-msgid "Copyright"
-msgstr "Copyright"
+#: ../qml/AboutPage.qml:86
+msgid "Maintainer"
+msgstr ""
 
-#: ../qml/AboutPage.qml:95
-msgid "and"
-msgstr "und"
-
-#: ../qml/AboutPage.qml:104
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
 msgstr "Mitwirkende: "
 
-#: ../qml/MainPage.qml:9
+#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../qml/AboutPage.qml:113
+msgid "and"
+msgstr "und"
+
+#: ../qml/LogPage.qml:99
+msgid "Log"
+msgstr "Log"
+
+#: ../qml/LogPage.qml:115
+msgid "Back"
+msgstr "Zurück"
+
+#: ../qml/LogPage.qml:124
+msgid "Pause"
+msgstr "Pause"
+
+#: ../qml/LogPage.qml:124
+msgid "Start"
+msgstr "Start"
+
+#: ../qml/LogPage.qml:129
+msgid "Copy"
+msgstr "Kopieren"
+
+#: ../qml/LogPage.qml:129
+msgid "Select"
+msgstr "Auswählen"
+
+#: ../qml/LogPage.qml:140
+msgid "Copy all"
+msgstr "Kopieren alles"
+
+#: ../qml/LogPage.qml:147
+msgid "Dpaste"
+msgstr "Dpaste"
+
+#: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
 msgstr "Ubuntu Touch Logs"
 
-#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
+#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../qml/MainPage.qml:47
+#: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
 msgstr "Keine Logs gefunden für den gesetzten Filter"
 
-#: ../qml/MainPage.qml:93
-msgid "file"
-msgstr "Datei"
+#: ../qml/MainPage.qml:88
+msgid "systemd unit"
+msgstr ""
+
+#: ../qml/PrefPage.qml:19
+msgid "Cancel"
+msgstr "Abbruch"
+
+#: ../qml/PrefPage.qml:28
+msgid "Apply"
+msgstr "Anwenden"
+
+#: ../qml/PrefPage.qml:54
+msgid "Filter:"
+msgstr "Filter:"
+
+#: ../qml/PrefPage.qml:84
+msgid "Refresh interval (ms):"
+msgstr "Aktualisierungsintervall (ms):"
+
+#: ../qml/PrefPage.qml:119
+msgid "Font size:"
+msgstr "Schriftgröße:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Teilen mit"
 
-#: ../qml/PrefPage.qml:20
-msgid "Cancel"
-msgstr "Abbruch"
+#~ msgid "Share"
+#~ msgstr "Teilen"
 
-#: ../qml/PrefPage.qml:29
-msgid "Apply"
-msgstr "Anwenden"
+#~ msgid "Sending to dpaste.."
+#~ msgstr "Sende an Dpaste.."
 
-#: ../qml/PrefPage.qml:52
-msgid "Directory:"
-msgstr "Verzeichnis:"
+#~ msgid "Dpaste Successful"
+#~ msgstr "Dpaste erfolgreich"
 
-#: ../qml/PrefPage.qml:74
-msgid "Filter:"
-msgstr "Filter:"
+#~ msgid "<br>(Copied to clipboard)"
+#~ msgstr "<br>(In Zwischenablage kopiert)"
 
-#: ../qml/PrefPage.qml:96
-msgid "Refresh interval (ms):"
-msgstr "Aktualisierungsintervall (ms):"
+#~ msgid "OK"
+#~ msgstr "OK"
 
-#: ../qml/PrefPage.qml:123
-msgid "Font size:"
-msgstr "Schriftgröße:"
+#~ msgid "file"
+#~ msgstr "Datei"
+
+#~ msgid "Directory:"
+#~ msgstr "Verzeichnis:"
 
 #~ msgid "PasteBin"
 #~ msgstr "PasteBin"

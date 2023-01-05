@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-05 19:01+0000\n"
+"POT-Creation-Date: 2023-01-01 16:05+0000\n"
 "PO-Revision-Date: 2021-12-18 20:22+0100\n"
 "Last-Translator: Anne017\n"
 "Language-Team: \n"
@@ -16,67 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/LogPage.qml:19
-msgid "Log"
-msgstr "Journal"
-
-#: ../qml/LogPage.qml:35
-msgid "Back"
-msgstr "Retour"
-
-#: ../qml/LogPage.qml:44
-msgid "Pause"
-msgstr "Pause"
-
-#: ../qml/LogPage.qml:44
-msgid "Start"
-msgstr "Démarrer"
-
-#: ../qml/LogPage.qml:52
-msgid "Copy"
-msgstr "Copier"
-
-#: ../qml/LogPage.qml:52
-msgid "Select"
-msgstr "Sélectionner"
-
-#: ../qml/LogPage.qml:63
-msgid "Copy all"
-msgstr "Tout copier"
-
-#: ../qml/LogPage.qml:68
-msgid "Dpaste"
-msgstr "Dpaste"
-
-#: ../qml/LogPage.qml:102
-msgid "Share"
-msgstr "Partager"
-
-#: ../qml/LogPage.qml:118
-msgid "Sending to dpaste.."
-msgstr "Envoi vers Dpaste..."
-
-#: ../qml/LogPage.qml:132
-msgid "Dpaste Error"
-msgstr "Erreur avec Dpaste"
-
-#: ../qml/LogPage.qml:132
-msgid "Dpaste Successful"
-msgstr "Envoi vers Dpaste réussi"
-
-#: ../qml/LogPage.qml:139
-msgid "Error ocurred uploading to Pastebin"
-msgstr "Une erreur s'est produite lors de l'envoi au bac de copie"
-
-#: ../qml/LogPage.qml:140
-msgid "<br>(Copied to clipboard)"
-msgstr "<br>(Copié dans le presse-papiers)"
-
-#: ../qml/LogPage.qml:146
-msgid "OK"
-msgstr "Valider"
-
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:19
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
 msgstr "À propos"
 
@@ -89,8 +29,12 @@ msgid "Version: "
 msgstr "Version :"
 
 #: ../qml/AboutPage.qml:58
+#, fuzzy
+#| msgid ""
+#| "This application lets you view logs on Ubuntu Touch devices. Based on the "
+#| "original work of Victor Tuson Palau and Niklas Wenzel."
 msgid ""
-"This application lets you view logs on Ubuntu Touch devices. Based on the "
+"This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
 "Cette application vous permet de consulter les journaux des appareils sous "
@@ -135,61 +79,116 @@ msgstr "DONNER"
 msgid "Maintainer"
 msgstr "Mainteneur"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
-msgid "Copyright"
-msgstr "Copyright"
-
-#: ../qml/AboutPage.qml:104
-msgid "and"
-msgstr "et"
-
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
 msgstr "Contributions générales : "
 
-#: ../qml/MainPage.qml:9
+#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../qml/AboutPage.qml:113
+msgid "and"
+msgstr "et"
+
+#: ../qml/LogPage.qml:99
+msgid "Log"
+msgstr "Journal"
+
+#: ../qml/LogPage.qml:115
+msgid "Back"
+msgstr "Retour"
+
+#: ../qml/LogPage.qml:124
+msgid "Pause"
+msgstr "Pause"
+
+#: ../qml/LogPage.qml:124
+msgid "Start"
+msgstr "Démarrer"
+
+#: ../qml/LogPage.qml:129
+msgid "Copy"
+msgstr "Copier"
+
+#: ../qml/LogPage.qml:129
+msgid "Select"
+msgstr "Sélectionner"
+
+#: ../qml/LogPage.qml:140
+msgid "Copy all"
+msgstr "Tout copier"
+
+#: ../qml/LogPage.qml:147
+msgid "Dpaste"
+msgstr "Dpaste"
+
+#: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
 msgstr "Journaux d'Ubuntu Touch"
 
-#: ../qml/MainPage.qml:14 ../qml/PrefPage.qml:16
+#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
 msgstr "Paramètres"
 
-#: ../qml/MainPage.qml:47
+#: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
 msgstr "Aucun journal trouvé pour le filtre défini"
 
-#: ../qml/MainPage.qml:93
-msgid "file"
-msgstr "fichier"
+#: ../qml/MainPage.qml:88
+msgid "systemd unit"
+msgstr ""
+
+#: ../qml/PrefPage.qml:19
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../qml/PrefPage.qml:28
+msgid "Apply"
+msgstr "Appliquer"
+
+#: ../qml/PrefPage.qml:54
+msgid "Filter:"
+msgstr "Filtre :"
+
+#: ../qml/PrefPage.qml:84
+msgid "Refresh interval (ms):"
+msgstr "Intervalle d'actualisation (ms) :"
+
+#: ../qml/PrefPage.qml:119
+msgid "Font size:"
+msgstr "Taille de la police :"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Partager avec"
 
-#: ../qml/PrefPage.qml:20
-msgid "Cancel"
-msgstr "Annuler"
+#~ msgid "Share"
+#~ msgstr "Partager"
 
-#: ../qml/PrefPage.qml:29
-msgid "Apply"
-msgstr "Appliquer"
+#~ msgid "Sending to dpaste.."
+#~ msgstr "Envoi vers Dpaste..."
 
-#: ../qml/PrefPage.qml:52
-msgid "Directory:"
-msgstr "Répertoire :"
+#~ msgid "Dpaste Error"
+#~ msgstr "Erreur avec Dpaste"
 
-#: ../qml/PrefPage.qml:74
-msgid "Filter:"
-msgstr "Filtre :"
+#~ msgid "Dpaste Successful"
+#~ msgstr "Envoi vers Dpaste réussi"
 
-#: ../qml/PrefPage.qml:96
-msgid "Refresh interval (ms):"
-msgstr "Intervalle d'actualisation (ms) :"
+#~ msgid "Error ocurred uploading to Pastebin"
+#~ msgstr "Une erreur s'est produite lors de l'envoi au bac de copie"
 
-#: ../qml/PrefPage.qml:123
-msgid "Font size:"
-msgstr "Taille de la police :"
+#~ msgid "<br>(Copied to clipboard)"
+#~ msgstr "<br>(Copié dans le presse-papiers)"
+
+#~ msgid "OK"
+#~ msgstr "Valider"
+
+#~ msgid "file"
+#~ msgstr "fichier"
+
+#~ msgid "Directory:"
+#~ msgstr "Répertoire :"
 
 #~ msgid "Pastebin user:"
 #~ msgstr "Utilisateur du bac de copie :"
