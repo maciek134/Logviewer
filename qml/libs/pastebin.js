@@ -35,6 +35,6 @@ function post(message, unit, on_success, on_failure) {
         );
         on_success(`https:${result}`);
     }
-    
+
     req.send(args.join("&"));
 }
