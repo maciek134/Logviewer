@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the logviewer.ruditimmer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: logviewer.ruditimmer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+msgid "About"
+msgstr ""
+
+#: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
+msgid "Logviewer"
+msgstr ""
+
+#: ../qml/AboutPage.qml:50
+msgid "Version: "
+msgstr ""
+
+#: ../qml/AboutPage.qml:58
+msgid ""
+"This application lets you view logs on Lomiri Touch devices. Based on the "
+"original work of Victor Tuson Palau and Niklas Wenzel."
+msgstr ""
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/AboutPage.qml:67
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+
+#: ../qml/AboutPage.qml:76
+msgid "SOURCE"
+msgstr ""
+
+#: ../qml/AboutPage.qml:76
+msgid "ISSUES"
+msgstr ""
+
+#: ../qml/AboutPage.qml:76
+msgid "DONATE"
+msgstr ""
+
+#: ../qml/AboutPage.qml:86
+msgid "Maintainer"
+msgstr ""
+
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+msgid "General contributions: "
+msgstr ""
+
+#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+msgid "Copyright"
+msgstr ""
+
+#: ../qml/AboutPage.qml:113
+msgid "and"
+msgstr ""
+
+#: ../qml/LogPage.qml:99
+msgid "Log"
+msgstr ""
+
+#: ../qml/LogPage.qml:115
+msgid "Back"
+msgstr ""
+
+#: ../qml/LogPage.qml:124
+msgid "Pause"
+msgstr ""
+
+#: ../qml/LogPage.qml:124
+msgid "Start"
+msgstr ""
+
+#: ../qml/LogPage.qml:129
+msgid "Copy"
+msgstr ""
+
+#: ../qml/LogPage.qml:129
+msgid "Select"
+msgstr ""
+
+#: ../qml/LogPage.qml:140
+msgid "Copy all"
+msgstr ""
+
+#: ../qml/LogPage.qml:147
+msgid "Dpaste"
+msgstr ""
+
+#: ../qml/MainPage.qml:18
+msgid "Ubuntu Touch Logs"
+msgstr ""
+
+#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+msgid "Settings"
+msgstr ""
+
+#: ../qml/MainPage.qml:54
+msgid "No logs found for the set filter"
+msgstr ""
+
+#: ../qml/MainPage.qml:88
+msgid "systemd unit"
+msgstr ""
+
+#: ../qml/PrefPage.qml:19
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/PrefPage.qml:28
+msgid "Apply"
+msgstr ""
+
+#: ../qml/PrefPage.qml:54
+msgid "Filter:"
+msgstr ""
+
+#: ../qml/PrefPage.qml:84
+msgid "Refresh interval (ms):"
+msgstr ""
+
+#: ../qml/PrefPage.qml:119
+msgid "Font size:"
+msgstr ""
+
+#: ../qml/SharePage.qml:17
+msgid "Share with"
+msgstr ""
