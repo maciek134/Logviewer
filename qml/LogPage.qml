@@ -144,7 +144,7 @@ Page {
             }
         },
         Action {
-            text: i18n.tr("Dpaste")
+            text: i18n.tr("dpaste")
             iconName: "external-link"
             onTriggered: {
                 console.log("try to paste to dpaste");
@@ -152,14 +152,14 @@ Page {
                 const uploadText = d.hasSelection ? d.selectionToText() : d.fullModelToText();
 
                 if (!d.hasSelection) {
-                    console.log("Text to upload is empty. Pasting the whole text...");
+                    console.log("Text to upload is empty. Pasting the whole text…");
                 }
 
                 PasteBin.post(
                     uploadText,
                     unit,
                     (url) => {
-                        console.log("url is", url);
+                        console.log("URL is", url);
                         Clipboard.push(url);
                         d.clearSelection();
                         PopupUtils.close(d.__popover);
@@ -196,7 +196,7 @@ Page {
             ListItemLayout {
                 anchors.verticalCenter: parent.verticalCenter
 
-                title.text: i18n.tr("Sending to dpaste..")
+                title.text: i18n.tr("Sending to dpaste…")
 
                 ActivityIndicator {
                     running: true
@@ -210,14 +210,14 @@ Page {
         id: resultsD
         Dialog {
             id: dialogue
-            title: logPage.dialogError ? i18n.tr("Dpaste Error") : i18n.tr("Dpaste Successful")
+            title: logPage.dialogError ? i18n.tr("Dpaste Error") : i18n.tr("Added to dpaste")
 
             Label {
                 width: parent.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Text.AlignHCenter
                 text: logPage.dialogError ?
-                      i18n.tr("Error ocurred uploading to Pastebin") :
+                      i18n.tr("Could not upload to pastebin") :
                       logPage.dialogText + i18n.tr("<br>(Copied to clipboard)");
 
                 onLinkActivated: Qt.openUrlExternally(link)
