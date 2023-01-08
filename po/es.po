@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-01-05 14:05+0000\n"
+"PO-Revision-Date: 2023-01-09 19:48+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/es/>\n"
@@ -126,7 +126,7 @@ msgstr "Registros (logs) de Ubuntu Touch"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Ajustes"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
