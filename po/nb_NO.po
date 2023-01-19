@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-01-08 01:54+0000\n"
+"PO-Revision-Date: 2023-01-20 19:52+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/nb_NO/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
@@ -32,10 +32,13 @@ msgid "Version: "
 msgstr "Versjon: "
 
 #: ../qml/AboutPage.qml:58
+#, fuzzy
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Programmet lar deg vise loggføring på Lomiri Touch-enheter. Basert på "
+"opprinnelig versjon fra Victor Tuson Palau og Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -51,16 +54,19 @@ msgid ""
 msgstr ""
 
 #: ../qml/AboutPage.qml:76
+#, fuzzy
 msgid "SOURCE"
-msgstr ""
+msgstr "Kilde"
 
 #: ../qml/AboutPage.qml:76
+#, fuzzy
 msgid "ISSUES"
-msgstr ""
+msgstr "Problemer"
 
 #: ../qml/AboutPage.qml:76
+#, fuzzy
 msgid "DONATE"
-msgstr ""
+msgstr "Doner"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
@@ -112,8 +118,9 @@ msgid "Dpaste"
 msgstr "dpaste"
 
 #: ../qml/MainPage.qml:18
+#, fuzzy
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Ubuntu Touch-loggføring"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
@@ -121,11 +128,11 @@ msgstr "Innstillinger"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Fant ingen loggføring for satt filter"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd-enhet"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
@@ -141,7 +148,7 @@ msgstr "Filter:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Gjenoppfriskingsintervall (ms):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
