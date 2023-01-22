@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-01-22 13:26+0000\n"
+"PO-Revision-Date: 2023-01-23 20:52+0000\n"
 "Last-Translator: HudobniVolk <hudobni.volk@tuta.io>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/sl/>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr ""
+msgstr "O Launcher modular"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
@@ -50,6 +50,14 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Ta program je prosta programska oprema: lahko ga distribuirate naprej in/ali "
+"spreminjate pod pogoji splošne javne licence GNU, kot jo je objavila "
+"fundacija Free Software Foundation, bodisi različica 3 te licence ali bodisi "
+"(po vaši izbiri) katere koli poznejše različice. Ta program se distribuira v "
+"upanju, da bo uporaben, vendar pa je BREZ KATEREGAKOLI JAMSTVA; celo brez "
+"implicitnega jamstva o PRIMERNOSTI ZA PRODAJO ali PRIMERNOSTI ZA DOLOČEN "
+"NAMEN. Za več podrobnosti glej <a href=\"https://www.gnu.org/licenses/gpl-3.0"
+".en.html\">Splošna javna licenca GNU</a>."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
@@ -57,7 +65,7 @@ msgstr "IZVOR"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr "PROBLEMI"
+msgstr "TEŽAVE"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
@@ -65,7 +73,7 @@ msgstr "DONIRAJ"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Vzdrževalec"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
@@ -73,7 +81,7 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "Avtorske pravice"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
@@ -85,7 +93,7 @@ msgstr ""
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Nazaj"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
@@ -117,7 +125,7 @@ msgstr ""
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Nastavitve"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
@@ -129,7 +137,7 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
