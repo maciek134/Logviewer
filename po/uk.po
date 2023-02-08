@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-02-08 13:37+0000\n"
+"PO-Revision-Date: 2023-02-09 21:38+0000\n"
 "Last-Translator: Dan <denqwerta@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/uk/>\n"
@@ -26,17 +26,19 @@ msgstr "Про нас"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "Перегляд журналу"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "Версія: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Цей застосунок дозволяє переглядати журнали на пристроях Lomiri Touch. За "
+"мотивами оригінальної роботи Віктора Тусона Палау та Нікласа Венцеля."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -50,18 +52,26 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Ця програма є вільним програмним забезпеченням: Її можна перерозподілити та/"
+"або модифікувати за умовами GNU General Public License, як це було "
+"опубліковано Free Software Foundation, або 3 версії ліцензії, або (за вашим "
+"вибором) будь-якої пізнішої версії. Ця програма розповсюджується в надії, що "
+"вона буде корисною, але БЕЗ БУДЬ-ЯКОЇ ГАРАНТІЇ; без навіть непрямої гарантії "
+"КОМЕРЦІЙНА ПРИДАТНІСТЬ або ПРИДАТНОСТІ ДЛЯ ПЕВНОЇ МЕТИ. Докладніше про це "
+"читайте у розділі <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\""
+">GNU General Public License</a>."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "ДЖЕРЕЛО"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "ПРОБЛЕМИ"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "ПОЖЕРТВУВАТИ"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
@@ -69,51 +79,51 @@ msgstr "Супроводжувач"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
-msgstr ""
+msgstr "Загальні внески: "
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "Авторське право"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr ""
+msgstr "і"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Журнал"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Пауза"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Старт"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Копіювати"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Вибрати"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Копіювати все"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
-msgstr ""
+msgstr "Dpaste"
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Журнали Ubuntu Touch"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
@@ -121,11 +131,11 @@ msgstr "Налаштування"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Для заданого фільтра не знайдено журналів"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "системний блок"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
@@ -137,16 +147,16 @@ msgstr "Застосувати"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr ""
+msgstr "Фільтр:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Інтервал оновлення (мс):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "Розмір шрифту:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Поділіться з"
