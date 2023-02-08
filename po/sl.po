@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-02-03 13:39+0000\n"
-"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
+"PO-Revision-Date: 2023-02-09 21:38+0000\n"
+"Last-Translator: HudobniVolk <hudobni.volk@tuta.io>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/sl/>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr "O Launcher modular"
+msgstr "O aplikaciji"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
@@ -119,11 +119,11 @@ msgstr "Copiar todos"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
-msgstr ""
+msgstr "Dpaste"
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Dnevniki Ubuntu Touch"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
@@ -131,11 +131,11 @@ msgstr "Nastavitve"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Ni bilo najdenih dnevnikov glede na nastavljene parametre filtra"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "enota systemd"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
@@ -143,20 +143,20 @@ msgstr "Prekliči"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr ""
+msgstr "Uveljavi"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr ""
+msgstr "Filter:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Interval osveževanja (ms):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "Velikost pisave:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Deli z"
