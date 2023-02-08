@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-01-28 17:46+0000\n"
+"PO-Revision-Date: 2023-02-09 21:38+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/eo/>\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "Kopirajtoj"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
@@ -116,7 +116,7 @@ msgstr ""
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Agordoj"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "Nuligi"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
