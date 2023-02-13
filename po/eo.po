@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-02-09 21:38+0000\n"
+"PO-Revision-Date: 2023-02-14 03:39+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/eo/>\n"
@@ -25,7 +25,7 @@ msgstr "Pri"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "Protokollegilo"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
@@ -36,6 +36,8 @@ msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Ĉi tiu programo montras protokolojn en aparatoj uzantaj Lomiri Touch. "
+"Surbaze de la origina verko de Victor Tuson Palau kaj Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,6 +51,14 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Ĉi tiu programo estas libera programo: vi povas redistribui ĝin kaj/aŭ "
+"modifi ĝin laŭ la kondiĉoj de la Ĝenerala Publika Licenco GNU eldonita de "
+"Free Software Foundation — aŭ versio 3 de la Licenco, aŭ (laŭplaĉe) ajna "
+"posta versio. Ĉi tiu programo estas distribuata kun la espero, ke ĝi estos "
+"utila, sed SEN AJNA GARANTIO; sen eĉ la implicita garantio de "
+"PRIKOMERCEBLECO aŭ TAŬGECO POR IU CELO. Vidu la <a href=\"https://www.gnu."
+"org/licenses/gpl-3.0.en.html\">Ĝeneralan Publikan Licencon GNU</a> por pliaj "
+"detaloj."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
@@ -64,11 +74,11 @@ msgstr "DONACI"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Mastrumanto"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
-msgstr ""
+msgstr "Ĝeneralaj kontribuoj: "
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
@@ -76,43 +86,43 @@ msgstr "Kopirajtoj"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr ""
+msgstr "kaj"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Protokolo"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Reen"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Paŭzigi"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Komenci"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Kopii"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Elekti"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Kopii ĉion"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
-msgstr ""
+msgstr "dpaste.com"
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Protokoloj de Ubuntu Touch"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
@@ -120,11 +130,11 @@ msgstr "Agordoj"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Troviĝis neniu protokolero kongrua kun la filtrilo"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd-unuo"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
@@ -132,20 +142,20 @@ msgstr "Nuligi"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr ""
+msgstr "Efektivigi"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr ""
+msgstr "Filtri:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Reŝarga intervalo (ms):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "Grando de tiparo:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Kunhavigi"
