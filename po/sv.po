@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2023-02-14 08:39+0000\n"
+"PO-Revision-Date: 2023-02-15 10:39+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/sv/>\n"
@@ -36,6 +36,8 @@ msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Denna applikation låter dig se loggar på Lomiri Touch-enheter. Baserad på "
+"originaljobb av Victor Tuson Palau och Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,38 +51,46 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Detta program är fri programvara: du kan distribuera det och/eller modifiera "
+"det enligt villkoren i GNU General Public License som publicerats av Free "
+"Software Foundation, antingen version 3 av licensen, eller (efter eget val) "
+"vilken senare version som helst. Detta program distribueras i hopp om att "
+"det ska vara användbart, men UTAN NÅGON GARANTI; utan ens den underförstådda "
+"garantin för SÄLJBARHET eller LÄMPLIGHET FÖR ETT SÄRSKILT SYFTE. Se <a href="
+"\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public License</"
+"a> för mer information."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "KÄLLA"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "PROBLEM"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "DONERA"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Underhållare"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
-msgstr ""
+msgstr "Allmänna bidrag: "
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr ""
+msgstr "och"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Logg"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
@@ -88,64 +98,64 @@ msgstr "Tillbaka"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Starta"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Kopiera"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Välj"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Kopiera alla"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
-msgstr ""
+msgstr "Dpaste"
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Ubuntu Touch loggar"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Inställningar"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Inga loggar hittades för det inställda filtret"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd enhet"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr ""
+msgstr "Tillämpa"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr ""
+msgstr "Filter:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Uppdateringsintervall (ms):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "Textstorlek:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Dela med"
