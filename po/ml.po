@@ -8,17 +8,20 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-02-17 04:45+0000\n"
+"Last-Translator: Raman <translations.0l5zc@simplelogin.com>\n"
+"Language-Team: Malayalam <https://hosted.weblate.org/projects/ubports/"
+"logviewer-fork/ml/>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr ""
+msgstr "കുറിച്ച്"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
@@ -26,7 +29,7 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "പതിപ്പ്: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
@@ -49,31 +52,31 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "ഉറവിടം"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "പ്രശ്നങ്ങൾ"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "സംഭാവനചെയ്യുക"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "പരിപാലകൻ"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
-msgstr ""
+msgstr "പൊതുവായ സംഭാവനകൾ: "
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "പകർപ്പവകാശം"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr ""
+msgstr "ഒപ്പം"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
@@ -81,27 +84,27 @@ msgstr ""
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "തിരികെ"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "താൽക്കാലികമായി നിർത്തുക"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "ആരംഭിക്കുക"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "പകർത്തുക"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "തിരഞ്ഞെടുക്കുക"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "എല്ലാം പകർത്തുക"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
@@ -113,7 +116,7 @@ msgstr ""
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "ക്രമീകരണങ്ങൾ"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
@@ -125,11 +128,11 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr ""
+msgstr "പ്രയോഗിക്കുക"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
@@ -137,12 +140,12 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "ഇടവേള പുതുക്കുക (എംഎസ്):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "അക്ഷര വലിപ്പം:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "എന്നിവരുമായി പങ്കിടുക"
