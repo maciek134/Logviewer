@@ -8,17 +8,20 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-04-09 05:52+0000\n"
+"Last-Translator: Lucas Bernardes da Silva <ilucasbernardes@me.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"ubports/logviewer-fork/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
@@ -81,7 +84,7 @@ msgstr ""
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
@@ -93,7 +96,7 @@ msgstr ""
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
@@ -113,7 +116,7 @@ msgstr ""
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
@@ -125,7 +128,7 @@ msgstr ""
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
