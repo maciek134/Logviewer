@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: 2019-01-08 07:43+0100\n"
-"Last-Translator: Pavel Zlámal <zlamal.pavel@gmail.com>\n"
-"Language-Team: \n"
-"Language: cs_CZ\n"
+"PO-Revision-Date: 2023-04-09 05:52+0000\n"
+"Last-Translator: Jozef Mlich <jmlich83@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/ubports/"
+"logviewer-fork/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
@@ -77,7 +78,7 @@ msgstr "PŘISPĚT"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Správce"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
