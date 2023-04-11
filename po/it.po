@@ -8,31 +8,36 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-01 16:05+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-04-14 06:24+0000\n"
+"Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
+"logviewer-fork/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
 msgid "About"
-msgstr ""
+msgstr "Info"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "Visualizzatore Registro"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "Versione: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Questa applicazione ti permette di vedere i registri su dispositivi Lomiri "
+"Touch. Basata sul lavoro originale di Victor Tuson Palau e Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,100 +54,100 @@ msgstr ""
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "SORGENTE"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "PROBLEMI"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "DONA"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Manutentore"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
 msgid "General contributions: "
-msgstr ""
+msgstr "Contribuzioni generali: "
 
 #: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
 msgid "Copyright"
-msgstr ""
+msgstr "Copyright"
 
 #: ../qml/AboutPage.qml:113
 msgid "and"
-msgstr ""
+msgstr "e"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Registra"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Indietro"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Inizia"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Copia"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Seleziona"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Copia tutto"
 
 #: ../qml/LogPage.qml:147
 msgid "Dpaste"
-msgstr ""
+msgstr "Dpaste"
 
 #: ../qml/MainPage.qml:18
 msgid "Ubuntu Touch Logs"
-msgstr ""
+msgstr "Registri Ubuntu Touch"
 
 #: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Impostazioni"
 
 #: ../qml/MainPage.qml:54
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Nessun registro trovato con i filtri impostati"
 
 #: ../qml/MainPage.qml:88
 msgid "systemd unit"
-msgstr ""
+msgstr "unità systemd"
 
 #: ../qml/PrefPage.qml:19
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #: ../qml/PrefPage.qml:28
 msgid "Apply"
-msgstr ""
+msgstr "Applica"
 
 #: ../qml/PrefPage.qml:54
 msgid "Filter:"
-msgstr ""
+msgstr "Filtro:"
 
 #: ../qml/PrefPage.qml:84
 msgid "Refresh interval (ms):"
-msgstr ""
+msgstr "Intervallo di aggiornamento (ms):"
 
 #: ../qml/PrefPage.qml:119
 msgid "Font size:"
-msgstr ""
+msgstr "Dimensione carattere:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Condividi con"
