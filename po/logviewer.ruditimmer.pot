@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-07-10 12:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:36
 msgid "About"
 msgstr ""
 
@@ -64,15 +64,15 @@ msgstr ""
 msgid "Maintainer"
 msgstr ""
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr ""
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr ""
 
@@ -105,22 +105,26 @@ msgid "Copy all"
 msgstr ""
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+msgid "dpaste"
 msgstr ""
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:19
+msgid "Lomiri Touch Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:31 ../qml/PrefPage.qml:15
 msgid "Settings"
 msgstr ""
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:42 ../qml/MainPage.qml:90
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:119
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:153
 msgid "systemd unit"
 msgstr ""
 
