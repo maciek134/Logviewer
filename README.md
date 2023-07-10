@@ -4,6 +4,12 @@ This application lets you view logs on Ubuntu Touch devices. Based on the origin
 
 [![Logviewer](assets/logo.png)](https://open.uappexplorer.com/app/logviewer.neothethird)
 
+## Build
+
+`clickable build --libs --arch [arch]`
+
+`clickable build --arch [arch]`
+
 ## License
 
  - Copyright (C) 2017 - 2020 [Johannah Sprinz](https://spri.nz)
