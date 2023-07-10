@@ -15,26 +15,91 @@ Page {
     }
 
     header: PageHeader {
+        id: defaultHeader
         title: i18n.tr("Lomiri Touch Logs")
         flickable: scrollView.flickableItem
+    }
+    state: "defaultState"
 
-        trailingActionBar.actions: [
-        Action {
-            text: i18n.tr("Settings")
-            onTriggered: mainView.showSettings()
-            iconName: "settings"
+    states: [
+        State {
+          id: defaultState
+          name: "defaultState"
+
+          property list<QtObject> trailingActions: [
+              Action {
+                  text: i18n.tr("Settings")
+                  onTriggered: mainView.showSettings()
+                  iconName: "settings"
+              },
+              Action {
+                  text: i18n.tr("About")
+                  onTriggered: pStack.push(Qt.resolvedUrl("AboutPage.qml"))
+                  iconName: "info"
+              },
+              Action {
+                  iconName: "search"
+                  text: i18n.tr("Search")
+                  onTriggered: {
+                      mainPage.state = "searchState";
+                      searchField.forceActiveFocus();
+                  }
+              }
+          ]
+
+          PropertyChanges {
+              target: defaultHeader
+              trailingActionBar.actions: defaultState.trailingActions
+              leadingActionBar.actions:  []
+          }
         },
-        Action {
-            text: i18n.tr("About")
-            onTriggered: pStack.push(Qt.resolvedUrl("AboutPage.qml"))
-            iconName: "info"
+
+        State {
+            id: searchState
+            name: "searchState"
+
+            property list<QtObject> leadingActions: [
+                Action {
+                    iconName: "back"
+                    shortcut: "Esc"
+                    onTriggered: mainPage.state = "defaultState"
+                }
+            ]
+
+            PropertyChanges {
+                target: defaultHeader
+                trailingActionBar.actions: []
+                contents: searchField
+                leadingActionBar.actions: searchState.leadingActions
+            }
+
+            PropertyChanges {
+                target: searchField
+                text: ""
+            }
         }
-        ]
+    ]
+
+    TextField {
+        id: searchField
+        visible: mainPage.state == "searchState"
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
+        inputMethodHints: Qt.ImhNoPredictiveText
+        placeholderText: i18n.tr("Search")
     }
 
     JournaldUniqueQueryModel {
         id: unitsList
         field: "_SYSTEMD_USER_UNIT"
+    }
+
+    SortFilterModel {
+        id: filteredModel
+        model: unitsList
+        filter.property: "field"
+        filter.pattern: mainPage.state == "searchState" ? RegExp(searchField.text, "gi") : RegExp("", "gi")
     }
 
     ScrollView {
@@ -44,7 +109,7 @@ Page {
         ListView {
             id: logsListView
             anchors.fill: parent
-            model: unitsList
+            model: filteredModel
             delegate: logDelegate
             focus: true
 
