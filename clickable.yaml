@@ -9,6 +9,7 @@ dependencies_target:
   - extra-cmake-modules
   - libkf5coreaddons-dev
   - libkf5i18n-dev
+  - liblomiri-app-launch-dev
 libraries:
   kjournald:
     builder: cmake

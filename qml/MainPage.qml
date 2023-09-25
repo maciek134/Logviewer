@@ -2,6 +2,7 @@ import QtQuick 2.9
 import Lomiri.Components 1.3
 import Qt.labs.folderlistmodel 1.0
 import kjournald 1.0
+import LomiriAppLaunch 1.0
 import "libs/utils.js" as Utils
 
 Page {
@@ -16,7 +17,7 @@ Page {
 
     header: PageHeader {
         id: defaultHeader
-        title: i18n.tr("Lomiri Touch Logs")
+        title: i18n.tr("Ubuntu Touch Logs")
         flickable: scrollView.flickableItem
     }
     state: "defaultState"
@@ -127,9 +128,10 @@ Page {
 
         ListItem {
             id: logItemDelegate
-            visible: unitRegex.test(model.field)
+            visible: unitRegex.test(model.field) && !preferences.hidePush || !Utils.isPush(model.field)
 
             property var parsed: Utils.parseServiceName(model.field)
+            property var iconAndName: parsed.fullName ? LomiriAppLaunch.iconAndName(parsed.fullName) : []
 
             onVisibleChanged: {
                 if (!visible) {
@@ -141,7 +143,7 @@ Page {
 
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("LogPage.qml"), {
-                    logname: Utils.parsedNameToString(parsed),
+                    logname: Utils.parsedNameToString(parsed, iconAndName),
                     unit: model.field,
                     fontSize: FontUtils.sizeToPixels("medium") * preferences.dpFontSize / 10,
                 });
@@ -149,14 +151,36 @@ Page {
 
             ListItemLayout {
                 anchors.centerIn: parent
-                title.text: Utils.parsedNameToString(parsed)
+                title.text: Utils.parsedNameToString(parsed, iconAndName)
                 subtitle.text: i18n.tr("systemd unit") + ": " + model.field
+
+                Component {
+                    id: shape
+                    LomiriShape {
+                        source: Image {
+                            source: `file://${iconAndName[0]}`
+                        }
+                        radius: "large"
+                        width: units.gu(5)
+                        height: width
+                    }
+                }
+
+                Loader {
+                    sourceComponent: shape
+                    active: iconAndName.length > 0
+                    SlotsLayout.position: SlotsLayout.Leading
+                    SlotsLayout.padding {
+                        leading: 0
+                        trailing: 0
+                    }
+                }
 
                 Icon {
                     width: units.gu(2);
                     height: width
                     name: "go-next"
-                    SlotsLayout.position: SlotsLayout.Last
+                    SlotsLayout.position: SlotsLayout.Trailing
                 }
             }
         }

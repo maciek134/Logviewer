@@ -6,6 +6,9 @@ find_package(Qt5Qml REQUIRED)
 find_package(Qt5Quick REQUIRED)
 find_package(Qt5QuickControls2 REQUIRED)
 find_package(KJournald 0.0.2 REQUIRED)
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(LAL REQUIRED lomiri-app-launch-0)
 
 # Automatically create moc files
 set(CMAKE_AUTOMOC ON)
@@ -51,9 +54,11 @@ install(FILES "content-hub.json" DESTINATION ${CMAKE_INSTALL_PREFIX})
 qt5_add_resources(QT_RESOURCES qml/qml.qrc)
 qt5_add_resources(QT_RESOURCES assets/assets.qrc)
 
-add_executable(${PROJECT_NAME} main.cpp ${QT_RESOURCES})
+add_executable(${PROJECT_NAME} main.cpp src/LomiriAppLaunch.cpp ${QT_RESOURCES})
+target_include_directories(${PROJECT_NAME} PUBLIC ${LAL_INCLUDE_DIRS})
 set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_RELEASE -s)
-target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Qml Qt5::Quick Qt5::QuickControls2 KJournald)
+target_compile_options(${PROJECT_NAME} PUBLIC ${LAL_CFLAGS_OTHER})
+target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Qml Qt5::Quick Qt5::QuickControls2 KJournald ${LAL_LIBRARIES})
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 # Translations

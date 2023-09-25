@@ -1,10 +1,12 @@
 import QtQuick 2.9
+import QtQuick.Layouts 1.12
 import Lomiri.Components 1.3
 
 Page {
     id: settingPage
 
     property alias interval: intervalSlider.value
+    property alias hidePush: hidePushHelper.checked
     property alias filter: filterText.text
     property alias dpFontSize: fontslider.value
 
@@ -42,67 +44,91 @@ Page {
             id: column
             width: scrollView.width
 
-            property int mSpacing: units.gu(1)
-
-            // TODO: directory could be replaced by a system/user service switch?
+            property int mSpacing: units.gu(2)
 
             ListItem {
-                height: filterlabel.height + filterText.height + 2 * column.mSpacing
+                height: layout.height + (divider.visible ? divider.height : 0)
+                divider.visible: !filterInput.visible
 
-                Label {
-                    id: filterlabel
-                    text: i18n.tr("Filter:")
-
-                    anchors {
-                        top: parent.top
-                        topMargin: column.mSpacing
-                        left: parent.left
-                        leftMargin: units.gu(1)
-                        right: parent.right
-                        rightMargin: units.gu(1)
-                    }
+                onClicked: {
+                    filterInput.visible = !filterInput.visible;
                 }
-                TextField {
-                    id: filterText
-                    width: parent.width
 
-                    anchors {
-                        top: filterlabel.bottom
-                        left: parent.left
-                        leftMargin: units.gu(1)
-                        right: parent.right
-                        rightMargin: units.gu(1)
+                ListItemLayout {
+                    id: layout
+                    title.text: "Filter"
+
+                    Label {
+                        text: filterText.text
+                        SlotsLayout.position: SlotsLayout.Trailing
                     }
                 }
             }
 
             ListItem {
-                height: intervalLabel.height + intervalSlider.height + column.mSpacing
+                id: filterInput
+                visible: false
 
-                Label {
-                    id:intervalLabel
-                    text: i18n.tr("Refresh interval (ms):")
-
+                TextField {
+                    id: filterText
+                    width: parent.width - column.mSpacing * 2
                     anchors {
-                        top: parent.top; topMargin: column.mSpacing
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                        top: parent.top
+                        topMargin: column.mSpacing / 2
+                        left: parent.left
+                        leftMargin: column.mSpacing
                     }
                 }
+            }
+
+            ListItem {
+                height: layout2.height + (divider.visible ? divider.height : 0)
+                ListItemLayout {
+                    id: layout2
+                    title.text: "Hide push helper logs"
+
+                    Switch {
+                        id: hidePushHelper
+                        SlotsLayout.position: SlotsLayout.Trailing
+                    }
+                }
+            }
+
+            ListItem {
+                height: intervalLayout.height + (divider.visible ? divider.height : 0)
+                divider.visible: !intervalInput.visible
+
+                onClicked: {
+                    intervalInput.visible = !intervalInput.visible;
+                }
+
+                ListItemLayout {
+                    id: intervalLayout
+                    title.text: "Refresh interval"
+
+                    Label {
+                        text: intervalSlider.value.toFixed(0) + " ms"
+                        SlotsLayout.position: SlotsLayout.Trailing
+                    }
+                }
+            }
+
+            ListItem {
+                id: intervalInput
+                visible: false
+
                 Slider {
-                    id:intervalSlider
+                    id: intervalSlider
                     minimumValue: 50
                     maximumValue: 5000
                     value: 100
                     live: true
-                    width: parent.width
-
+                    width: parent.width - column.mSpacing * 2
                     anchors {
-                        top: intervalLabel.bottom
+                        top: parent.top
+                        topMargin: column.mSpacing / 2
                         left: parent.left
-                        leftMargin: units.gu(1)
-                        right: parent.right
-                        rightMargin: units.gu(1)
+                        leftMargin: column.mSpacing
                     }
                     
                     function formatValue(v) {
@@ -112,32 +138,40 @@ Page {
             }
 
             ListItem {
-                height: fontlabel.height + fontslider.height + column.mSpacing
+                height: fontLayout.height + (divider.visible ? divider.height : 0)
+                divider.visible: !fontInput.visible
 
-                Label {
-                    id: fontlabel
-                    text: i18n.tr("Font size:")
+                onClicked: {
+                    fontInput.visible = !fontInput.visible;
+                }
 
-                    anchors {
-                        top: parent.top; topMargin: column.mSpacing
-                        left: parent.left; leftMargin: units.gu(1)
-                        right: parent.right; rightMargin: units.gu(1)
+                ListItemLayout {
+                    id: fontLayout
+                    title.text: "Font size"
+
+                    Label {
+                        text: fontslider.value.toFixed(0)
+                        SlotsLayout.position: SlotsLayout.Trailing
                     }
                 }
+            }
+
+            ListItem {
+                id: fontInput
+                visible: false
+
                 Slider {
                     id: fontslider
                     minimumValue: 4
                     maximumValue: 24
                     value: 10
                     live: true
-                    width: parent.width
-
+                    width: parent.width - column.mSpacing * 2
                     anchors {
-                        top: fontlabel.bottom
+                        top: parent.top
+                        topMargin: column.mSpacing / 2
                         left: parent.left
-                        leftMargin: units.gu(1)
-                        right: parent.right
-                        rightMargin: units.gu(1)
+                        leftMargin: column.mSpacing
                     }
                     
                     function formatValue(v) {
