@@ -25,6 +25,7 @@ MainView {
         property int interval: 100
         property int dpFontSize: 10
         property int commonMargin: units.gu(2)
+        property bool hidePush: true
     }
 
     PageStack {
@@ -36,6 +37,7 @@ MainView {
         preferences.dpFontSize = msettings.dpFontSize;
         preferences.interval = msettings.interval;
         preferences.unitFilter = msettings.filter;
+        preferences.hidePush = msettings.hidePush;
     }
 
     function showSettings() {
@@ -43,6 +45,7 @@ MainView {
             dpFontSize: preferences.dpFontSize,
             interval: preferences.interval,
             filter: preferences.unitFilter,
+            hidePush: preferences.hidePush,
         });
 
         settingsPage.applyChanges.connect(applyChanges.bind(this, settingsPage));
