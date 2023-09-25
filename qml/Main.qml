@@ -12,7 +12,7 @@ MainView {
     width: units.gu(100)
     height: units.gu(75)
 
-    property string appVersion : "2.9.0"     
+    property string appVersion : "2.10.0"     
 
     Component.onCompleted: {
         pStack.push(Qt.resolvedUrl("MainPage.qml"));
