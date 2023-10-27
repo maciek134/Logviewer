@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-04-09 05:52+0000\n"
 "Last-Translator: Lucas Bernardes da Silva <ilucasbernardes@me.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.17-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Sobre"
 
@@ -66,15 +66,15 @@ msgstr ""
 msgid "Maintainer"
 msgstr ""
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr ""
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr ""
 
@@ -107,43 +107,35 @@ msgid "Copy all"
 msgstr ""
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+msgid "dpaste"
 msgstr ""
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+msgid "Lomiri Touch Logs"
 msgstr ""
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Configurações"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr ""
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr ""
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr ""
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr ""
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
 msgstr ""
 
 #: ../qml/SharePage.qml:17

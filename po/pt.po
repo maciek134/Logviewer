@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-02-08 13:37+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/ubports/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Sobre"
 
@@ -56,9 +56,9 @@ msgstr ""
 "Software Foundation, either version 3 of the License, or (at your option) "
 "any later version. This program is distributed in the hope that it will be "
 "useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a href=\"https"
-"://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public License</a> for "
-"more details."
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public "
+"License</a> for more details."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
@@ -76,15 +76,15 @@ msgstr "DOAR"
 msgid "Maintainer"
 msgstr "Mantedor"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Contribuidores gerais: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Direitos de Autor"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "e"
 
@@ -117,45 +117,50 @@ msgid "Copy all"
 msgstr "Copiar tudo"
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+#, fuzzy
+#| msgid "Dpaste"
+msgid "dpaste"
 msgstr "Dpaste"
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+#, fuzzy
+#| msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Registos Ubuntu Touch"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Configurações"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Sem registos encontrados para o filtro aplicado"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "systemd unit"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Aplicar"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Filtro:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Intervalo de atualização (ms):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Tamanho da fonte:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Partilhar com"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtro:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Intervalo de atualização (ms):"
+
+#~ msgid "Font size:"
+#~ msgstr "Tamanho da fonte:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-02-15 10:39+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/ubports/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Om"
 
@@ -56,9 +56,9 @@ msgstr ""
 "Software Foundation, antingen version 3 av licensen, eller (efter eget val) "
 "vilken senare version som helst. Detta program distribueras i hopp om att "
 "det ska vara användbart, men UTAN NÅGON GARANTI; utan ens den underförstådda "
-"garantin för SÄLJBARHET eller LÄMPLIGHET FÖR ETT SÄRSKILT SYFTE. Se <a href="
-"\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public License</"
-"a> för mer information."
+"garantin för SÄLJBARHET eller LÄMPLIGHET FÖR ETT SÄRSKILT SYFTE. Se <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public "
+"License</a> för mer information."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
@@ -76,15 +76,15 @@ msgstr "DONERA"
 msgid "Maintainer"
 msgstr "Underhållare"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Allmänna bidrag: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "och"
 
@@ -117,45 +117,50 @@ msgid "Copy all"
 msgstr "Kopiera alla"
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+#, fuzzy
+#| msgid "Dpaste"
+msgid "dpaste"
 msgstr "Dpaste"
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+#, fuzzy
+#| msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Ubuntu Touch loggar"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Inställningar"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Inga loggar hittades för det inställda filtret"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "systemd enhet"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Tillämpa"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Filter:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Uppdateringsintervall (ms):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Textstorlek:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Dela med"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Uppdateringsintervall (ms):"
+
+#~ msgid "Font size:"
+#~ msgstr "Textstorlek:"

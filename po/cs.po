@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.neothethird\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-08-15 19:24+0000\n"
 "Last-Translator: Milan Korecky <milan.korecky@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/ubports/"
-"logviewer-fork/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/ubports/logviewer-"
+"fork/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "O aplikaci"
 
@@ -77,15 +77,15 @@ msgstr "PŘISPĚT"
 msgid "Maintainer"
 msgstr "Správce"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Obecné vývojářské příspěvky: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "a"
 
@@ -118,48 +118,51 @@ msgid "Copy all"
 msgstr "Kopírovat vše"
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+msgid "dpaste"
 msgstr ""
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+#, fuzzy
+#| msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Logy Ubuntu Touch"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Pro zadaný filtr nebyl nalezen žádný logovací soubor"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "jednotka systemd"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Použít"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Filtr:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Interval obnovy (ms):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Velikost písma:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Sdílet s"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtr:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Interval obnovy (ms):"
+
+#~ msgid "Font size:"
+#~ msgstr "Velikost písma:"
 
 #~ msgid "Directory:"
 #~ msgstr "Složka:"

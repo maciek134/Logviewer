@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-02-14 03:39+0000\n"
 "Last-Translator: phlostically <phlostically@mailinator.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/ubports/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Pri"
 
@@ -76,15 +76,15 @@ msgstr "DONACI"
 msgid "Maintainer"
 msgstr "Mastrumanto"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Ĝeneralaj kontribuoj: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Kopirajtoj"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "kaj"
 
@@ -117,45 +117,50 @@ msgid "Copy all"
 msgstr "Kopii ĉion"
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+#, fuzzy
+#| msgid "Dpaste"
+msgid "dpaste"
 msgstr "dpaste.com"
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+#, fuzzy
+#| msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Protokoloj de Ubuntu Touch"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Agordoj"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Troviĝis neniu protokolero kongrua kun la filtrilo"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "systemd-unuo"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Nuligi"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Efektivigi"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Filtri:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Reŝarga intervalo (ms):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Grando de tiparo:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Kunhavigi"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtri:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Reŝarga intervalo (ms):"
+
+#~ msgid "Font size:"
+#~ msgstr "Grando de tiparo:"

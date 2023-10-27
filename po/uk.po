@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-10-27 09:27+0000\n"
 "Last-Translator: Serhii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
@@ -20,7 +20,7 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.2-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Про програму"
 
@@ -77,15 +77,15 @@ msgstr "ПОЖЕРТВУВАТИ"
 msgid "Maintainer"
 msgstr "Супроводжувач"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Загальні внески: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Авторське право"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "і"
 
@@ -118,45 +118,50 @@ msgid "Copy all"
 msgstr "Копіювати все"
 
 #: ../qml/LogPage.qml:147
-msgid "Dpaste"
+#, fuzzy
+#| msgid "Dpaste"
+msgid "dpaste"
 msgstr "Dpaste"
 
-#: ../qml/MainPage.qml:18
-msgid "Ubuntu Touch Logs"
+#: ../qml/MainPage.qml:20
+#, fuzzy
+#| msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Журнали Ubuntu Touch"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Налаштування"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Для заданого фільтра не знайдено журналів"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "модуль systemd"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Застосувати"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Фільтр:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Інтервал оновлення (мс):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Розмір шрифту:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Поділіться з"
+
+#~ msgid "Filter:"
+#~ msgstr "Фільтр:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Інтервал оновлення (мс):"
+
+#~ msgid "Font size:"
+#~ msgstr "Розмір шрифту:"

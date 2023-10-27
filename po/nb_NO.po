@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 16:05+0000\n"
+"POT-Creation-Date: 2023-09-25 20:10+0000\n"
 "PO-Revision-Date: 2023-01-23 20:52+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ubports/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:28
+#: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
 msgstr "Om"
 
@@ -57,8 +57,9 @@ msgstr ""
 "Software Foundation, enten versjon 3 av lisensen, eller (etter eget valg) "
 "hvilken som helst senere versjon. Dette programmet distribueres i håp om at "
 "det vil være nyttig, men UTEN NOEN GARANTI; selv uten underforstått garanti "
-"om SALGBARHET eller FORMÅLSTJENLIGHET. Mer info er å finne i <a href=\"https"
-"://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public License</a>."
+"om SALGBARHET eller FORMÅLSTJENLIGHET. Mer info er å finne i <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public "
+"License</a>."
 
 #: ../qml/AboutPage.qml:76
 #, fuzzy
@@ -79,15 +80,15 @@ msgstr "Doner"
 msgid "Maintainer"
 msgstr "Vedlikeholder"
 
-#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:122
+#: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
 msgstr "Medvirkende: "
 
-#: ../qml/AboutPage.qml:104 ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
 msgstr "Opphavsrett"
 
-#: ../qml/AboutPage.qml:113
+#: ../qml/AboutPage.qml:122
 msgid "and"
 msgstr "og"
 
@@ -121,46 +122,47 @@ msgstr "Kopier alle"
 
 #: ../qml/LogPage.qml:147
 #, fuzzy
-msgid "Dpaste"
+msgid "dpaste"
 msgstr "dpaste"
 
-#: ../qml/MainPage.qml:18
+#: ../qml/MainPage.qml:20
 #, fuzzy
-msgid "Ubuntu Touch Logs"
+msgid "Lomiri Touch Logs"
 msgstr "Ubuntu Touch-loggføring"
 
-#: ../qml/MainPage.qml:23 ../qml/PrefPage.qml:15
+#: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
 msgstr "Innstillinger"
 
-#: ../qml/MainPage.qml:54
+#: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
+msgid "Search"
+msgstr ""
+
+#: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
 msgstr "Fant ingen loggføring for satt filter"
 
-#: ../qml/MainPage.qml:88
+#: ../qml/MainPage.qml:155
 msgid "systemd unit"
 msgstr "systemd-enhet"
 
-#: ../qml/PrefPage.qml:19
+#: ../qml/PrefPage.qml:21
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../qml/PrefPage.qml:28
+#: ../qml/PrefPage.qml:30
 msgid "Apply"
 msgstr "Bruk"
-
-#: ../qml/PrefPage.qml:54
-msgid "Filter:"
-msgstr "Filter:"
-
-#: ../qml/PrefPage.qml:84
-msgid "Refresh interval (ms):"
-msgstr "Gjenoppfriskingsintervall (ms):"
-
-#: ../qml/PrefPage.qml:119
-msgid "Font size:"
-msgstr "Skriftstørrelse:"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
 msgstr "Del med"
+
+#~ msgid "Filter:"
+#~ msgstr "Filter:"
+
+#~ msgid "Refresh interval (ms):"
+#~ msgstr "Gjenoppfriskingsintervall (ms):"
+
+#~ msgid "Font size:"
+#~ msgstr "Skriftstørrelse:"
