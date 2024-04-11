@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2023-03-13 11:36+0000\n"
-"Last-Translator: Lnpo <enceka@yeah.net>\n"
+"PO-Revision-Date: 2024-04-15 06:23+0000\n"
+"Last-Translator: 复予 <clonewith@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "ubports/logviewer-fork/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -25,17 +25,19 @@ msgstr "关于"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "日志查看器"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "版本： "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"此应用让您在 Lomiri Touch 设备上查看日志。基于 Victor Tuson Palau 与 Niklas "
+"Wenzel 的原始工作。"
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,18 +51,23 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"本程序为自由软件：在自由软件基金会发布的 GNU 通用公共许可证的约束下，您可以对"
+"其进行再发布及修改。协议版本为第三版或（任您选择）更新的版本。我们希望发布的"
+"这款程序有用，但不保证，甚至不保证它有经济价值和适合特定用途。  详情参见 <a "
+"href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU "
+"通用公共许可证</a>。"
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "源代码"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "问题"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "捐赠"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
@@ -68,51 +75,51 @@ msgstr "维护者"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr ""
+msgstr "一般贡献： "
 
 #: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
-msgstr ""
+msgstr "版权所有"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr ""
+msgstr "与"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "日志"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "暂停"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "开始"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "选择"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "复制所有"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "Lomiri Touch 日志"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
@@ -120,24 +127,24 @@ msgstr "设置"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "未找到符合所选过滤器的日志"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd 单元"
 
 #: ../qml/PrefPage.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
+msgstr "确定"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "分享方式"
