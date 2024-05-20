@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2023-04-14 06:24+0000\n"
+"PO-Revision-Date: 2024-05-20 23:45+0000\n"
 "Last-Translator: Sylke Vicious <silkevicious@tuta.io>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -109,16 +109,12 @@ msgid "Copy all"
 msgstr "Copia tutto"
 
 #: ../qml/LogPage.qml:147
-#, fuzzy
-#| msgid "Dpaste"
 msgid "dpaste"
-msgstr "Dpaste"
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
-#, fuzzy
-#| msgid "Ubuntu Touch Logs"
 msgid "Lomiri Touch Logs"
-msgstr "Registri Ubuntu Touch"
+msgstr "Registri Lomiri Touch"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
@@ -126,7 +122,7 @@ msgstr "Impostazioni"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "Cerca"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
