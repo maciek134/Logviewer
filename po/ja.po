@@ -8,31 +8,36 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-08-21 03:09+0000\n"
+"Last-Translator: umesaburo sagawa <atowa-notonare-yamatonare427@pm.me>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/ubports/"
+"logviewer-fork/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.7\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
-msgstr ""
+msgstr "について"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "ログビューア"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "バージョン "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"このアプリケーションを使用すると、Lomiri Touch デバイスのログを表示できます。"
+"ビクター・トゥーソン・パラオとニクラス・ウェンゼルの原作に基づく。"
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -46,95 +51,102 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"このプログラムはフリー ソフトウェアです。Free Software Foundation が発行する "
+"GNU General Public License の条件 (ライセンスのバージョン 3、または "
+"(ユーザーの選択による) 以降のバージョン) に基づいて再配布したり、変更したりす"
+"ることができます。このプログラムは役立つことを期待して配布されていますが、い"
+"かなる保証もありません。商品性や特定目的への適合性についての暗黙の保証もあり"
+"ません。   詳細については、<a href=\"https://www.gnu.org/licenses/gpl-3.0.en."
+"html\">GNU 一般公衆利用許諾書</a>を参照してください。"
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "ソース"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "問題"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "寄付する"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "メンテナー"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr ""
+msgstr "一般的な貢献: "
 
 #: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
-msgstr ""
+msgstr "コピーライト"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr ""
+msgstr "アンド"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "ログ"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "一時停止"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "スタート"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "コピー"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "選択"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "すべてコピー"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "ペースト"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "Lomiri Touch ログ"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "設定されたフィルターのログが見つかりませんでした"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
-msgstr ""
+msgstr "システムユニット"
 
 #: ../qml/PrefPage.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
+msgstr "適用する"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "共有する相手"
