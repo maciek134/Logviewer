@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2023-10-27 09:27+0000\n"
+"PO-Revision-Date: 2024-11-02 03:31+0000\n"
 "Last-Translator: Serhii Horichenko <m@sgg.im>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -75,7 +75,7 @@ msgstr "ПОЖЕРТВУВАТИ"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr "Супроводжувач"
+msgstr "Супровід"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
@@ -87,7 +87,7 @@ msgstr "Авторське право"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr "і"
+msgstr "та"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
@@ -118,16 +118,12 @@ msgid "Copy all"
 msgstr "Копіювати все"
 
 #: ../qml/LogPage.qml:147
-#, fuzzy
-#| msgid "Dpaste"
 msgid "dpaste"
-msgstr "Dpaste"
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
-#, fuzzy
-#| msgid "Ubuntu Touch Logs"
 msgid "Lomiri Touch Logs"
-msgstr "Журнали Ubuntu Touch"
+msgstr "Журнали Lomiri Touch"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
@@ -135,7 +131,7 @@ msgstr "Налаштування"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
@@ -151,7 +147,7 @@ msgstr "Скасувати"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr "Застосувати"
+msgstr "Прийняти"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
