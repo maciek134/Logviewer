@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2024-11-30 03:42+0000\n"
+"PO-Revision-Date: 2024-12-06 16:34+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/hr/>\n"
@@ -26,7 +26,7 @@ msgstr "O aplikaciji"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "Logviewer"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
@@ -37,6 +37,8 @@ msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Ova aplikacija omogućuje pregled zapisa na Lomiri Touch uređajima. Temelji "
+"se na izvornom djelu Victora Tusona Palaua i Niklasa Wenzela."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -50,6 +52,13 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Ovaj program je besplatan softver: možeš ga redistribuirati i/ili mijenjati "
+"pod uvjetima GNU Opće javne licence koju je objavila Free Software "
+"Foundation, verzije 3 ili (po izboru) bilo koje novije verzije. Ovaj program "
+"se distribuira u nadi da će biti koristan, ali BEZ IKAKVOG JAMSTVA; čak i "
+"bez impliciranog jamstva MOGUĆNOSTI ZA PRODAJU ili PRIKLADNOSTI ZA ODREĐENU "
+"NAMJENU. Pričitaj pojedinosti na stranici <a href=\"https://www.gnu.org/"
+"licenses/gpl-3.0.en.html\">GNU Opća javna licenca</a>."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
@@ -81,7 +90,7 @@ msgstr "i"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Zapis"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
@@ -109,11 +118,11 @@ msgstr "Kopiraj sve"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "Lomiri Touch zapisi"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
@@ -125,7 +134,7 @@ msgstr "Traži"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Nema zapisa za postavljeni filtar"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
