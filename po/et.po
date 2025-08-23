@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2025-07-24 09:05+0000\n"
+"PO-Revision-Date: 2025-08-30 23:01+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/et/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.13.1-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -36,6 +36,8 @@ msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"See rakendus võimaldab sul Lomiri-põhistes seadmetes vaadata logisid. "
+"Põhineb Victor Tuson Palau ja Niklas Wenzeli varasemal tööl."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,95 +51,104 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"See programm on vaba tarkvara: sa võid seda levitada ja/või muuta vastavalt "
+"GNU Üldise Avaliku Litsentsi (GNU General Public License) tingimustele, "
+"mille on avaldanud Vaba Tarkvara Sihtasutus (Free Software Foundation), kas "
+"litsentsi versioon 3 või (sinu valikul) mistahes hilisema versiooni alusel. "
+"Seda programm levitatakse lootuses, et see on kasulik, kuid ILMA MIS TAHES "
+"GARANTIITA; isegi ilma kaudse garantiita KAUBANDUSLIKU KASUTATAVUSE või "
+"KONKREETSE EESMÄRGI JAOKS SOBIVUSE kohta.  Lisateavet leiad <a href="
+"\"https://www.gnu.org/licenses/gpl-3.0.en.html\">GNU Üldise Avaliku "
+"Litsentsi</a> veebilehelt."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "LÄHTEKOOD"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "VEAHALDUS"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "TOETA RAHALISELT"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Jätkuarendaja"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr ""
+msgstr "Üldine kaastöö: "
 
 #: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
-msgstr ""
+msgstr "Autoriõigused"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr ""
+msgstr "ja"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Logi"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "Tagasi"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Peata"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Alusta"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Vali"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Kopeeri kõik"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "dpaste.com"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "Lomiri Touchi logid"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
-msgstr ""
+msgstr "Seadistused"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "Otsi"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Määratud filtri alusel ei leidunud logisid"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd ühik"
 
 #: ../qml/PrefPage.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
+msgstr "Rakenda"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Jaga kasutades"
