@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2024-03-14 05:20+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2025-11-14 20:51+0000\n"
+"Last-Translator: Ida Brenna <ida@larald.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -32,13 +32,12 @@ msgid "Version: "
 msgstr "Versjon: "
 
 #: ../qml/AboutPage.qml:58
-#, fuzzy
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
-"Programmet lar deg vise loggføring på Lomiri Touch-enheter. Basert på "
-"opprinnelig versjon fra Victor Tuson Palau og Niklas Wenzel."
+"Programmet lar deg se logger på Lomiri Touch-enheter. Basert på opprinnelig "
+"versjon fra Victor Tuson Palau og Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -62,17 +61,14 @@ msgstr ""
 "License</a>."
 
 #: ../qml/AboutPage.qml:76
-#, fuzzy
 msgid "SOURCE"
 msgstr "Kilde"
 
 #: ../qml/AboutPage.qml:76
-#, fuzzy
 msgid "ISSUES"
 msgstr "Problemer"
 
 #: ../qml/AboutPage.qml:76
-#, fuzzy
 msgid "DONATE"
 msgstr "Doner"
 
@@ -121,14 +117,12 @@ msgid "Copy all"
 msgstr "Kopier alle"
 
 #: ../qml/LogPage.qml:147
-#, fuzzy
 msgid "dpaste"
 msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
-#, fuzzy
 msgid "Lomiri Touch Logs"
-msgstr "Ubuntu Touch-loggføring"
+msgstr "Ubuntu Touch-logger"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
