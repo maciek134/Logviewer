@@ -8,31 +8,36 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-12-04 16:00+0000\n"
+"Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
+"Language-Team: Lao <https://hosted.weblate.org/projects/ubports/logviewer-"
+"fork/lo/>\n"
 "Language: lo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
-msgstr ""
+msgstr "ກ່ຽວກັບ"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "ຕົວເບິ່ງບັນທຶກ"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "ເວີຊັນ: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"ແອັບພລິເຄຊັນນີ້ຊ່ວຍໃຫ້ທ່ານເບິ່ງບັນທຶກໃນອຸປະກອນ Lomiri Touch. ອີງຕາມຜົນງານຕົ້ນສະບັບຂອງ Victor "
+"Tuson Palau ແລະ Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -46,95 +51,102 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"ໂປຣແກຣມນີ້ແມ່ນຊອບແວເສລີ: ທ່ານສາມາດແຈກຢາຍມັນຄືນ ແລະ/ຫຼື ດັດແກ້ມັນພາຍໃຕ້ເງື່ອນໄຂຂອງ GNU "
+"General Public License ຕາມທີ່ເຜີຍແຜ່ໂດຍ Free Software Foundation, ບໍ່ວ່າຈະເປັນໃບອະນຸຍາ"
+"ດເວີຊັນ 3 ຫຼື (ຕາມທີ່ທ່ານເລືອກ) ເວີຊັນໃດກໍຕາມຫຼັງຈາກນັ້ນ. ໂປຣແກຣມນີ້ຖືກແຈກຢາຍດ້ວຍຄວາມຫວັງວ່າມັນຈະເປັ"
+"ນປະໂຫຍດ, ແຕ່ WITHOUT ANY WARRANTY (ໂດຍບໍ່ມີການຮັບປະກັນໃດໆ); ບໍ່ມີການຮັບປະກັນໂດຍນັຍກ່ຽວກັບ "
+"MERCHANTABILITY ຫຼື FITNESS FOR A PARTICULAR PURPOSE. ເບິ່ງ <a href=\"https://"
+"www.gnu.org/licenses/gpl-3.0.en.html\">GNU General Public License</a> ສຳລັບລາຍ"
+"ລະອຽດເພີ່ມເຕີມ."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "ຕົ້ນສະບັບ"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "ບັນຫາ"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "ບໍລິຈາກ"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "ຜູ້ເບິ່ງແຍງ"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr ""
+msgstr "ຜູ້ປະກອບສ່ວນທົ່ວໄປ: "
 
 #: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
-msgstr ""
+msgstr "ລິຂະສິດ"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr ""
+msgstr "ແລະ"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "ບັນທຶກ"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
-msgstr ""
+msgstr "ກັບຄືນ"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "ຢຸດຊົ່ວຄາວ"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "ເລີ່ມ"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "ສຳເນົາ"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "ເລືອກ"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "ສຳເນົາທັງໝົດ"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "ບັນທຶກ Lomiri Touch"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
-msgstr ""
+msgstr "ການຕັ້ງຄ່າ"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "ຄົ້ນຫາ"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "ບໍ່ພົບບັນທຶກສຳລັບຕົວຕອງທີ່ຕັ້ງໄວ້"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
-msgstr ""
+msgstr "ຫົວໜ່ວຍ systemd"
 
 #: ../qml/PrefPage.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "ຍົກເລີກ"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
+msgstr "ນຳໃຊ້"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "ແບ່ງປັນກັບ"
