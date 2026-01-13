@@ -329,7 +329,7 @@ Page {
             font.family: "Ubuntu Mono"
             color: selected ? theme.palette.selected.selectionText : theme.palette.normal.fieldText
             wrapMode: Text.Wrap
-            width: parent.width - preferences.commonMargin * 2
+            width: ListView.view.width - preferences.commonMargin * 2
             x: preferences.commonMargin
 
             background: Rectangle {
