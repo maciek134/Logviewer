@@ -20,4 +20,5 @@ libraries:
       - libkf5i18n-dev
     build_args:
       - -DINSTALL_EXPERIMENTAL_HEADERS=ON
+      - -DCMAKE_INSTALL_LIBDIR=lib
     prebuild: git submodule update --init --recursive
