@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2023-03-25 21:41+0000\n"
-"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"PO-Revision-Date: 2026-02-23 03:09+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/id/>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -25,17 +25,19 @@ msgstr "Tentang"
 
 #: ../qml/AboutPage.qml:32 logviewer.ruditimmer.desktop.in.h:1
 msgid "Logviewer"
-msgstr ""
+msgstr "Logviewer"
 
 #: ../qml/AboutPage.qml:50
 msgid "Version: "
-msgstr ""
+msgstr "Versi: "
 
 #: ../qml/AboutPage.qml:58
 msgid ""
 "This application lets you view logs on Lomiri Touch devices. Based on the "
 "original work of Victor Tuson Palau and Niklas Wenzel."
 msgstr ""
+"Aplikasi ini memungkinkan Anda melihat log pada perangkat Lomiri Touch. "
+"Berdasarkan karya asli dari Victor Tuson Palau dan Niklas Wenzel."
 
 #. TRANSLATORS: Please make sure the URLs are correct
 #: ../qml/AboutPage.qml:67
@@ -49,38 +51,46 @@ msgid ""
 "href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
 "License</a> for more details."
 msgstr ""
+"Program ini adalah perangkat lunak bebas: Anda dapat mendistribusikan ulang "
+"dan/atau memodifikasinya di bawah ketentuan Lisensi Publik Umum GNU "
+"sebagaimana diterbitkan oleh Free Software Foundation, baik lisensi versi 3, "
+"atau (sesuai pilihan Anda) versi yang lebih baru. Program ini "
+"didistribusikan dengan harapan dapat bermanfaat, tetapi TANPA GARANSI APA "
+"PUN; bahkan tanpa garansi tersirat mengenai KELAYAKAN JUAL atau KESESUAIAN "
+"UNTUK TUJUAN TERTENTU. Lihat <a href=\"https://www.gnu.org/licenses/gpl-"
+"3.0.en.html\">Lisensi Publik Umum GNU</a> untuk detail lebih lanjut."
 
 #: ../qml/AboutPage.qml:76
 msgid "SOURCE"
-msgstr ""
+msgstr "SUMBER"
 
 #: ../qml/AboutPage.qml:76
 msgid "ISSUES"
-msgstr ""
+msgstr "MASALAH"
 
 #: ../qml/AboutPage.qml:76
 msgid "DONATE"
-msgstr ""
+msgstr "DONASI"
 
 #: ../qml/AboutPage.qml:86
 msgid "Maintainer"
-msgstr ""
+msgstr "Pemelihara"
 
 #: ../qml/AboutPage.qml:95 ../qml/AboutPage.qml:104
 msgid "General contributions: "
-msgstr ""
+msgstr "Kontribusi umum: "
 
 #: ../qml/AboutPage.qml:113 ../qml/AboutPage.qml:122
 msgid "Copyright"
-msgstr ""
+msgstr "Hak Cipta"
 
 #: ../qml/AboutPage.qml:122
 msgid "and"
-msgstr ""
+msgstr "dan"
 
 #: ../qml/LogPage.qml:99
 msgid "Log"
-msgstr ""
+msgstr "Log"
 
 #: ../qml/LogPage.qml:115
 msgid "Back"
@@ -88,56 +98,56 @@ msgstr "Kembali"
 
 #: ../qml/LogPage.qml:124
 msgid "Pause"
-msgstr ""
+msgstr "Jeda"
 
 #: ../qml/LogPage.qml:124
 msgid "Start"
-msgstr ""
+msgstr "Mulai"
 
 #: ../qml/LogPage.qml:129
 msgid "Copy"
-msgstr ""
+msgstr "Salin"
 
 #: ../qml/LogPage.qml:129
 msgid "Select"
-msgstr ""
+msgstr "Pilih"
 
 #: ../qml/LogPage.qml:140
 msgid "Copy all"
-msgstr ""
+msgstr "Salin semua"
 
 #: ../qml/LogPage.qml:147
 msgid "dpaste"
-msgstr ""
+msgstr "dpaste"
 
 #: ../qml/MainPage.qml:20
 msgid "Lomiri Touch Logs"
-msgstr ""
+msgstr "Log Lomiri Touch"
 
 #: ../qml/MainPage.qml:32 ../qml/PrefPage.qml:17
 msgid "Settings"
-msgstr ""
+msgstr "Pengaturan"
 
 #: ../qml/MainPage.qml:43 ../qml/MainPage.qml:91
 msgid "Search"
-msgstr ""
+msgstr "Cari"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr ""
+msgstr "Tidak ada log yang ditemukan untuk filter yang diatur"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
-msgstr ""
+msgstr "unit systemd"
 
 #: ../qml/PrefPage.qml:21
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: ../qml/PrefPage.qml:30
 msgid "Apply"
-msgstr ""
+msgstr "Terapkan"
 
 #: ../qml/SharePage.qml:17
 msgid "Share with"
-msgstr ""
+msgstr "Bagikan dengan"
