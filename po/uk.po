@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: logviewer.ruditimmer\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 20:10+0000\n"
-"PO-Revision-Date: 2026-01-22 09:24+0000\n"
+"PO-Revision-Date: 2026-04-17 04:38+0000\n"
 "Last-Translator: Serhii Horichenko <serhii@horichenko.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ubports/"
 "logviewer-fork/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: ../qml/AboutPage.qml:8 ../qml/MainPage.qml:37
 msgid "About"
@@ -135,7 +135,7 @@ msgstr "Пошук"
 
 #: ../qml/MainPage.qml:120
 msgid "No logs found for the set filter"
-msgstr "Для заданого фільтра не знайдено журналів"
+msgstr "Для обраного фільтра журнали не знайдено"
 
 #: ../qml/MainPage.qml:155
 msgid "systemd unit"
